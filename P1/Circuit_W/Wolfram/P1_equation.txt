@@ -1,0 +1,21 @@
+
+1) 
+truth table not(D1) and A and B
+
+2) 
+truth table not(not(D1) and A and B)
+
+
+3)
+ truth table not (not(A) or B) and not(D0)
+
+4)
+ truth table not (not(A) or B) and not(D0)
+
+
+5) not(not (not(A) or B) and not(D0)) 
+
+
+6) truth table not(not(D1) and A and B)  and not(not (not(A) or B) and not(D0)) 
+
+
