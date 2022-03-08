@@ -1,0 +1,10 @@
+|Circuit_W
+D[0] => W.IN1
+D[1] => W.IN0
+A => W.IN1
+A => W.IN0
+B => W.IN1
+B => W.IN1
+W <= W.DB_MAX_OUTPUT_PORT_TYPE
+
+

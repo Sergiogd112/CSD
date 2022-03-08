@@ -1,0 +1,17 @@
+# Compile of Circuit_W.vhd was successful.
+# Compile of Circuit_W_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work_functional.circuit_w_vhd_tst
+# vsim -gui work_functional.circuit_w_vhd_tst 
+# Start time: 18:23:44 on Mar 08,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_functional.circuit_w_vhd_tst(circuit_w_arch)
+# Loading work_functional.circuit_w(general_eq)
+add wave -r sim:/circuit_w_vhd_tst/*
+add wave sim:/circuit_w_vhd_tst/*
+add wave sim:/circuit_w_vhd_tst/*
+run 20ms
+# End time: 18:41:14 on Mar 08,2022, Elapsed time: 0:17:30
+# Errors: 0, Warnings: 7
