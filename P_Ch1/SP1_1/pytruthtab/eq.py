@@ -10,5 +10,5 @@ def eq(inputs):
         and ((not (A) and B) or (not (A) and C))
         and (not (B) or not (C))
     )
-    E = not ((not (A) and not (B)) or not (not(A) or not (B) and C)) or (A and B)
+    E =  ((not (A) and not (B)) or not (not(A) or not (B) and C)) or (A and B)
     return [D,E]    
