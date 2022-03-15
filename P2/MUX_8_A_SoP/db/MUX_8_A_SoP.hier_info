@@ -1,0 +1,29 @@
+|MUX_8
+Ch7 => Q.IN1
+Ch6 => Q.IN1
+Ch5 => Q.IN1
+Ch4 => Q.IN1
+Ch3 => Q.IN1
+Ch2 => Q.IN1
+Ch1 => Q.IN1
+Ch0 => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[0] => Q.IN1
+S[1] => Q.IN1
+S[1] => Q.IN1
+S[1] => Q.IN1
+S[1] => Q.IN1
+S[2] => Q.IN0
+S[2] => Q.IN0
+E_L => Q.IN1
+E_L => Q.IN1
+Y <= Q.DB_MAX_OUTPUT_PORT_TYPE
+Y_L <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

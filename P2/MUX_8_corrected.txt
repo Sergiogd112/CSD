@@ -1,0 +1,7 @@
+This is the list of output equations minimized by minilog.exe in PoS or SoP format from the output format logic equations:
+
+Y= (S2+S1+S0+CH0).(S2+S1+S0'+CH1).(S2+S1'+S0+CH2).(S2+S1'+S0'+CH3).(S2'+S1+S0+CH4).(S2'+S1+S0'+CH5).    .(S2'+S1'+S0+CH6).(S2'+S1'+S0'+CH7).(E_L')
+
+
+This file was created by Equation_converter.exe
+©2020 Gerard Nadal

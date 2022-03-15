@@ -1,0 +1,48 @@
+""-----------------------------------------------------------------------------
+"" An example of a chip design: Multiplexer of 8 channels: MUX_8
+"" (type 74LS151)
+""-------------------------------------------------
+"" This is the truth table in minilog syntax 
+
+"" The MUX_8 structural equations SoP or PoS select the right option 
+
+"" Exercises P2 - CSD 
+"" http://digsys.upc.edu
+""-----------------------------------------------------------------------------
+
+table MUX_8
+input E_L S2 S1 S0 Ch7 Ch6 Ch5 Ch4 Ch3 Ch2 Ch1 Ch0 
+output Y
+
+"" The symbol "-" is don't care "x"; so the 4096 rows table can be shortened
+
+""-----------------------------------------------------------------------------
+" E_L S2 S1 S0 Ch7 Ch6 Ch5 Ch4 Ch3 Ch2 Ch1 Ch0   Y
+" --------------------------------------------   ---
+  1   -  -  -   -   -   -   -   -   -   -    -    0  "disable mode
+  				
+  0   0  0  0   -   -   -   -   -   -   -    0    0  " select Ch0
+  0   0  0  0   -   -   -   -   -   -   -    1    1
+
+  0   0  0  1   -   -   -   -   -   -   0    -    0
+  0   0  0  1   -   -   -   -   -   -   1    -    1
+
+  0   0  1  0   -   -   -   -   -   0   -    -    0
+  0   0  1  0   -   -   -   -   -   1   -    -    1
+
+  0   0  1  1   -   -   -   -   0   -   -    -    0
+  0   0  1  1   -   -   -   -   1   -   -    -    1
+
+  0   1  0  0   -   -   -   0   -   -   -    -    0
+  0   1  0  0   -   -   -   1   -   -   -    -    1
+  
+  0   1  0  1   -   -   0   -   -   -   -    -    0
+  0   1  0  1   -   -   1   -   -   -   -    -    1
+
+  0   1  1  0   -   0   -   -   -   -   -    -    0
+  0   1  1  0   -   1   -   -   -   -   -    -    1
+
+  0   1  1  1   0   -   -   -   -   -   -    -    0	 " select Ch7
+  0   1  1  1   1   -   -   -   -   -   -    -    1
+  
+end
