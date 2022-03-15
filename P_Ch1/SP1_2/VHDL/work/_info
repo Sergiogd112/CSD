@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Ecircuit_sp1_1
+Z0 w1647341841
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+Z3 dC:/CSD/P_Ch1/SP1_2/VHDL
+Z4 8C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd
+Z5 FC:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd
+l0
+L12 1
+VjGBVaPB3zEV_4aT>U9[_b3
+!s100 iFS09n=TD9L0YE?>Mf4@C2
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1647344317
+!i10b 1
+Z8 !s108 1647344317.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd|
+Z10 !s107 C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Ageneral_eq
+R1
+R2
+Z13 DEx4 work 13 circuit_sp1_1 0 22 jGBVaPB3zEV_4aT>U9[_b3
+!i122 5
+l20
+Z14 L19 7
+Z15 VhQ1AJ;eBbG=L<NkAfmfQQ1
+Z16 !s100 <I?ei8[KabEU@l0<fFYM43
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecircuit_sp1_1_vhd_tst
+Z17 w1647344295
+R1
+R2
+!i122 4
+R3
+Z18 8C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd
+Z19 FC:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd
+l0
+L31 1
+V@cAQ:Wz4[Pm`[BzQ7=2CE1
+!s100 him2H<L=667Q`gSQJ2e=V0
+R6
+32
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd|
+Z21 !s107 C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd|
+!i113 1
+R11
+R12
+Acircuit_sp1_1_arch
+R1
+R2
+DEx4 work 21 circuit_sp1_1_vhd_tst 0 22 @cAQ:Wz4[Pm`[BzQ7=2CE1
+!i122 4
+l52
+L33 84
+VgS[W@Wf?IDM<TQY:?[1BR3
+!s100 DFT8UKDUVgHH27h55LkVo2
+R6
+32
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12

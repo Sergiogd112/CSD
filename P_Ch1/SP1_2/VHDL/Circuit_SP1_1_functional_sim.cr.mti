@@ -1,0 +1,17 @@
+C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Circuit_SP1_1
+-- Compiling architecture general_eq of Circuit_SP1_1
+
+} {} {}} C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_2/VHDL/Circuit_SP1_1_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Circuit_SP1_1_vhd_tst
+-- Compiling architecture Circuit_SP1_1_arch of Circuit_SP1_1_vhd_tst
+
+} {} {}}
