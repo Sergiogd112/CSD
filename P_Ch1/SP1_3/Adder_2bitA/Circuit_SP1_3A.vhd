@@ -17,15 +17,16 @@ ENTITY Circuit_SP1_3A IS
 		Cout : OUT STD_LOGIC
 	);
 END Circuit_SP1_1;
-
+-- D(0)<=(not(A(0)) AND not(B(0)) AND Cin) or (not(A(0)) AND B(0) AND not(Cin)) or (A(0) AND NOT(B(0)) AND NOT(Cin)) OR (A(0) AND B(0) AND Cin); 
 ARCHITECTURE general_eq OF Circuit_SP1_3A IS
 BEGIN
 
-	D(0) <= (A(0) AND NOT((B(0) OR Cin) AND (NOT(B(0)) OR NOT (Cin)))) OR (((NOT(A(0)) AND B(0)) OR (NOT(A(0)) AND Cin)) AND (NOT (B(0)) OR NOT (Cin)));
+	D(0)<=(NOT(A(0)) AND NOT(B(0)) AND Cin) or (NOT(A(0)) AND B(0) AND NOT(Cin)) or (A(0) AND NOT(B(0)) AND NOT(Cin)) OR (A(0) AND B(0) AND Cin);
 	C <= NOT((NOT(A(0)) AND NOT (B(0))) OR NOT ((NOT(A(0)) OR NOT (B(0))) AND Cin)) OR (A(0) AND B(0));
 
-	D(1) <= (A(1) AND NOT((B(1) OR C) AND (NOT(B(1)) OR NOT (C)))) OR (((NOT(A(1)) AND B(1)) OR (NOT(A(1)) AND C)) AND (NOT (B(1)) OR NOT (C)));
-	
+
+	D(1) <= (NOT(A(1)) AND NOT(B(1)) AND C) or (NOT(A(1)) AND B(1) AND NOT(C)) or (A(1) AND NOT(B(1)) AND NOT(C)) OR (A(1) AND B(1) AND C);
+
 	Cout <= NOT((NOT(A(1)) AND NOT (B(1))) OR NOT ((NOT(A(1)) OR NOT (B(1))) AND C)) OR (A(1) AND B(1));
 
 END general_eq;
