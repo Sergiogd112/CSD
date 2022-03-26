@@ -1,0 +1,73 @@
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd failed with 64 errors.
+# 2 compiles, 1 failed with 64 errors.
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui Adder_2bit_A_functional_library.adder_2bit_a -Lf C:/CSD/P_Ch1/SP1_3/Adder_2bitA
+# vsim -gui Adder_2bit_A_functional_library.adder_2bit_a -Lf C:/CSD/P_Ch1/SP1_3/Adder_2bitA 
+# Start time: 15:50:18 on Mar 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a(general_eq)
+quit -sim
+# End time: 15:50:28 on Mar 21,2022, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 7
+vsim Adder_2bit_A_functional_library.adder_2bit_a
+# vsim Adder_2bit_A_functional_library.adder_2bit_a 
+# Start time: 15:50:46 on Mar 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a(general_eq)
+quit -sim
+# End time: 15:50:54 on Mar 21,2022, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 1
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb
+# vsim Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb 
+# Start time: 15:54:57 on Mar 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb(adder_2bit_a_arch)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a(general_eq)
+add wave sim:/adder_2bit_a_vhd_tb/*
+run 20ms
+quit -sim
+# End time: 15:56:42 on Mar 21,2022, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 10
+# Compile of Adder_2bit_A.vhd was successful.
+# Compile of Adder_2bit_A_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb
+# vsim Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb 
+# Start time: 15:57:00 on Mar 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a_vhd_tb(adder_2bit_a_arch)
+# Loading Adder_2bit_A_functional_library.adder_2bit_a(general_eq)
+add wave sim:/adder_2bit_a_vhd_tb/*
+run 20 ms
+quit -sim
+# End time: 16:12:14 on Mar 21,2022, Elapsed time: 0:15:14
+# Errors: 0, Warnings: 2

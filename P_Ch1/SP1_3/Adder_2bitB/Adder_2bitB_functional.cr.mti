@@ -1,0 +1,33 @@
+C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder1Bit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder1Bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder1Bit
+-- Compiling architecture hierarchical_structure of Adder1Bit
+
+} {} {}} C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder_2bit_B
+-- Compiling architecture hierarchical_structure of Adder_2bit_B
+
+} {} {}} C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX_8
+-- Compiling architecture logic_equation_SoP of MUX_8
+
+} {} {}} C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder_2bit_B_vhd_tb
+-- Compiling architecture Adder_2bit_B_arch of Adder_2bit_B_vhd_tb
+
+} {} {}}

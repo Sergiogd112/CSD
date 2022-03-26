@@ -1,0 +1,10 @@
+This is the list of output equations minimized by minilog.exe in PoS or SoP format from the output format logic equations:
+
+COUT= A0·B1·B0 + A1·B0·CIN + A0·B1·CIN + A1·A0·B0 + A1·A0·CIN + A1·B1
+S1= A1·A0'·B1'·B0' + A1·B1'·B0'·CIN' + A1'·A0'·B1·B0' + A1'·B1·B0'·CIN' + A1·A0'·B1'·CIN' + A1'·A0'·B1·CIN' + A1'·B1'·B0·CIN + A1'·A0·B1'·B0
+    + A1·B1·B0·CIN + A1·A0·B1·B0 + A1'·A0·B1'·CIN + A1·A0·B1·CIN
+S0= A0·B0·CIN + A0'·B0·CIN' + A0'·B0'·CIN + A0·B0'·CIN' + A1'·A0·B1'·CIN + A1'·B1·B0
+
+
+This file was created by Equation_converter.exe
+©2020 Gerard Nadal
