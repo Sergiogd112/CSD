@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "03/21/2022 18:15:35"
+-- DATE "03/31/2022 19:27:16"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -97,14 +97,14 @@ ENTITY 	Adder_2bit_B IS
 END Adder_2bit_B;
 
 -- Design Ports Information
--- S[0]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- S[1]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Cout	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A[0]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B[0]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Cin	=>  Location: PIN_C6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B[1]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A[1]	=>  Location: PIN_D7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- S[0]	=>  Location: PIN_AB6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- S[1]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Cout	=>  Location: PIN_AA7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B[1]	=>  Location: PIN_AB8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[1]	=>  Location: PIN_V9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[0]	=>  Location: PIN_AA8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B[0]	=>  Location: PIN_V10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Cin	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Adder_2bit_B IS
@@ -131,15 +131,16 @@ SIGNAL \~QUARTUS_CREATED_ADC2~~eoc\ : std_logic;
 SIGNAL \S[0]~output_o\ : std_logic;
 SIGNAL \S[1]~output_o\ : std_logic;
 SIGNAL \Cout~output_o\ : std_logic;
-SIGNAL \Cin~input_o\ : std_logic;
-SIGNAL \B[0]~input_o\ : std_logic;
-SIGNAL \A[0]~input_o\ : std_logic;
-SIGNAL \Chip1|Chip1|Y~0_combout\ : std_logic;
-SIGNAL \Chip1|Chip2|Y~0_combout\ : std_logic;
 SIGNAL \B[1]~input_o\ : std_logic;
+SIGNAL \Cin~input_o\ : std_logic;
+SIGNAL \A[0]~input_o\ : std_logic;
+SIGNAL \B[0]~input_o\ : std_logic;
+SIGNAL \Mux4~0_combout\ : std_logic;
 SIGNAL \A[1]~input_o\ : std_logic;
-SIGNAL \Chip2|Chip1|Y~0_combout\ : std_logic;
-SIGNAL \Chip2|Chip2|Y~0_combout\ : std_logic;
+SIGNAL \Mux4~1_combout\ : std_logic;
+SIGNAL \Mux3~0_combout\ : std_logic;
+SIGNAL \Mux5~0_combout\ : std_logic;
+SIGNAL \Y_OUT~0_combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -168,7 +169,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X44_Y42_N8
+-- Location: LCCOMB_X44_Y41_N8
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -181,7 +182,7 @@ GENERIC MAP (
 PORT MAP (
 	combout => \~QUARTUS_CREATED_GND~I_combout\);
 
--- Location: IOOBUF_X26_Y39_N16
+-- Location: IOOBUF_X29_Y0_N9
 \S[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -189,11 +190,11 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Chip1|Chip1|Y~0_combout\,
+	i => \Mux4~1_combout\,
 	devoe => ww_devoe,
 	o => \S[0]~output_o\);
 
--- Location: IOOBUF_X26_Y39_N2
+-- Location: IOOBUF_X29_Y0_N2
 \S[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -201,11 +202,11 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Chip2|Chip1|Y~0_combout\,
+	i => \Mux3~0_combout\,
 	devoe => ww_devoe,
 	o => \S[1]~output_o\);
 
--- Location: IOOBUF_X26_Y39_N9
+-- Location: IOOBUF_X29_Y0_N16
 \Cout~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -213,79 +214,11 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Chip2|Chip2|Y~0_combout\,
+	i => \Y_OUT~0_combout\,
 	devoe => ww_devoe,
 	o => \Cout~output_o\);
 
--- Location: IOIBUF_X29_Y39_N8
-\Cin~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_Cin,
-	o => \Cin~input_o\);
-
--- Location: IOIBUF_X29_Y39_N1
-\B[0]~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_B(0),
-	o => \B[0]~input_o\);
-
--- Location: IOIBUF_X31_Y39_N29
-\A[0]~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_A(0),
-	o => \A[0]~input_o\);
-
--- Location: LCCOMB_X29_Y35_N0
-\Chip1|Chip1|Y~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \Chip1|Chip1|Y~0_combout\ = \Cin~input_o\ $ (\B[0]~input_o\ $ (\A[0]~input_o\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100001100111100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \Cin~input_o\,
-	datac => \B[0]~input_o\,
-	datad => \A[0]~input_o\,
-	combout => \Chip1|Chip1|Y~0_combout\);
-
--- Location: LCCOMB_X29_Y35_N10
-\Chip1|Chip2|Y~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \Chip1|Chip2|Y~0_combout\ = (\Cin~input_o\ & ((\B[0]~input_o\) # (\A[0]~input_o\))) # (!\Cin~input_o\ & (\B[0]~input_o\ & \A[0]~input_o\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111110011000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \Cin~input_o\,
-	datac => \B[0]~input_o\,
-	datad => \A[0]~input_o\,
-	combout => \Chip1|Chip2|Y~0_combout\);
-
--- Location: IOIBUF_X31_Y39_N1
+-- Location: IOIBUF_X31_Y0_N8
 \B[1]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -297,7 +230,59 @@ PORT MAP (
 	i => ww_B(1),
 	o => \B[1]~input_o\);
 
--- Location: IOIBUF_X29_Y39_N15
+-- Location: IOIBUF_X31_Y0_N1
+\Cin~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Cin,
+	o => \Cin~input_o\);
+
+-- Location: IOIBUF_X31_Y0_N15
+\A[0]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_A(0),
+	o => \A[0]~input_o\);
+
+-- Location: IOIBUF_X31_Y0_N22
+\B[0]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_B(0),
+	o => \B[0]~input_o\);
+
+-- Location: LCCOMB_X31_Y1_N24
+\Mux4~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \Mux4~0_combout\ = (\Cin~input_o\ & ((\A[0]~input_o\) # (\B[0]~input_o\))) # (!\Cin~input_o\ & (\A[0]~input_o\ & \B[0]~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111101010100000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Cin~input_o\,
+	datac => \A[0]~input_o\,
+	datad => \B[0]~input_o\,
+	combout => \Mux4~0_combout\);
+
+-- Location: IOIBUF_X31_Y0_N29
 \A[1]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -309,37 +294,70 @@ PORT MAP (
 	i => ww_A(1),
 	o => \A[1]~input_o\);
 
--- Location: LCCOMB_X29_Y35_N28
-\Chip2|Chip1|Y~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X31_Y1_N18
+\Mux4~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \Chip2|Chip1|Y~0_combout\ = \Chip1|Chip2|Y~0_combout\ $ (\B[1]~input_o\ $ (\A[1]~input_o\))
+-- \Mux4~1_combout\ = (\B[1]~input_o\ & ((\Mux4~0_combout\ & (\A[0]~input_o\ & \A[1]~input_o\)) # (!\Mux4~0_combout\ & ((!\A[1]~input_o\))))) # (!\B[1]~input_o\ & (\Mux4~0_combout\ $ (((\A[1]~input_o\)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010010101011010",
+	lut_mask => "1001000101100110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \Chip1|Chip2|Y~0_combout\,
-	datac => \B[1]~input_o\,
+	dataa => \B[1]~input_o\,
+	datab => \Mux4~0_combout\,
+	datac => \A[0]~input_o\,
 	datad => \A[1]~input_o\,
-	combout => \Chip2|Chip1|Y~0_combout\);
+	combout => \Mux4~1_combout\);
 
--- Location: LCCOMB_X29_Y35_N22
-\Chip2|Chip2|Y~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X31_Y1_N20
+\Mux3~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \Chip2|Chip2|Y~0_combout\ = (\Chip1|Chip2|Y~0_combout\ & ((\B[1]~input_o\) # (\A[1]~input_o\))) # (!\Chip1|Chip2|Y~0_combout\ & (\B[1]~input_o\ & \A[1]~input_o\))
+-- \Mux3~0_combout\ = (\B[1]~input_o\ & ((\Mux4~0_combout\) # (\A[1]~input_o\))) # (!\B[1]~input_o\ & (\Mux4~0_combout\ & \A[1]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111101010100000",
+	lut_mask => "1110111010001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \Chip1|Chip2|Y~0_combout\,
-	datac => \B[1]~input_o\,
+	dataa => \B[1]~input_o\,
+	datab => \Mux4~0_combout\,
 	datad => \A[1]~input_o\,
-	combout => \Chip2|Chip2|Y~0_combout\);
+	combout => \Mux3~0_combout\);
+
+-- Location: LCCOMB_X31_Y1_N6
+\Mux5~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \Mux5~0_combout\ = (\B[0]~input_o\ & (!\A[0]~input_o\ & ((!\A[1]~input_o\) # (!\B[1]~input_o\)))) # (!\B[0]~input_o\ & (((\A[0]~input_o\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011010000111100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \B[1]~input_o\,
+	datab => \B[0]~input_o\,
+	datac => \A[0]~input_o\,
+	datad => \A[1]~input_o\,
+	combout => \Mux5~0_combout\);
+
+-- Location: LCCOMB_X31_Y1_N0
+\Y_OUT~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \Y_OUT~0_combout\ = \Cin~input_o\ $ (\Mux5~0_combout\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Cin~input_o\,
+	datad => \Mux5~0_combout\,
+	combout => \Y_OUT~0_combout\);
 
 -- Location: UNVM_X0_Y40_N40
 \~QUARTUS_CREATED_UNVM~\ : fiftyfivenm_unvm

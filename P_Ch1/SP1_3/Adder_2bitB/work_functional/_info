@@ -92,10 +92,10 @@ R21
 R12
 R13
 Eadder_2bit_b
-Z23 w1647882902
+Z23 w1648747604
 R1
 R2
-!i122 8
+!i122 12
 R3
 Z24 8C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd
 Z25 FC:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd
@@ -105,18 +105,37 @@ Va=JoC[eKPn^^i6ec6o;Ac1
 !s100 <>a5[J81PeO6XPW:gzz:]1
 R7
 32
-R8
+Z26 !s110 1648747786
 !i10b 1
-R9
-Z26 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd|
-Z27 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd|
+Z27 !s108 1648747786.000000
+Z28 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd|
+Z29 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd|
+!i113 1
+R12
+R13
+Atruth_table
+R1
+R2
+Z30 DEx4 work 12 adder_2bit_b 0 22 a=JoC[eKPn^^i6ec6o;Ac1
+!i122 12
+l26
+L21 96
+V8kN_aCDmXV49``05;F<DT0
+!s100 ;iRBf<b7hiPYZfl2K6:lT2
+R7
+32
+R26
+!i10b 1
+R27
+R28
+R29
 !i113 1
 R12
 R13
 Ahierarchical_structure
 R1
 R2
-DEx4 work 12 adder_2bit_b 0 22 a=JoC[eKPn^^i6ec6o;Ac1
+R30
 !i122 8
 l33
 L21 32
@@ -127,60 +146,61 @@ R7
 R8
 !i10b 1
 R9
-R26
-R27
+R28
+R29
 !i113 1
 R12
 R13
+w1647882902
 Eadder_2bit_b_vhd_tb
-Z28 w1647969893
+Z31 w1647969893
 R1
 R2
-!i122 11
+!i122 13
 R3
-Z29 8C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd
-Z30 FC:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd
+Z32 8C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd
+Z33 FC:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd
 l0
 R17
 VKC6oOXIHIl<2CIEjG5Nab3
 !s100 U2:Y?>eP93gSGJ@OC:dRc3
 R7
 32
-R8
+R26
 !i10b 1
-R9
-Z31 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd|
-Z32 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd|
+R27
+Z34 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd|
+Z35 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B_tb.vhd|
 !i113 1
 R12
 R13
 Aadder_2bit_b_arch
 R1
 R2
-Z33 DEx4 work 19 adder_2bit_b_vhd_tb 0 22 KC6oOXIHIl<2CIEjG5Nab3
-!i122 11
+Z36 DEx4 work 19 adder_2bit_b_vhd_tb 0 22 KC6oOXIHIl<2CIEjG5Nab3
+!i122 13
 l52
 R22
-Z34 VLleY4:NQNM5mOZYZD1?IP3
-Z35 !s100 kkRc2]Re7hMk@hcEDYT`g2
+Z37 VLleY4:NQNM5mOZYZD1?IP3
+Z38 !s100 kkRc2]Re7hMk@hcEDYT`g2
 R7
 32
-R8
+R26
 !i10b 1
-R9
-R31
-R32
+R27
+R34
+R35
 !i113 1
 R12
 R13
 Emux_8
-Z36 w1647880366
+Z39 w1647880366
 R1
 R2
 !i122 10
 R3
-Z37 8C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
-Z38 FC:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
+Z40 8C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
+Z41 FC:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
 l0
 L17 1
 V0>9d@_hKI0m_UnI9nH@d70
@@ -190,8 +210,8 @@ R7
 R8
 !i10b 1
 R9
-Z39 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd|
-Z40 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd|
+Z42 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd|
+Z43 !s107 C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd|
 !i113 1
 R12
 R13
@@ -209,8 +229,8 @@ R7
 R8
 !i10b 1
 R9
-R39
-R40
+R42
+R43
 !i113 1
 R12
 R13

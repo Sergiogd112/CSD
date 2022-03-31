@@ -1,149 +1,33 @@
 |Adder_2bit_B
-A[0] => Adder1Bit:Chip1.A
-A[1] => Adder1Bit:Chip2.A
-B[0] => Adder1Bit:Chip1.B
-B[1] => Adder1Bit:Chip2.B
-Cin => Adder1Bit:Chip1.Cin
-S[0] <= Adder1Bit:Chip1.S
-S[1] <= Adder1Bit:Chip2.S
-Cout <= Adder1Bit:Chip2.Cout
-
-
-|Adder_2bit_B|Adder1Bit:Chip1
-A => MUX_8:Chip1.S[2]
-A => MUX_8:Chip2.S[2]
-B => MUX_8:Chip1.S[1]
-B => MUX_8:Chip2.S[1]
-Cin => MUX_8:Chip1.S[0]
-Cin => MUX_8:Chip2.S[0]
-S <= MUX_8:Chip1.Y
-Cout <= MUX_8:Chip2.Y
-
-
-|Adder_2bit_B|Adder1Bit:Chip1|MUX_8:Chip1
-Ch7 => Q.IN1
-Ch6 => Q.IN1
-Ch5 => Q.IN1
-Ch4 => Q.IN1
-Ch3 => Q.IN1
-Ch2 => Q.IN1
-Ch1 => Q.IN1
-Ch0 => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[2] => Q.IN0
-S[2] => Q.IN0
-E_L => Q.IN1
-E_L => Q.IN1
-Y <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Y_L <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Adder_2bit_B|Adder1Bit:Chip1|MUX_8:Chip2
-Ch7 => Q.IN1
-Ch6 => Q.IN1
-Ch5 => Q.IN1
-Ch4 => Q.IN1
-Ch3 => Q.IN1
-Ch2 => Q.IN1
-Ch1 => Q.IN1
-Ch0 => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[2] => Q.IN0
-S[2] => Q.IN0
-E_L => Q.IN1
-E_L => Q.IN1
-Y <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Y_L <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Adder_2bit_B|Adder1Bit:Chip2
-A => MUX_8:Chip1.S[2]
-A => MUX_8:Chip2.S[2]
-B => MUX_8:Chip1.S[1]
-B => MUX_8:Chip2.S[1]
-Cin => MUX_8:Chip1.S[0]
-Cin => MUX_8:Chip2.S[0]
-S <= MUX_8:Chip1.Y
-Cout <= MUX_8:Chip2.Y
-
-
-|Adder_2bit_B|Adder1Bit:Chip2|MUX_8:Chip1
-Ch7 => Q.IN1
-Ch6 => Q.IN1
-Ch5 => Q.IN1
-Ch4 => Q.IN1
-Ch3 => Q.IN1
-Ch2 => Q.IN1
-Ch1 => Q.IN1
-Ch0 => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[2] => Q.IN0
-S[2] => Q.IN0
-E_L => Q.IN1
-E_L => Q.IN1
-Y <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Y_L <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Adder_2bit_B|Adder1Bit:Chip2|MUX_8:Chip2
-Ch7 => Q.IN1
-Ch6 => Q.IN1
-Ch5 => Q.IN1
-Ch4 => Q.IN1
-Ch3 => Q.IN1
-Ch2 => Q.IN1
-Ch1 => Q.IN1
-Ch0 => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[0] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[1] => Q.IN1
-S[2] => Q.IN0
-S[2] => Q.IN0
-E_L => Q.IN1
-E_L => Q.IN1
-Y <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Y_L <= Q.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Mux0.IN17
+A[0] => Mux1.IN17
+A[0] => Mux2.IN17
+A[0] => Mux3.IN17
+A[0] => Mux4.IN17
+A[0] => Mux5.IN17
+A[1] => Mux0.IN16
+A[1] => Mux1.IN16
+A[1] => Mux2.IN16
+A[1] => Mux3.IN16
+A[1] => Mux4.IN16
+A[1] => Mux5.IN16
+B[0] => Mux0.IN19
+B[0] => Mux1.IN19
+B[0] => Mux2.IN19
+B[0] => Mux3.IN19
+B[0] => Mux4.IN19
+B[0] => Mux5.IN19
+B[1] => Mux0.IN18
+B[1] => Mux1.IN18
+B[1] => Mux2.IN18
+B[1] => Mux3.IN18
+B[1] => Mux4.IN18
+B[1] => Mux5.IN18
+Cin => Y_OUT.OUTPUTSELECT
+Cin => Y_OUT.OUTPUTSELECT
+Cin => Y_OUT.OUTPUTSELECT
+S[0] <= Y_OUT.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Y_OUT.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Y_OUT.DB_MAX_OUTPUT_PORT_TYPE
 
 

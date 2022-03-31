@@ -1,0 +1,37 @@
+MINILOG  LOGIC MINIMIZER           Monday, March 28, 2022; 00:02
+INPUT FILE:  unknown.tbl           SINGLE OUTPUT SUM OF PRODUCTS MODE
+
+
+FUNCTION TABLE
+
+=========
+ABC   XYZ
+=========
+" Gi Ei Li     Gt Eq Lt
+000 | 000
+001 | 001
+010 | 010
+011 | 011
+100 | 100
+101 | 101
+110 | 110
+111 | 111
+
+MINIMIZATION RESULT STATISTICS
+==============================
+FOUND 3 ESSENTIAL PRODUCT TERMS
+MAXIMUM FANIN:                1
+TOTAL LITERAL COUNT:          6
+MAXIMUM PRODUCT TERM SIZE:    1
+MAXIMUM OUTPUT FUNCTION SIZE: 1
+
+INPUT SIGNAL  |  OUTPUT SIGNAL  REPRESENTATION
+
+A : GI        C : LI            |       X : GT        Z : LT
+B : EI                          |       Y : EQ        
+
+MINIMIZED EQUATIONS
+
+X = A
+Y = B
+Z = C

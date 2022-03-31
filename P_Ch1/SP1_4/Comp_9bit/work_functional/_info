@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CSD/P_Ch1/SP1_3/Adder_2bitA/SoP
+Ecomp_1bit
+Z0 w1648419412
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z3 dC:/CSD/P_Ch1/SP1_4/Comp_9bit
+Z4 8C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_1bit.vhd
+Z5 FC:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_1bit.vhd
+l0
+L5 1
+V0VQXY<i;6Z`IMj?P3=jHU3
+!s100 Lc:h<=BnZ?R=Hn11:go7D2
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1648420553
+!i10b 1
+Z8 !s108 1648420552.000000
+Z9 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_1bit.vhd|
+Z10 !s107 C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_1bit.vhd|
+!i113 1
+Z11 o-work work_functional -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aalgorithm
+R1
+R2
+DEx4 work 9 comp_1bit 0 22 0VQXY<i;6Z`IMj?P3=jHU3
+!i122 0
+l18
+L15 30
+VPKdI8Il1VGVl3KZMn<bU^3
+!s100 JZGdY2Ab1J:[cV?>RQHQg1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomp_9bit
+Z13 w1648415995
+R1
+R2
+!i122 1
+R3
+Z14 8C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit.vhd
+Z15 FC:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit.vhd
+l0
+L5 1
+VTRW4;fh3Y?HU>3?VKJ?Vz0
+!s100 OPQ0CD2g?b23WJ32DAgS=3
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1648420553.000000
+Z17 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit.vhd|
+Z18 !s107 C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit.vhd|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 9 comp_9bit 0 22 TRW4;fh3Y?HU>3?VKJ?Vz0
+!i122 1
+l30
+L16 136
+VUBgYFFWITQUeX[jc1zN0=0
+!s100 N<B[`LgQCKYgAT_B^0W?Q2
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Ecomp_9bit_vhd_tst
+Z19 w1648420395
+R1
+R2
+!i122 2
+R3
+Z20 8C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit_tb.vhd
+Z21 FC:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit_tb.vhd
+l0
+L31 1
+VjnT0Gef4QW=GTAh>g75=C3
+!s100 1N;:SAREMTc2oiSWY]bd[1
+R6
+32
+R7
+!i10b 1
+R16
+Z22 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit_tb.vhd|
+!s107 C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit_tb.vhd|
+!i113 1
+R11
+R12
+Acomp_9bit_arch
+R1
+R2
+DEx4 work 17 comp_9bit_vhd_tst 0 22 jnT0Gef4QW=GTAh>g75=C3
+!i122 2
+l59
+L33 188
+VaQ^:_k`j8EZcM0<F?S;=Q2
+!s100 DW:mAOcF_@JLemFVL1hhi3
+R6
+32
+R7
+!i10b 1
+R16
+R22
+Z23 !s107 C:/CSD/P_Ch1/SP1_4/Comp_9bit/Comp_9bit_tb.vhd|
+!i113 1
+R11
+R12

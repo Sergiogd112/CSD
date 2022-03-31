@@ -1,0 +1,39 @@
+vsim -gui -l msim_transcript work_gate_level.adder_10bit_tb -sdftyp /Adder_10bit_tb/uut=C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo
+# vsim -gui -l msim_transcript work_gate_level.adder_10bit_tb -sdftyp "/Adder_10bit_tb/uut=C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo" 
+# Start time: 18:31:39 on Mar 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.adder_10bit_tb(behavior)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.adder_10bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo
+# Loading timing data from C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_10bit_tb File: C:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd
+add wave sim:/adder_10bit_tb/*
+run 40ms
+add wave sim:/adder_10bit_tb/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading instances from C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo
+# Loading timing data from C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_10bit_tb File: C:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd
+add wave sim:/adder_10bit_tb/*
+run 10ms
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 18:40:13 on Mar 29,2022, Elapsed time: 0:08:34
+# Errors: 0, Warnings: 1

@@ -1,0 +1,9 @@
+This is the list of output equations minimized by minilog.exe in PoS or SoP format from the output format logic equations:
+
+GT= GI
+EQ= EI
+LT= LI
+
+
+This file was created by Equation_converter.exe
+©2020 Gerard Nadal

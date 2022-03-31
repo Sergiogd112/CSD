@@ -1,0 +1,33 @@
+# Compile of Adder_1bit.vhd was successful.
+# Compile of Adder_1bit_tb.vhd was successful.
+# Compile of mux_4.vhd was successful.
+# Compile of Adder_1bit.vho was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work_gate_level.adder_1bit_vhd_tst -sdftyp /Adder_1bit_vhd_tst/i1=C:/CSD/P4/Adder_1bit_MoM/simulation/modelsim/Adder_1bit_vhd.sdo
+# vsim -gui work_gate_level.adder_1bit_vhd_tst -sdftyp "/Adder_1bit_vhd_tst/i1=C:/CSD/P4/Adder_1bit_MoM/simulation/modelsim/Adder_1bit_vhd.sdo" 
+# Start time: 18:10:51 on Mar 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.adder_1bit_vhd_tst(adder_1bit_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.adder_1bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from C:/CSD/P4/Adder_1bit_MoM/simulation/modelsim/Adder_1bit_vhd.sdo
+# Loading timing data from C:/CSD/P4/Adder_1bit_MoM/simulation/modelsim/Adder_1bit_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_1bit_vhd_tst File: C:/CSD/P4/Adder_1bit_MoM/Adder_1bit_tb.vhd
+add wave sim:/adder_1bit_vhd_tst/*
+run 20ms
+run 20 ms
+# End time: 18:23:19 on Mar 29,2022, Elapsed time: 0:12:28
+# Errors: 0, Warnings: 7

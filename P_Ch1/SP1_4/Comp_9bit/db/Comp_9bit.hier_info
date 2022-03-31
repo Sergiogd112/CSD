@@ -1,0 +1,162 @@
+|Comp_9bit
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+A[4] => Comp_1bit:Chip5.A
+A[5] => Comp_1bit:Chip6.A
+A[6] => Comp_1bit:Chip7.A
+A[7] => Comp_1bit:Chip8.A
+A[8] => Comp_1bit:Chip9.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+B[4] => Comp_1bit:Chip5.B
+B[5] => Comp_1bit:Chip6.B
+B[6] => Comp_1bit:Chip7.B
+B[7] => Comp_1bit:Chip8.B
+B[8] => Comp_1bit:Chip9.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt << Comp_1bit:Chip9.Gt
+Eq << Comp_1bit:Chip9.Eq
+Lt << Comp_1bit:Chip9.Lt
+
+
+|Comp_9bit|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip5
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip6
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip7
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip8
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Comp_9bit|Comp_1bit:Chip9
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

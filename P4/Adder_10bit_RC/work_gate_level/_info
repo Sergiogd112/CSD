@@ -1,0 +1,295 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CSD/P4/Adder_10bit_RC/simulation/modelsim
+Eadder_10bit
+Z0 w1648571327
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 5
+Z7 dC:/CSD/P4/Adder_10bit_RC
+Z8 8C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit.vho
+Z9 FC:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit.vho
+l0
+L78 1
+V7WW7;1MD;Y]SBeTPPKjKN0
+!s100 ;L6[XlCA1VQ91f3fgn7L43
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1648571431
+!i10b 1
+Z12 !s108 1648571431.000000
+Z13 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit.vho|
+!s107 C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit.vho|
+!i113 1
+Z14 o-work work_gate_level -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 11 adder_10bit 0 22 7WW7;1MD;Y]SBeTPPKjKN0
+!i122 5
+l214
+L127 902
+VQMi>RehDdF_QQ`>oGYoSb2
+!s100 U=7I?e9a1;aWO[8<:k7?b2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+Z16 !s107 C:/CSD/P4/Adder_10bit_RC/simulation/modelsim/Adder_10bit.vho|
+!i113 1
+R14
+R15
+Ahierarchical_structure
+R4
+R5
+DEx4 work 11 adder_10bit 0 22 GDdba7VH]cV>_R:ho;odC0
+!i122 2
+l53
+L27 85
+VGLD3j>^54G_S7e[VH[kLV3
+!s100 nTS:4^cWDd<dC9@o;19kc3
+R10
+32
+R11
+!i10b 1
+R12
+!s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/adder_10bit.vhd|
+!s107 C:/CSD/P4/Adder_10bit_RC/adder_10bit.vhd|
+!i113 1
+R14
+R15
+FC:/CSD/P4/Adder_10bit_RC/adder_10bit.vhd
+w1648571052
+8C:/CSD/P4/Adder_10bit_RC/adder_10bit.vhd
+Eadder_10bit_tb
+Z17 w1648571169
+R4
+R5
+!i122 3
+R7
+Z18 8C:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd
+Z19 FC:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd
+l0
+Z20 L35 1
+VoYe8Nb1T82>8f;V^hR9i^3
+!s100 cAcNYJP;5eM>XXD]^4j1C1
+R10
+32
+R11
+!i10b 1
+R12
+Z21 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd|
+Z22 !s107 C:/CSD/P4/Adder_10bit_RC/Adder_10bit_tb.vhd|
+!i113 1
+R14
+R15
+Abehavior
+R4
+R5
+DEx4 work 14 adder_10bit_tb 0 22 oYe8Nb1T82>8f;V^hR9i^3
+!i122 3
+l74
+L38 112
+VlzJV]C32:[aOn60bElk592
+!s100 2VQ?m?2`EdIle_FGnVGWQ2
+R10
+32
+R11
+!i10b 1
+R12
+R21
+R22
+!i113 1
+R14
+R15
+Eadder_1bit
+Z23 w1648566951
+R4
+R5
+!i122 0
+R7
+Z24 8C:/CSD/P4/Adder_10bit_RC/Adder_1bit.vhd
+Z25 FC:/CSD/P4/Adder_10bit_RC/Adder_1bit.vhd
+l0
+Z26 L14 1
+VeOMQJkV7`G1`ISCO=UZ5n3
+!s100 lTYoP<UPCI@k8X]K[g7=J0
+R10
+32
+Z27 !s110 1648571430
+!i10b 1
+Z28 !s108 1648571430.000000
+Z29 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/Adder_1bit.vhd|
+Z30 !s107 C:/CSD/P4/Adder_10bit_RC/Adder_1bit.vhd|
+!i113 1
+R14
+R15
+Ahierarchical_structure
+R4
+R5
+DEx4 work 10 adder_1bit 0 22 eOMQJkV7`G1`ISCO=UZ5n3
+!i122 0
+l41
+L22 54
+VMBH0iki<^iL@JFY3T43Y93
+!s100 X<dMPW3=_l5MK17n[3>7z0
+R10
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R14
+R15
+Eadder_4bit
+Z31 w1648571124
+R4
+R5
+!i122 1
+R7
+Z32 8C:/CSD/P4/Adder_10bit_RC/Adder_4bit.vhd
+Z33 FC:/CSD/P4/Adder_10bit_RC/Adder_4bit.vhd
+l0
+L16 1
+V32YSgX_G^W`O9a=dVdX`O1
+!s100 ]hjNQT?nR<OhZjEL0WE^F2
+R10
+32
+R11
+!i10b 1
+R28
+Z34 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/Adder_4bit.vhd|
+Z35 !s107 C:/CSD/P4/Adder_10bit_RC/Adder_4bit.vhd|
+!i113 1
+R14
+R15
+Ahierarchical_structure
+R4
+R5
+DEx4 work 10 adder_4bit 0 22 32YSgX_G^W`O9a=dVdX`O1
+!i122 1
+l48
+L29 73
+VT4il0g;L_]j]U2nQjhaBf2
+!s100 9>3PYc]PTGK_liBUoH<1e2
+R10
+32
+R11
+!i10b 1
+R28
+R34
+R35
+!i113 1
+R14
+R15
+Ehard_block
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 5
+R7
+R8
+R9
+l0
+R20
+VT@E2b;fQ2^bhgf]W4bJ:Q3
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R16
+!i113 1
+R14
+R15
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 T@E2b;fQ2^bhgf]W4bJ:Q3
+!i122 5
+l65
+L51 20
+V32aW@i8G@oUoaTVJzKA=k1
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R16
+!i113 1
+R14
+R15
+Emux_4
+Z36 w1648566955
+R4
+R5
+!i122 4
+R7
+Z37 8C:/CSD/P4/Adder_10bit_RC/mux_4.vhd
+Z38 FC:/CSD/P4/Adder_10bit_RC/mux_4.vhd
+l0
+R26
+VKZ0cNicGi4dBZM_65JY:Y2
+!s100 WjA3RI;;9@291:IQ^_Q:`2
+R10
+32
+R11
+!i10b 1
+R12
+Z39 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P4/Adder_10bit_RC/mux_4.vhd|
+Z40 !s107 C:/CSD/P4/Adder_10bit_RC/mux_4.vhd|
+!i113 1
+R14
+R15
+Alogic_equations
+R4
+R5
+DEx4 work 5 mux_4 0 22 KZ0cNicGi4dBZM_65JY:Y2
+!i122 4
+l27
+L25 12
+VSUH4KX[_YD6kIJ`LYH`iJ3
+!s100 ?SJf52ZI`T=:a1d`SM9=X0
+R10
+32
+R11
+!i10b 1
+R12
+R39
+R40
+!i113 1
+R14
+R15

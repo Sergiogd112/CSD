@@ -1,0 +1,15 @@
+|Comp_1bit
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

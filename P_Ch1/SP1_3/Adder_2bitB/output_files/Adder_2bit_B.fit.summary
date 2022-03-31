@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Mar 21 18:15:23 2022
+Fitter Status : Successful - Thu Mar 31 19:27:06 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Adder_2bit_B
 Top-level Entity Name : Adder_2bit_B
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 5 / 49,760 ( < 1 % )
-    Total combinational functions : 5 / 49,760 ( < 1 % )
+Total logic elements : 6 / 49,760 ( < 1 % )
+    Total combinational functions : 6 / 49,760 ( < 1 % )
     Dedicated logic registers : 0 / 49,760 ( 0 % )
 Total registers : 0
 Total pins : 8 / 360 ( 2 % )

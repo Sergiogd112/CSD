@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Gt",
+					"strict" : false
+				},
+				{
+					"name" : "Eq",
+					"strict" : false
+				},
+				{
+					"name" : "Lt",
+					"strict" : false
+				},
+				{
+					"name" : "Ei",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "Gi",
+					"strict" : false
+				},
+				{
+					"name" : "Li",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
