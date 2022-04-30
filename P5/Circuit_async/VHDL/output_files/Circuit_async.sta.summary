@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'T_FF:Chip3|current_state'
+Slack : -0.370
+TNS   : -0.370
+
+Type  : Setup 'T_FF:Chip1|current_state'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Setup 'T_FF:Chip2|current_state'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Setup 'CLK'
+Slack : 1.212
+TNS   : 0.000
+
+Type  : Hold 'CLK'
+Slack : -1.058
+TNS   : -1.058
+
+Type  : Hold 'T_FF:Chip2|current_state'
+Slack : -0.539
+TNS   : -0.539
+
+Type  : Hold 'T_FF:Chip1|current_state'
+Slack : -0.326
+TNS   : -0.326
+
+Type  : Hold 'T_FF:Chip3|current_state'
+Slack : 1.024
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'T_FF:Chip1|current_state'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'T_FF:Chip2|current_state'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'T_FF:Chip3|current_state'
+Slack : 0.334
+TNS   : 0.000
+
+------------------------------------------------------------

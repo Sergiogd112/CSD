@@ -1,0 +1,538 @@
+Analysis & Synthesis report for Comp_24bit
+Tue Apr 05 18:45:32 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Apr 05 18:45:32 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; Comp_24bit                                  ;
+; Top-level Entity Name              ; Comp_24bit                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 176                                         ;
+;     Total combinational functions  ; 176                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 54                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; Comp_24bit         ; Comp_24bit         ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                             ;
++----------------------------------+-----------------+-----------------+-----------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path      ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------+---------+
+; Comp_4bit.vhd                    ; yes             ; User VHDL File  ; C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd  ;         ;
+; Comp_24bit.vhd                   ; yes             ; User VHDL File  ; C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd ;         ;
+; Comp_1bit.vhd                    ; yes             ; User VHDL File  ; C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd  ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                               ;
++---------------------------------------------+---------------------------------------------+
+; Resource                                    ; Usage                                       ;
++---------------------------------------------+---------------------------------------------+
+; Estimated Total logic elements              ; 176                                         ;
+;                                             ;                                             ;
+; Total combinational functions               ; 176                                         ;
+; Logic element usage by number of LUT inputs ;                                             ;
+;     -- 4 input functions                    ; 8                                           ;
+;     -- 3 input functions                    ; 96                                          ;
+;     -- <=2 input functions                  ; 72                                          ;
+;                                             ;                                             ;
+; Logic elements by mode                      ;                                             ;
+;     -- normal mode                          ; 176                                         ;
+;     -- arithmetic mode                      ; 0                                           ;
+;                                             ;                                             ;
+; Total registers                             ; 0                                           ;
+;     -- Dedicated logic registers            ; 0                                           ;
+;     -- I/O registers                        ; 0                                           ;
+;                                             ;                                             ;
+; I/O pins                                    ; 54                                          ;
+;                                             ;                                             ;
+; Embedded Multiplier 9-bit elements          ; 0                                           ;
+;                                             ;                                             ;
+; Maximum fan-out node                        ; Comp_4bit:Chip1|Comp_1bit:Chip1|process_0~0 ;
+; Maximum fan-out                             ; 3                                           ;
+; Total fan-out                               ; 521                                         ;
+; Average fan-out                             ; 1.83                                        ;
++---------------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+-------------+--------------+
+; |Comp_24bit                ; 176 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |Comp_24bit                                 ; Comp_24bit  ; work         ;
+;    |Comp_4bit:Chip1|       ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip1                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip1|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip1|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip1|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip1|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
+;    |Comp_4bit:Chip2|       ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip2                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip2|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip2|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip2|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip2|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
+;    |Comp_4bit:Chip3|       ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip3                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip3|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip3|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip3|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip3|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
+;    |Comp_4bit:Chip4|       ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip4                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip4|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip4|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip4|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip4|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
+;    |Comp_4bit:Chip5|       ; 28 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip5                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip5|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip5|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip5|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip5|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
+;    |Comp_4bit:Chip6|       ; 36 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip6                 ; Comp_4bit   ; work         ;
+;       |Comp_1bit:Chip1|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip6|Comp_1bit:Chip1 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip2|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip6|Comp_1bit:Chip2 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip6|Comp_1bit:Chip3 ; Comp_1bit   ; work         ;
+;       |Comp_1bit:Chip4|    ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Comp_24bit|Comp_4bit:Chip6|Comp_1bit:Chip4 ; Comp_1bit   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                      ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                       ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+; Comp_4bit:Chip6|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip6|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip6|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip6|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip6|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip6|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip6|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip6|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip6|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip6|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip6|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip6|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip6|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip6|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip5|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip5|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip5|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip5|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip5|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip5|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip5|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip5|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip5|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip5|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip5|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip5|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip5|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip4|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip4|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip4|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip4|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip4|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip4|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip4|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip4|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip4|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip4|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip4|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip4|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip4|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip3|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip3|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip3|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip3|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip3|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip3|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip3|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip3|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip3|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip3|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip3|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip3|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip3|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip2|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip2|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip2|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip2|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip2|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip2|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip2|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip2|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip2|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip2|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip2|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip2|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip2|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip4|Gt                  ; Comp_4bit:Chip1|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip1|Comp_1bit:Chip4|Lt                  ; Comp_4bit:Chip1|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip3|Gt                  ; Comp_4bit:Chip1|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip1|Comp_1bit:Chip3|Lt                  ; Comp_4bit:Chip1|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip2|Gt                  ; Comp_4bit:Chip1|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip1|Comp_1bit:Chip2|Lt                  ; Comp_4bit:Chip1|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip1|Gt                  ; Comp_4bit:Chip1|Comp_1bit:Chip1|process_0 ; no                     ;
+; Comp_4bit:Chip1|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Comp_4bit:Chip1|Comp_1bit:Chip1|Lt                  ; Comp_4bit:Chip1|Comp_1bit:Chip1|process_0 ; no                     ;
+; Number of user-specified and inferred latches = 72  ;                                           ;                        ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 54                          ;
+; cycloneiii_lcell_comb ; 176                         ;
+;     normal            ; 176                         ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 96                          ;
+;         4 data inputs ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.83                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Apr 05 18:45:23 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SP2_1_prj -c Comp_24bit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file comp_9bit_tb.vhd
+    Info (12022): Found design unit 1: Comp_9bit_vhd_tst-Comp_9bit_arch File: C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd Line: 33
+    Info (12023): Found entity 1: Comp_9bit_vhd_tst File: C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd Line: 31
+Info (12021): Found 2 design units, including 1 entities, in source file comp_4bit.vhd
+    Info (12022): Found design unit 1: Comp_4bit-hierarchical_structure File: C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd Line: 14
+    Info (12023): Found entity 1: Comp_4bit File: C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file comp_24bit.vhd
+    Info (12022): Found design unit 1: Comp_24bit-hierarchical_structure File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 14
+    Info (12023): Found entity 1: Comp_24bit File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file comp_1bit.vhd
+    Info (12022): Found design unit 1: Comp_1bit-algorithm File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 15
+    Info (12023): Found entity 1: Comp_1bit File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 5
+Info (12127): Elaborating entity "Comp_24bit" for the top level hierarchy
+Info (12128): Elaborating entity "Comp_4bit" for hierarchy "Comp_4bit:Chip1" File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 27
+Info (12128): Elaborating entity "Comp_1bit" for hierarchy "Comp_4bit:Chip1|Comp_1bit:Chip1" File: C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd Line: 26
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Gt", which holds its previous value in one or more paths through the process File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Eq", which holds its previous value in one or more paths through the process File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Lt", which holds its previous value in one or more paths through the process File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Lt" at Comp_1bit.vhd(20) File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Eq" at Comp_1bit.vhd(20) File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Gt" at Comp_1bit.vhd(20) File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 20
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[23] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip6|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[23] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[22] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip6|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[22] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[21] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip6|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[21] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[20] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip6|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip6|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[20] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[19] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip5|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[19] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[18] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip5|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[18] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[17] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip5|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[17] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[16] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip5|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip5|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[16] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[15] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip4|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[15] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[14] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip4|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[14] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[13] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip4|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[13] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[12] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip4|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip4|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[12] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[11] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip3|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[11] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[10] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip3|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[10] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[9] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip3|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[9] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[8] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip3|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip3|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[8] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[7] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip2|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[7] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[6] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip2|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[6] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[5] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip2|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[5] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[4] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip2|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip2|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[4] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip4|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[3] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip1|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[3] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip3|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[2] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip1|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[2] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip2|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[1] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip1|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[1] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip1|Gt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[0] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Warning (13012): Latch Comp_4bit:Chip1|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_4bit:Chip1|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[0] File: C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 230 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 51 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 176 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Tue Apr 05 18:45:32 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
+
+

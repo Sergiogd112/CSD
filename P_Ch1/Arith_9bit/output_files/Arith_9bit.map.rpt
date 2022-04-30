@@ -1,0 +1,474 @@
+Analysis & Synthesis report for Arith_9bit
+Fri Apr 01 00:19:27 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "Triple_MUX_2:Chip3"
+ 11. Port Connectivity Checks: "Comp_9bit:Chip2"
+ 12. Port Connectivity Checks: "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_4:Chip2"
+ 13. Port Connectivity Checks: "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_2:Chip1"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Apr 01 00:19:27 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; Arith_9bit                                  ;
+; Top-level Entity Name              ; Arith_9bit                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 80                                          ;
+;     Total combinational functions  ; 80                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 32                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; Arith_9bit         ; Arith_9bit         ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                  ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+; Triple_MUX_2.vhdl                ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl     ;         ;
+; Sel_Add_Subt_9bit.vhd            ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd ;         ;
+; MUX_4.vhd                        ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd             ;         ;
+; MUX_2.vhd                        ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd             ;         ;
+; Comp_9bit.vhd                    ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd         ;         ;
+; Comp_1bit.vhd                    ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd         ;         ;
+; Arith_9bit.vhdl                  ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl       ;         ;
+; Adder_9bit.vhd                   ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd        ;         ;
+; Adder_1bit (1).vhd               ; yes             ; User VHDL File  ; C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd    ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 80          ;
+;                                             ;             ;
+; Total combinational functions               ; 80          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 24          ;
+;     -- 3 input functions                    ; 25          ;
+;     -- <=2 input functions                  ; 31          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 80          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 32          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; OP[0]~input ;
+; Maximum fan-out                             ; 25          ;
+; Total fan-out                               ; 277         ;
+; Average fan-out                             ; 1.92        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Entity Name       ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
+; |Arith_9bit                  ; 80 (7)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |Arith_9bit                                                                       ; Arith_9bit        ; work         ;
+;    |Comp_9bit:Chip2|         ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2                                                       ; Comp_9bit         ; work         ;
+;       |Comp_1bit:Chip1|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip1                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip2|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip2                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip3|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip3                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip4|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip4                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip5|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip5                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip6|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip6                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip7|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip7                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip8|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip8                                       ; Comp_1bit         ; work         ;
+;       |Comp_1bit:Chip9|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip9                                       ; Comp_1bit         ; work         ;
+;    |Sel_Add_Subt_9bit:Chip1| ; 24 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1                                               ; Sel_Add_Subt_9bit ; work         ;
+;       |Adder_9bit:Chip1|     ; 21 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1                              ; Adder_9bit        ; work         ;
+;          |Adder_1bit:Chip1|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip2|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip3|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip4|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip5|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip6|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip7|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip8|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8             ; Adder_1bit        ; work         ;
+;             |MUX_2:Chip1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8|MUX_2:Chip1 ; MUX_2             ; work         ;
+;             |MUX_4:Chip2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8|MUX_4:Chip2 ; MUX_4             ; work         ;
+;          |Adder_1bit:Chip9|  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip9             ; Adder_1bit        ; work         ;
+;             |MUX_4:Chip2|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip9|MUX_4:Chip2 ; MUX_4             ; work         ;
+;    |Triple_MUX_2:Chip3|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arith_9bit|Triple_MUX_2:Chip3                                                    ; Triple_MUX_2      ; work         ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                      ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                       ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+; Comp_9bit:Chip2|Comp_1bit:Chip9|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip9|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip9|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip8|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip8|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip8|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip7|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip7|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip7|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip6|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip6|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip6|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip5|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip5|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip5|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip4|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip4|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip4|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip3|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip3|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip3|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip2|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip2|process_0 ; no                     ;
+; Comp_9bit:Chip2|Comp_1bit:Chip2|Eq                  ; VCC                                       ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip1|Lt                  ; Comp_9bit:Chip2|Comp_1bit:Chip1|process_0 ; yes                    ;
+; Comp_9bit:Chip2|Comp_1bit:Chip1|Eq                  ; VCC                                       ; yes                    ;
+; Number of user-specified and inferred latches = 18  ;                                           ;                        ;
++-----------------------------------------------------+-------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Triple_MUX_2:Chip3"                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; e    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; y[2] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "Comp_9bit:Chip2" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; gi   ; Input ; Info     ; Stuck at GND      ;
+; ei   ; Input ; Info     ; Stuck at VCC      ;
+; li   ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_4:Chip2" ;
++------+-------+----------+-------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                 ;
++------+-------+----------+-------------------------------------------------------------------------+
+; ch0  ; Input ; Info     ; Stuck at GND                                                            ;
+; ch3  ; Input ; Info     ; Stuck at VCC                                                            ;
+; e_l  ; Input ; Info     ; Stuck at GND                                                            ;
++------+-------+----------+-------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_2:Chip1" ;
++------+-------+----------+-------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                 ;
++------+-------+----------+-------------------------------------------------------------------------+
+; e_l  ; Input ; Info     ; Stuck at GND                                                            ;
++------+-------+----------+-------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 32                          ;
+; cycloneiii_lcell_comb ; 82                          ;
+;     normal            ; 82                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 24                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.00                       ;
+; Average LUT depth     ; 5.40                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Apr 01 00:19:17 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Arith_9bit_prj -c Arith_9bit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file triple_mux_2.vhdl
+    Info (12022): Found design unit 1: Triple_MUX_2-algorithm File: C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl Line: 24
+    Info (12023): Found entity 1: Triple_MUX_2 File: C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file sel_add_subt_9bit.vhd
+    Info (12022): Found design unit 1: Sel_Add_Subt_9bit-hierarchical_structure File: C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd Line: 15
+    Info (12023): Found entity 1: Sel_Add_Subt_9bit File: C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file mux_4.vhd
+    Info (12022): Found design unit 1: MUX_4-logic_equations File: C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd Line: 25
+    Info (12023): Found entity 1: MUX_4 File: C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd Line: 14
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2.vhd
+    Info (12022): Found design unit 1: MUX_2-algorithm File: C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd Line: 24
+    Info (12023): Found entity 1: MUX_2 File: C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file comp_9bit.vhd
+    Info (12022): Found design unit 1: Comp_9bit-hierarchical_structure File: C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd Line: 16
+    Info (12023): Found entity 1: Comp_9bit File: C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comp_1bit.vhd
+    Info (12022): Found design unit 1: Comp_1bit-algorithm File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 15
+    Info (12023): Found entity 1: Comp_1bit File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file arith_9bit.vhdl
+    Info (12022): Found design unit 1: Arith_9bit-hierarchical_structure File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 15
+    Info (12023): Found entity 1: Arith_9bit File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file adder_9bit.vhd
+    Info (12022): Found design unit 1: Adder_9bit-hierarchical_structure File: C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd Line: 14
+    Info (12023): Found entity 1: Adder_9bit File: C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd Line: 4
+Warning (12019): Can't analyze file -- file Adder_4bit.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file adder_1bit (1).vhd
+    Info (12022): Found design unit 1: Adder_1bit-hierarchical_structure File: C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd Line: 12
+    Info (12023): Found entity 1: Adder_1bit File: C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd Line: 4
+Info (12127): Elaborating entity "Arith_9bit" for the top level hierarchy
+Info (12128): Elaborating entity "Sel_Add_Subt_9bit" for hierarchy "Sel_Add_Subt_9bit:Chip1" File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 52
+Info (12128): Elaborating entity "Adder_9bit" for hierarchy "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1" File: C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd Line: 33
+Info (12128): Elaborating entity "Adder_1bit" for hierarchy "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1" File: C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd Line: 25
+Info (12128): Elaborating entity "MUX_2" for hierarchy "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_2:Chip1" File: C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd Line: 43
+Info (12128): Elaborating entity "MUX_4" for hierarchy "Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_4:Chip2" File: C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd Line: 53
+Info (12128): Elaborating entity "Comp_9bit" for hierarchy "Comp_9bit:Chip2" File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 68
+Info (12128): Elaborating entity "Comp_1bit" for hierarchy "Comp_9bit:Chip2|Comp_1bit:Chip1" File: C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd Line: 32
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Gt", which holds its previous value in one or more paths through the process File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Eq", which holds its previous value in one or more paths through the process File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at Comp_1bit.vhd(20): inferring latch(es) for signal or variable "Lt", which holds its previous value in one or more paths through the process File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Lt" at Comp_1bit.vhd(20) File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Eq" at Comp_1bit.vhd(20) File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Info (10041): Inferred latch for "Gt" at Comp_1bit.vhd(20) File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 20
+Info (12128): Elaborating entity "Triple_MUX_2" for hierarchy "Triple_MUX_2:Chip3" File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 81
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip9|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip9|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[8] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip8|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip8|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[7] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip7|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip7|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[6] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip6|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip6|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[5] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip5|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip5|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[4] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip4|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip4|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[3] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip3|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip3|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[2] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip2|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip2|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[1] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Warning (13012): Latch Comp_9bit:Chip2|Comp_1bit:Chip1|Lt has unsafe behavior File: C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd Line: 9
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal Comp_9bit:Chip2|Comp_1bit:Chip1|process_0~synth
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal A[0] File: C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 80 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Fri Apr 01 00:19:27 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
+
+

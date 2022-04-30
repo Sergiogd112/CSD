@@ -6,7 +6,7 @@ ENTITY Sel_Add_Subt_9bit IS
         A, B : IN STD_LOGIC_VECTOR (8 DOWNTO 0);
         OP : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
         OV, Z, Cout : OUT STD_LOGIC;
-        R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+        R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0)
 
     );
 
@@ -22,12 +22,13 @@ ARCHITECTURE hierarchical_structure OF Sel_Add_Subt_9bit IS
         );
 
     END COMPONENT;
-    SIGNAL J, P, M, N, W, Y : STD_LOGIC_VECTOR(2 DOWNTO 0);
-    SIGNAL XORB, Q : OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+    SIGNAL J, P, M, N, W, Y : STD_LOGIC;
+    SIGNAL XORB, Q : STD_LOGIC_VECTOR (8 DOWNTO 0);
 
 BEGIN
 
-    XORB <= (B(0) XOR OP(0) & B(1) XOR OP(0) & B(2) XOR OP(0) & B(3) XOR OP(0) & B(4) XOR OP(0) & B(5) XOR OP(0) & B(6) XOR OP(0) & B(7) XOR OP(0) & B(8) XOR OP(0));
+    XORB <= (B(0) XOR OP(0), B(1) XOR OP(0), B(2) XOR OP(0), B(3) XOR OP(0), B(4) XOR OP(0),
+    B(5) XOR OP(0), B(6) XOR OP(0), B(7) XOR OP(0), B(8) XOR OP(0));
 
     Chip1 : Adder_9bit
     PORT MAP(

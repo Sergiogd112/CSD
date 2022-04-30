@@ -6,7 +6,7 @@ ENTITY Arith_9bit IS
         A, B : IN STD_LOGIC_VECTOR (8 DOWNTO 0);
         OP : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
         OV, Z, Cout : OUT STD_LOGIC;
-        R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+        R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0)
 
     );
 
@@ -30,7 +30,7 @@ ARCHITECTURE hierarchical_structure OF Arith_9bit IS
             A, B : IN STD_LOGIC_VECTOR (8 DOWNTO 0);
             OP : IN STD_LOGIC_VECTOR (1 DOWNTO 0);
             OV, Z, Cout : OUT STD_LOGIC;
-            R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+            R : OUT STD_LOGIC_VECTOR (8 DOWNTO 0)
 
         );
 
@@ -56,7 +56,7 @@ BEGIN
         B => B,
         OP => OP,
         OV => O,
-        Z <= L,
+        Z => L,
         Cout => M,
         R(8) => Q(2),
         R(7 DOWNTO 5) => S,
@@ -70,28 +70,28 @@ BEGIN
 
         A => A,
         B => B,
-        Gi => "0",
-        Ei => "1",
-        Li => "0",
+        Gi => '0',
+        Ei => '1',
+        Li => '0',
         Gt => K(2),
         Eq => K(1),
         Lt => K(0)
     );
-    W <= NOT(OP(1)) OR OP(0);
+    W <= NOT(OP(0)) OR OP(1);
     Chip3 : Triple_MUX_2
     PORT MAP(
 
         Ch0 => K,
         Ch1 => Q,
         S => W,
-        E => "1",
+        E => '1',
         Y => N
     );
     R(8) <= N(0);
-    R(7 DOWNTO 5) <= (S(0) AND W & S(1) AND W & S(2) AND W);
-    R(4) <= Y(1);
-    R(3 DOWNTO 1) <= (P(0) AND W & P(1) AND W & P(2) AND W);
-    R(0) <= Y(0);
+    R(7 DOWNTO 5) <= (S(0) AND W, S(1) AND W, S(2) AND W);
+    R(4) <= N(1);
+    R(3 DOWNTO 1) <= (P(0) AND W, P(1) AND W, P(2) AND W);
+    R(0) <= N(0);
     OV <= O;
     Z <= L;
     Cout <= M;

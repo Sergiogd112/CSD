@@ -1,3 +1,8 @@
+from multiprocessing import Pool
+def add_line(i):
+    if i%10**10==0:
+        print(i)
+    return "{0:b}".format(i).rjust(len(inputs_ports), "0")
 path = input("Path to the template file: ")
 minpulse = input("Minimum pulse: ")
 
@@ -23,9 +28,10 @@ for line in text.splitlines():
         inputs_ports += names
 print(" | ".join(inputs_ports))
 combinations = []
-for i in range(2 ** len(inputs_ports)):
-    combinations.append("{0:b}".format(i).rjust(len(inputs_ports), "0"))
-    print(" | ".join(combinations[-1]) + " " + str(i))
+indexes = list(range(0,2 ** len(inputs_ports),2**22))
+with Pool(15) as p:
+    combinations=p.map(add_line,indexes)
+    # print(" | ".join(combinations[-1]) + " " + str(i))
 print()
 print('='*100)
 print('='*100)

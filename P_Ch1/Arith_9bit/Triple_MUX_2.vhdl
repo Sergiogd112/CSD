@@ -28,7 +28,7 @@ BEGIN
 	PROCESS ( E, S, Ch1,Ch0)
 		BEGIN
 			IF E = '0' THEN
-				Y <= '000';	-- disable
+				Y <= "000";	-- disable
 			ELSE
 				IF S = '0' THEN Y <= Ch0;
 					ELSE Y <= Ch1;

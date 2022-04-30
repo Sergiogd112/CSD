@@ -1,0 +1,197 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+
+// 
+// Device: Altera EPM2210F324C3 Package FBGA324
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "Circuit_async")
+  (DATE "04/05/2022 18:05:04")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\CLK\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (708:708:708) (708:708:708))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\CD\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (727:727:727) (727:727:727))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_asynch_lcell")
+    (INSTANCE \\Chip1\|current_state\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (599:599:599) (599:599:599))
+        (IOPATH datac regin (502:502:502) (502:502:502))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_lcell_register")
+    (INSTANCE \\Chip1\|current_state\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (2028:2028:2028) (2028:2028:2028))
+        (PORT clk (1313:1313:1313) (1313:1313:1313))
+        (IOPATH (posedge clk) regout (235:235:235) (235:235:235))
+        (IOPATH (posedge aclr) regout (360:360:360) (360:360:360))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (208:208:208))
+      (HOLD datain (posedge clk) (138:138:138))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_asynch_lcell")
+    (INSTANCE \\Chip2\|current_state\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (558:558:558) (558:558:558))
+        (IOPATH datad regin (369:369:369) (369:369:369))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_lcell_register")
+    (INSTANCE \\Chip2\|current_state\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (2028:2028:2028) (2028:2028:2028))
+        (PORT clk (1115:1115:1115) (1115:1115:1115))
+        (IOPATH (posedge clk) regout (235:235:235) (235:235:235))
+        (IOPATH (posedge aclr) regout (360:360:360) (360:360:360))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (208:208:208))
+      (HOLD datain (posedge clk) (138:138:138))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_asynch_lcell")
+    (INSTANCE \\Chip3\|current_state\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (570:570:570) (570:570:570))
+        (IOPATH datad regin (369:369:369) (369:369:369))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_lcell_register")
+    (INSTANCE \\Chip3\|current_state\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (2028:2028:2028) (2028:2028:2028))
+        (PORT clk (1340:1340:1340) (1340:1340:1340))
+        (IOPATH (posedge clk) regout (235:235:235) (235:235:235))
+        (IOPATH (posedge aclr) regout (360:360:360) (360:360:360))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (208:208:208))
+      (HOLD datain (posedge clk) (138:138:138))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_asynch_lcell")
+    (INSTANCE \\Chip4\|current_state\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (558:558:558) (558:558:558))
+        (IOPATH datad regin (369:369:369) (369:369:369))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_lcell_register")
+    (INSTANCE \\Chip4\|current_state\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (2028:2028:2028) (2028:2028:2028))
+        (PORT clk (1115:1115:1115) (1115:1115:1115))
+        (IOPATH (posedge clk) regout (235:235:235) (235:235:235))
+        (IOPATH (posedge aclr) regout (360:360:360) (360:360:360))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (208:208:208))
+      (HOLD datain (posedge clk) (138:138:138))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\Q\[0\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (889:889:889) (889:889:889))
+        (IOPATH datain padio (1454:1454:1454) (1454:1454:1454))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\Q\[1\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (892:892:892) (892:892:892))
+        (IOPATH datain padio (1454:1454:1454) (1454:1454:1454))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\Q\[2\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datain padio (1454:1454:1454) (1454:1454:1454))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxii_io")
+    (INSTANCE \\Q\[3\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1179:1179:1179) (1179:1179:1179))
+        (IOPATH datain padio (1454:1454:1454) (1454:1454:1454))
+      )
+    )
+  )
+)

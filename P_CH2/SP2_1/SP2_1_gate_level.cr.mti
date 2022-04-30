@@ -1,0 +1,41 @@
+C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd {1 {vcom -work work_gate_level -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_24bit_vhd_tst
+-- Compiling architecture Comp_24bit_arch of Comp_24bit_vhd_tst
+
+} {} {}} C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd {1 {vcom -work work_gate_level -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_4bit
+-- Compiling architecture hierarchical_structure of Comp_4bit
+
+} {} {}} C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd {1 {vcom -work work_gate_level -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_1bit
+-- Compiling architecture algorithm of Comp_1bit
+
+} {} {}} C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd {1 {vcom -work work_gate_level -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_9bit_vhd_tst
+-- Compiling architecture Comp_9bit_arch of Comp_9bit_vhd_tst
+
+} {} {}} C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd {1 {vcom -work work_gate_level -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_24bit
+-- Compiling architecture hierarchical_structure of Comp_24bit
+
+} {} {}}

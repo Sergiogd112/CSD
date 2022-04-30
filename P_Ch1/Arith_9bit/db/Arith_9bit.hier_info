@@ -1,0 +1,656 @@
+|Arith_9bit
+A[0] => Sel_Add_Subt_9bit:Chip1.A[0]
+A[0] => Comp_9bit:Chip2.A[0]
+A[1] => Sel_Add_Subt_9bit:Chip1.A[1]
+A[1] => Comp_9bit:Chip2.A[1]
+A[2] => Sel_Add_Subt_9bit:Chip1.A[2]
+A[2] => Comp_9bit:Chip2.A[2]
+A[3] => Sel_Add_Subt_9bit:Chip1.A[3]
+A[3] => Comp_9bit:Chip2.A[3]
+A[4] => Sel_Add_Subt_9bit:Chip1.A[4]
+A[4] => Comp_9bit:Chip2.A[4]
+A[5] => Sel_Add_Subt_9bit:Chip1.A[5]
+A[5] => Comp_9bit:Chip2.A[5]
+A[6] => Sel_Add_Subt_9bit:Chip1.A[6]
+A[6] => Comp_9bit:Chip2.A[6]
+A[7] => Sel_Add_Subt_9bit:Chip1.A[7]
+A[7] => Comp_9bit:Chip2.A[7]
+A[8] => Sel_Add_Subt_9bit:Chip1.A[8]
+A[8] => Comp_9bit:Chip2.A[8]
+B[0] => Sel_Add_Subt_9bit:Chip1.B[0]
+B[0] => Comp_9bit:Chip2.B[0]
+B[1] => Sel_Add_Subt_9bit:Chip1.B[1]
+B[1] => Comp_9bit:Chip2.B[1]
+B[2] => Sel_Add_Subt_9bit:Chip1.B[2]
+B[2] => Comp_9bit:Chip2.B[2]
+B[3] => Sel_Add_Subt_9bit:Chip1.B[3]
+B[3] => Comp_9bit:Chip2.B[3]
+B[4] => Sel_Add_Subt_9bit:Chip1.B[4]
+B[4] => Comp_9bit:Chip2.B[4]
+B[5] => Sel_Add_Subt_9bit:Chip1.B[5]
+B[5] => Comp_9bit:Chip2.B[5]
+B[6] => Sel_Add_Subt_9bit:Chip1.B[6]
+B[6] => Comp_9bit:Chip2.B[6]
+B[7] => Sel_Add_Subt_9bit:Chip1.B[7]
+B[7] => Comp_9bit:Chip2.B[7]
+B[8] => Sel_Add_Subt_9bit:Chip1.B[8]
+B[8] => Comp_9bit:Chip2.B[8]
+OP[0] => Sel_Add_Subt_9bit:Chip1.OP[0]
+OP[0] => W.IN0
+OP[1] => W.IN1
+OP[1] => Sel_Add_Subt_9bit:Chip1.OP[1]
+OV << Sel_Add_Subt_9bit:Chip1.OV
+Z << Sel_Add_Subt_9bit:Chip1.Z
+Cout << Sel_Add_Subt_9bit:Chip1.Cout
+R[0] << Triple_MUX_2:Chip3.Y[0]
+R[1] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[4] << Triple_MUX_2:Chip3.Y[1]
+R[5] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[6] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[7] << R.DB_MAX_OUTPUT_PORT_TYPE
+R[8] << Triple_MUX_2:Chip3.Y[0]
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1
+A[0] => Adder_9bit:Chip1.A[0]
+A[1] => Adder_9bit:Chip1.A[1]
+A[2] => Adder_9bit:Chip1.A[2]
+A[3] => Adder_9bit:Chip1.A[3]
+A[4] => Adder_9bit:Chip1.A[4]
+A[5] => Adder_9bit:Chip1.A[5]
+A[6] => Adder_9bit:Chip1.A[6]
+A[7] => Adder_9bit:Chip1.A[7]
+A[8] => Adder_9bit:Chip1.A[8]
+B[0] => XORB[8].IN0
+B[1] => XORB[7].IN0
+B[2] => XORB[6].IN0
+B[3] => XORB[5].IN0
+B[4] => XORB[4].IN0
+B[5] => XORB[3].IN0
+B[6] => XORB[2].IN0
+B[7] => XORB[1].IN0
+B[8] => XORB[0].IN0
+OP[0] => XORB[8].IN1
+OP[0] => XORB[7].IN1
+OP[0] => XORB[6].IN1
+OP[0] => XORB[5].IN1
+OP[0] => XORB[4].IN1
+OP[0] => XORB[3].IN1
+OP[0] => XORB[2].IN1
+OP[0] => XORB[1].IN1
+OP[0] => XORB[0].IN1
+OP[0] => Adder_9bit:Chip1.Cin
+OP[1] => OV.IN1
+OP[1] => W.IN1
+OP[1] => Cout.IN1
+OV <= OV.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+R[0] <= Adder_9bit:Chip1.S[0]
+R[1] <= Adder_9bit:Chip1.S[1]
+R[2] <= Adder_9bit:Chip1.S[2]
+R[3] <= Adder_9bit:Chip1.S[3]
+R[4] <= Adder_9bit:Chip1.S[4]
+R[5] <= Adder_9bit:Chip1.S[5]
+R[6] <= Adder_9bit:Chip1.S[6]
+R[7] <= Adder_9bit:Chip1.S[7]
+R[8] <= Adder_9bit:Chip1.S[8]
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1
+A[0] => Adder_1bit:Chip1.Ai
+A[1] => Adder_1bit:Chip2.Ai
+A[2] => Adder_1bit:Chip3.Ai
+A[3] => Adder_1bit:Chip4.Ai
+A[4] => Adder_1bit:Chip5.Ai
+A[5] => Adder_1bit:Chip6.Ai
+A[6] => Adder_1bit:Chip7.Ai
+A[7] => Adder_1bit:Chip8.Ai
+A[8] => Adder_1bit:Chip9.Ai
+B[0] => Adder_1bit:Chip1.Bi
+B[1] => Adder_1bit:Chip2.Bi
+B[2] => Adder_1bit:Chip3.Bi
+B[3] => Adder_1bit:Chip4.Bi
+B[4] => Adder_1bit:Chip5.Bi
+B[5] => Adder_1bit:Chip6.Bi
+B[6] => Adder_1bit:Chip7.Bi
+B[7] => Adder_1bit:Chip8.Bi
+B[8] => Adder_1bit:Chip9.Bi
+Cin => Adder_1bit:Chip1.Ci
+S[0] <= Adder_1bit:Chip1.So
+S[1] <= Adder_1bit:Chip2.So
+S[2] <= Adder_1bit:Chip3.So
+S[3] <= Adder_1bit:Chip4.So
+S[4] <= Adder_1bit:Chip5.So
+S[5] <= Adder_1bit:Chip6.So
+S[6] <= Adder_1bit:Chip7.So
+S[7] <= Adder_1bit:Chip8.So
+S[8] <= Adder_1bit:Chip9.So
+Cout <= Adder_1bit:Chip9.Co
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip1|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip2|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip3|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip4|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip5|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip6|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip7|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip8|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip9
+Ai => MUX_2:Chip1.S
+Ai => MUX_4:Chip2.S[1]
+Bi => K.IN0
+Bi => P.IN0
+Bi => MUX_4:Chip2.S[0]
+Ci => K.IN1
+Ci => P.IN1
+Ci => MUX_4:Chip2.Ch1
+Ci => MUX_4:Chip2.Ch2
+So <= MUX_2:Chip1.Y
+Co <= MUX_4:Chip2.Y
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip9|MUX_2:Chip1
+Ch0 => Y.DATAA
+Ch1 => Y.DATAB
+S => Y.OUTPUTSELECT
+E_L => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Sel_Add_Subt_9bit:Chip1|Adder_9bit:Chip1|Adder_1bit:Chip9|MUX_4:Chip2
+Ch0 => Y.IN1
+Ch1 => Y.IN1
+Ch2 => Y.IN1
+Ch3 => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[0] => Y.IN1
+S[1] => Y.IN0
+S[1] => Y.IN0
+E_L => Y.IN1
+E_L => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+A[4] => Comp_1bit:Chip5.A
+A[5] => Comp_1bit:Chip6.A
+A[6] => Comp_1bit:Chip7.A
+A[7] => Comp_1bit:Chip8.A
+A[8] => Comp_1bit:Chip9.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+B[4] => Comp_1bit:Chip5.B
+B[5] => Comp_1bit:Chip6.B
+B[6] => Comp_1bit:Chip7.B
+B[7] => Comp_1bit:Chip8.B
+B[8] => Comp_1bit:Chip9.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip9.Gt
+Eq <= Comp_1bit:Chip9.Eq
+Lt <= Comp_1bit:Chip9.Lt
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip5
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip6
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip7
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip8
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Comp_9bit:Chip2|Comp_1bit:Chip9
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Arith_9bit|Triple_MUX_2:Chip3
+Ch0[0] => Y.DATAB
+Ch0[1] => Y.DATAB
+Ch0[2] => Y.DATAB
+Ch1[0] => Y.DATAA
+Ch1[1] => Y.DATAA
+Ch1[2] => Y.DATAA
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+S => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

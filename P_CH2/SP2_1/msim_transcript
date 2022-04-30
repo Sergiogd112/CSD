@@ -1,0 +1,127 @@
+vsim -gui -l msim_transcript work_gate_level.comp_24bit_vhd_tst -sdftyp /Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# vsim -gui -l msim_transcript work_gate_level.comp_24bit_vhd_tst -sdftyp "/Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo" 
+# Start time: 16:16:14 on Apr 04,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.comp_24bit_vhd_tst(comp_24bit_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.comp_24bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading instances from C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# Error loading design
+# End time: 16:16:14 on Apr 04,2022, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 7
+# Compile of Comp_1bit.vhd was successful.
+# Compile of Comp_4bit.vhd was successful.
+# Compile of Comp_9bit_tb.vhd was successful.
+# Compile of Comp_24bit.vhd was successful.
+# Compile of Comp_24bit_tb.vhd was successful.
+# Compile of Comp_24bit.vho was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript -sdftyp /Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo work_gate_level.comp_24bit_vhd_tst
+# vsim -gui -l msim_transcript -sdftyp "/Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo" work_gate_level.comp_24bit_vhd_tst 
+# Start time: 16:17:18 on Apr 04,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.comp_24bit_vhd_tst(comp_24bit_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.comp_24bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading instances from C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# Error loading design
+# End time: 16:17:19 on Apr 04,2022, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 2
+# Compile of Comp_1bit.vhd was successful.
+# Compile of Comp_4bit.vhd was successful.
+# Compile of Comp_9bit_tb.vhd was successful.
+# Compile of Comp_24bit.vhd was successful.
+# Compile of Comp_24bit_tb.vhd was successful.
+# Compile of Comp_24bit.vho was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript -sdftyp /Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo work_gate_level.comp_24bit_vhd_tst
+# vsim -gui -l msim_transcript -sdftyp "/Comp_24bit_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo" work_gate_level.comp_24bit_vhd_tst 
+# Start time: 16:24:38 on Apr 04,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.comp_24bit_vhd_tst(comp_24bit_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.comp_24bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading instances from C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo(0): Failed to find INSTANCE '/Comp_24bit_tst/i1'.
+# Error loading design
+# End time: 16:24:39 on Apr 04,2022, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 2
+vsim -gui -l msim_transcript -sdftyp /Comp_24bit_vhd_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo work_gate_level.comp_24bit_vhd_tst
+# vsim -gui -l msim_transcript -sdftyp "/Comp_24bit_vhd_tst/i1=C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo" work_gate_level.comp_24bit_vhd_tst 
+# Start time: 16:30:27 on Apr 04,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.comp_24bit_vhd_tst(comp_24bit_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work_gate_level.comp_24bit(structure)
+# Loading work_gate_level.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading instances from C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# Loading timing data from C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit_vhd.sdo
+# ** Warning: Design size of 23861 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /comp_24bit_vhd_tst File: C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd
+add wave sim:/comp_24bit_vhd_tst/*
+run 100 us
+run 10 us
+run 10 us
+# End time: 09:54:55 on Apr 05,2022, Elapsed time: 17:24:28
+# Errors: 0, Warnings: 2

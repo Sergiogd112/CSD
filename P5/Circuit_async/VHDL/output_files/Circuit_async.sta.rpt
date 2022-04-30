@@ -1,0 +1,403 @@
+Timing Analyzer report for Circuit_async
+Tue Apr 05 18:05:03 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'T_FF:Chip3|current_state'
+ 12. Setup: 'T_FF:Chip1|current_state'
+ 13. Setup: 'T_FF:Chip2|current_state'
+ 14. Setup: 'CLK'
+ 15. Hold: 'CLK'
+ 16. Hold: 'T_FF:Chip2|current_state'
+ 17. Hold: 'T_FF:Chip1|current_state'
+ 18. Hold: 'T_FF:Chip3|current_state'
+ 19. Setup Transfers
+ 20. Hold Transfers
+ 21. Report TCCS
+ 22. Report RSKM
+ 23. Unconstrained Paths Summary
+ 24. Clock Status Summary
+ 25. Unconstrained Input Ports
+ 26. Unconstrained Output Ports
+ 27. Unconstrained Input Ports
+ 28. Unconstrained Output Ports
+ 29. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; Circuit_async                                       ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM2210F324C3                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                             ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; Clock Name               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                      ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; CLK                      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }                      ;
+; T_FF:Chip1|current_state ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:Chip1|current_state } ;
+; T_FF:Chip2|current_state ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:Chip2|current_state } ;
+; T_FF:Chip3|current_state ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:Chip3|current_state } ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+
+
++----------------------------------------------------------------+
+; Fmax Summary                                                   ;
++------------+-----------------+--------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
++------------+-----------------+--------------------------+------+
+; 729.93 MHz ; 729.93 MHz      ; T_FF:Chip3|current_state ;      ;
++------------+-----------------+--------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------------------------+
+; Setup Summary                                     ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; T_FF:Chip3|current_state ; -0.370 ; -0.370        ;
+; T_FF:Chip1|current_state ; 0.480  ; 0.000         ;
+; T_FF:Chip2|current_state ; 0.693  ; 0.000         ;
+; CLK                      ; 1.212  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------+
+; Hold Summary                                      ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; CLK                      ; -1.058 ; -1.058        ;
+; T_FF:Chip2|current_state ; -0.539 ; -0.539        ;
+; T_FF:Chip1|current_state ; -0.326 ; -0.326        ;
+; T_FF:Chip3|current_state ; 1.024  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Minimum Pulse Width Summary                       ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; CLK                      ; -2.289 ; -2.289        ;
+; T_FF:Chip1|current_state ; 0.334  ; 0.000         ;
+; T_FF:Chip2|current_state ; 0.334  ; 0.000         ;
+; T_FF:Chip3|current_state ; 0.334  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'T_FF:Chip3|current_state'                                                                                                                           ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; -0.370 ; T_FF:Chip4|current_state ; T_FF:Chip4|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; 1.000        ; 0.000      ; 1.162      ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'T_FF:Chip1|current_state'                                                                                                                          ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; 0.480 ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; 0.500        ; 1.115      ; 1.162      ;
+; 0.980 ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; 1.000        ; 1.115      ; 1.162      ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'T_FF:Chip2|current_state'                                                                                                                          ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; 0.693 ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; 0.500        ; 1.340      ; 1.174      ;
+; 1.193 ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; 1.000        ; 1.340      ; 1.174      ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK'                                                                                                                                  ;
++-------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+; 1.212 ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; CLK         ; 0.500        ; 2.021      ; 1.336      ;
+; 1.712 ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; CLK         ; 1.000        ; 2.021      ; 1.336      ;
++-------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK'                                                                                                                                    ;
++--------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+; -1.058 ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; CLK         ; 0.000        ; 2.021      ; 1.336      ;
+; -0.558 ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; CLK         ; -0.500       ; 2.021      ; 1.336      ;
++--------+--------------------------+--------------------------+--------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'T_FF:Chip2|current_state'                                                                                                                            ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; -0.539 ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; 0.000        ; 1.340      ; 1.174      ;
+; -0.039 ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; -0.500       ; 1.340      ; 1.174      ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'T_FF:Chip1|current_state'                                                                                                                            ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; -0.326 ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; 0.000        ; 1.115      ; 1.162      ;
+; 0.174  ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; -0.500       ; 1.115      ; 1.162      ;
++--------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'T_FF:Chip3|current_state'                                                                                                                           ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock             ; Latch Clock              ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+; 1.024 ; T_FF:Chip4|current_state ; T_FF:Chip4|current_state ; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; 0.000        ; 0.000      ; 1.162      ;
++-------+--------------------------+--------------------------+--------------------------+--------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                 ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; T_FF:Chip1|current_state ; CLK                      ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; 1        ; 0        ; 0        ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                  ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; T_FF:Chip1|current_state ; CLK                      ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip2|current_state ; T_FF:Chip1|current_state ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip3|current_state ; T_FF:Chip2|current_state ; 1        ; 1        ; 0        ; 0        ;
+; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; 1        ; 0        ; 0        ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 4     ; 4    ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------------------------------------+
+; Clock Status Summary                                                     ;
++--------------------------+--------------------------+------+-------------+
+; Target                   ; Clock                    ; Type ; Status      ;
++--------------------------+--------------------------+------+-------------+
+; CLK                      ; CLK                      ; Base ; Constrained ;
+; T_FF:Chip1|current_state ; T_FF:Chip1|current_state ; Base ; Constrained ;
+; T_FF:Chip2|current_state ; T_FF:Chip2|current_state ; Base ; Constrained ;
+; T_FF:Chip3|current_state ; T_FF:Chip3|current_state ; Base ; Constrained ;
++--------------------------+--------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; CD         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Q[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; CD         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; Q[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Apr 05 18:05:02 2022
+Info: Command: quartus_sta Circuit_async_prj -c Circuit_async
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Circuit_async.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+    Info (332105): create_clock -period 1.000 -name T_FF:Chip1|current_state T_FF:Chip1|current_state
+    Info (332105): create_clock -period 1.000 -name T_FF:Chip2|current_state T_FF:Chip2|current_state
+    Info (332105): create_clock -period 1.000 -name T_FF:Chip3|current_state T_FF:Chip3|current_state
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.370
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.370              -0.370 T_FF:Chip3|current_state 
+    Info (332119):     0.480               0.000 T_FF:Chip1|current_state 
+    Info (332119):     0.693               0.000 T_FF:Chip2|current_state 
+    Info (332119):     1.212               0.000 CLK 
+Info (332146): Worst-case hold slack is -1.058
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.058              -1.058 CLK 
+    Info (332119):    -0.539              -0.539 T_FF:Chip2|current_state 
+    Info (332119):    -0.326              -0.326 T_FF:Chip1|current_state 
+    Info (332119):     1.024               0.000 T_FF:Chip3|current_state 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 CLK 
+    Info (332119):     0.334               0.000 T_FF:Chip1|current_state 
+    Info (332119):     0.334               0.000 T_FF:Chip2|current_state 
+    Info (332119):     0.334               0.000 T_FF:Chip3|current_state 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4681 megabytes
+    Info: Processing ended: Tue Apr 05 18:05:03 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

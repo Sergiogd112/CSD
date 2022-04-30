@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "03/31/2022 19:27:16"
+-- DATE "04/01/2022 11:01:57"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -91,8 +91,8 @@ ENTITY 	Adder_2bit_B IS
 	A : IN std_logic_vector(1 DOWNTO 0);
 	B : IN std_logic_vector(1 DOWNTO 0);
 	Cin : IN std_logic;
-	S : OUT std_logic_vector(1 DOWNTO 0);
-	Cout : OUT std_logic
+	S : BUFFER std_logic_vector(1 DOWNTO 0);
+	Cout : BUFFER std_logic
 	);
 END Adder_2bit_B;
 

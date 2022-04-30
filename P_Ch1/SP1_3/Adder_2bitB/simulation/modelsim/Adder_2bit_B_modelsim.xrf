@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/CSD/P_Ch1/SP1_3/Adder_2bitB/MUX_8.vhd
-source_file = 1, C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder1Bit.vhd
+source_file = 1, MUX_8.vhd
+source_file = 1, Adder1Bit.vhd
 source_file = 1, C:/CSD/P_Ch1/SP1_3/Adder_2bitB/Adder_2bit_B.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

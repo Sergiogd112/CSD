@@ -1,0 +1,295 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CSD/P_CH2/SP2_1/simulation/modelsim
+Ecomp_1bit
+Z0 w1648750415
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+Z3 dC:/CSD/P_CH2/SP2_1
+Z4 8C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd
+Z5 FC:/CSD/P_CH2/SP2_1/Comp_1bit.vhd
+l0
+L5 1
+V@OoSzS7kE[z5Cj=9;>aQR2
+!s100 Lc:h<=BnZ?R=Hn11:go7D2
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1649082262
+!i10b 1
+Z8 !s108 1649082262.000000
+Z9 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd|
+Z10 !s107 C:/CSD/P_CH2/SP2_1/Comp_1bit.vhd|
+!i113 1
+Z11 o-work work_gate_level -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aalgorithm
+R1
+R2
+DEx4 work 9 comp_1bit 0 22 @OoSzS7kE[z5Cj=9;>aQR2
+!i122 12
+l18
+L15 30
+V`U@k4OOV>Q5=nD5:aT86Z3
+!s100 JZGdY2Ab1J:[cV?>RQHQg1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomp_24bit
+Z13 w1649081898
+Z14 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z15 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z16 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R1
+R2
+Z17 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 17
+R3
+Z18 8C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit.vho
+Z19 FC:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit.vho
+l0
+L78 1
+VPGh9NZh]>=ZLJLNZ4=`d[0
+!s100 08jeFHAeb8RJmOgI_loD^0
+R6
+32
+Z20 !s110 1649082263
+!i10b 1
+Z21 !s108 1649082263.000000
+Z22 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit.vho|
+Z23 !s107 C:/CSD/P_CH2/SP2_1/simulation/modelsim/Comp_24bit.vho|
+!i113 1
+R11
+R12
+Astructure
+R14
+R15
+R16
+R1
+R2
+R17
+Z24 DEx4 work 10 comp_24bit 0 22 PGh9NZh]>=ZLJLNZ4=`d[0
+!i122 17
+l444
+Z25 L148 3970
+Z26 V766^@S9hNVz1b8`Mz9GLC2
+Z27 !s100 hQB;GG;Bg6X3jD[<onl8o2
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 10 comp_24bit 0 22 K>ZD71]=P2E]XLN=>l?e;3
+!i122 15
+l25
+L14 96
+V^YJUkR;FCTD`Vh3P@K6c61
+!s100 :_XV3d]BA6lG5dbkH4g[F0
+R6
+32
+R20
+!i10b 1
+R21
+!s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd|
+!s107 C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd|
+!i113 1
+R11
+R12
+FC:/CSD/P_CH2/SP2_1/Comp_24bit.vhd
+w1649077242
+8C:/CSD/P_CH2/SP2_1/Comp_24bit.vhd
+Ecomp_24bit_vhd_tst
+Z28 w1649081808
+R1
+R2
+!i122 16
+R3
+Z29 8C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd
+Z30 FC:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd
+l0
+Z31 L31 1
+VA4@zEPkSP^PI4iB>lSBhA3
+!s100 UdMS;iP>LVUN_N4aAkF@M1
+R6
+32
+R20
+!i10b 1
+R21
+Z32 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd|
+Z33 !s107 C:/CSD/P_CH2/SP2_1/Comp_24bit_tb.vhd|
+!i113 1
+R11
+R12
+Acomp_24bit_arch
+R1
+R2
+DEx4 work 18 comp_24bit_vhd_tst 0 22 A4@zEPkSP^PI4iB>lSBhA3
+!i122 16
+l58
+L33 99
+V0_m111@Be8`0YUjYl[nWm3
+!s100 k?4?mTFTWTi_gQCi9Gh=S1
+R6
+32
+R20
+!i10b 1
+R21
+R32
+R33
+!i113 1
+R11
+R12
+Ecomp_4bit
+Z34 w1649076845
+R1
+R2
+!i122 13
+R3
+Z35 8C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd
+Z36 FC:/CSD/P_CH2/SP2_1/Comp_4bit.vhd
+l0
+L3 1
+V^Sk[m@Gg5IEM8gFolkMLQ1
+!s100 =Q0jPMkA[7Ni>a4c]B`Wm0
+R6
+32
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd|
+Z38 !s107 C:/CSD/P_CH2/SP2_1/Comp_4bit.vhd|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 9 comp_4bit 0 22 ^Sk[m@Gg5IEM8gFolkMLQ1
+!i122 13
+l24
+L14 69
+V@HN<iG_66dYWaSP9eTPA60
+!s100 JIgeRG8GCJ4QiLYM^heFD3
+R6
+32
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Ecomp_9bit_vhd_tst
+R0
+R1
+R2
+!i122 14
+R3
+Z39 8C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd
+Z40 FC:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd
+l0
+R31
+VgW^Eno8=?IiTT`RHhaQ1B2
+!s100 1N;:SAREMTc2oiSWY]bd[1
+R6
+32
+R20
+!i10b 1
+R8
+Z41 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd|
+Z42 !s107 C:/CSD/P_CH2/SP2_1/Comp_9bit_tb.vhd|
+!i113 1
+R11
+R12
+Acomp_9bit_arch
+R1
+R2
+DEx4 work 17 comp_9bit_vhd_tst 0 22 gW^Eno8=?IiTT`RHhaQ1B2
+!i122 14
+l59
+L33 188
+VUWB4F5I7gkf[BY>Tg8`Tz0
+!s100 DW:mAOcF_@JLemFVL1hhi3
+R6
+32
+R20
+!i10b 1
+R8
+R41
+R42
+!i113 1
+R11
+R12
+Ehard_block
+R13
+R14
+R15
+R16
+R1
+R2
+R17
+!i122 17
+R3
+R18
+R19
+l0
+L35 1
+VT@E2b;fQ2^bhgf]W4bJ:Q3
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R11
+R12
+Astructure
+R14
+R15
+R16
+R1
+R2
+R17
+Z43 DEx4 work 10 hard_block 0 22 T@E2b;fQ2^bhgf]W4bJ:Q3
+!i122 17
+l65
+Z44 L51 20
+Z45 V32aW@i8G@oUoaTVJzKA=k1
+Z46 !s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R6
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R11
+R12

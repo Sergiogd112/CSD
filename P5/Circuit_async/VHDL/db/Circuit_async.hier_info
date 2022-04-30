@@ -1,0 +1,44 @@
+|Circuit_async
+CLK => T_FF:Chip1.CLK
+CD => T_FF:Chip1.CD
+CD => T_FF:Chip2.CD
+CD => T_FF:Chip3.CD
+CD => T_FF:Chip4.CD
+Q[0] << T_FF:Chip1.Q
+Q[1] << T_FF:Chip2.Q
+Q[2] << T_FF:Chip3.Q
+Q[3] << T_FF:Chip4.Q
+
+
+|Circuit_async|T_FF:Chip1
+CLK => current_state.CLK
+CD => current_state.ACLR
+T => next_state.DATAB
+T => next_state.DATAA
+Q <= current_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuit_async|T_FF:Chip2
+CLK => current_state.CLK
+CD => current_state.ACLR
+T => next_state.DATAB
+T => next_state.DATAA
+Q <= current_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuit_async|T_FF:Chip3
+CLK => current_state.CLK
+CD => current_state.ACLR
+T => next_state.DATAB
+T => next_state.DATAA
+Q <= current_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Circuit_async|T_FF:Chip4
+CLK => current_state.CLK
+CD => current_state.ACLR
+T => next_state.DATAB
+T => next_state.DATAA
+Q <= current_state.DB_MAX_OUTPUT_PORT_TYPE
+
+

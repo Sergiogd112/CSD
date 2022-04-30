@@ -1,0 +1,421 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eadder_1bit
+Z0 w1648750506
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 72
+Z3 dC:/CSD/P_Ch1/Arith_9bit
+Z4 8C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd
+Z5 FC:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd
+l0
+L4 1
+V[BlVMJmBm4L08nRNd];O90
+!s100 A2f^PM]1VYdFGd:iH7YNm3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1648765194
+!i10b 1
+Z8 !s108 1648765193.000000
+Z9 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd|
+Z10 !s107 C:/CSD/P_Ch1/Arith_9bit/Adder_1bit (1).vhd|
+!i113 1
+Z11 o-work work_functional -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Ahierarchical_structure
+R1
+R2
+DEx4 work 10 adder_1bit 0 22 [BlVMJmBm4L08nRNd];O90
+!i122 72
+l39
+L12 60
+VGKin;o^hdN]A=cOBMhc<S1
+!s100 `BPZN6O^NUzF;FeFSfDi92
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_9bit
+Z13 w1648765157
+R1
+R2
+!i122 73
+R3
+Z14 8C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd
+Z15 FC:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd
+l0
+L4 1
+V?Xm51TC9hIEU3:2?S^F9P3
+!s100 YaaWFMa[]Gk=XAd`SO[]b1
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1648765194.000000
+Z17 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd|
+Z18 !s107 C:/CSD/P_Ch1/Arith_9bit/Adder_9bit.vhd|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 10 adder_9bit 0 22 ?Xm51TC9hIEU3:2?S^F9P3
+!i122 73
+l23
+L14 96
+VjB>;^@T`PHKSV?=bf^:9U1
+!s100 ZRP58lM6C@]a:FWK2H5Z>3
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
+Earith_9bit
+Z19 w1648763458
+R1
+R2
+!i122 74
+R3
+Z20 8C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl
+Z21 FC:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl
+l0
+L3 1
+V2Sz_MDl8Ml;1ZQdg0[Z2a1
+!s100 <K0hC2UZ^:5c7?AC9iZKg3
+R6
+32
+R7
+!i10b 1
+R16
+Z22 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl|
+Z23 !s107 C:/CSD/P_Ch1/Arith_9bit/Arith_9bit.vhdl|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 10 arith_9bit 0 22 2Sz_MDl8Ml;1ZQdg0[Z2a1
+!i122 74
+l51
+L15 85
+Va:9zLIFd>6>EBXVJ]bCEW1
+!s100 IG6S?VC;e_lLX>>@IW6j@1
+R6
+32
+R7
+!i10b 1
+R16
+R22
+R23
+!i113 1
+R11
+R12
+Earith_9bit_vhd_tst
+Z24 w1648763937
+R1
+R2
+!i122 75
+R3
+Z25 8C:/CSD/P_Ch1/Arith_9bit/Arith_9bit_tb.vhd
+Z26 FC:/CSD/P_Ch1/Arith_9bit/Arith_9bit_tb.vhd
+l0
+L31 1
+Va50`AUk3OOUNS17Rdjd1<3
+!s100 3h?a^fb=FD`Q<;]KAZW[E2
+R6
+32
+R7
+!i10b 1
+R16
+Z27 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Arith_9bit_tb.vhd|
+Z28 !s107 C:/CSD/P_Ch1/Arith_9bit/Arith_9bit_tb.vhd|
+!i113 1
+R11
+R12
+Aarith_9bit_arch
+R1
+R2
+DEx4 work 18 arith_9bit_vhd_tst 0 22 a50`AUk3OOUNS17Rdjd1<3
+!i122 75
+l56
+L33 74
+VdO_kEn7c?dP0`9loPPl^N1
+!s100 BXYJ?3Rall=TBcfJ5hV2L2
+R6
+32
+R7
+!i10b 1
+R16
+R27
+R28
+!i113 1
+R11
+R12
+Ecomp_1bit
+Z29 w1648750415
+R1
+R2
+!i122 76
+R3
+Z30 8C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd
+Z31 FC:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd
+l0
+L5 1
+V0VQXY<i;6Z`IMj?P3=jHU3
+!s100 Lc:h<=BnZ?R=Hn11:go7D2
+R6
+32
+R7
+!i10b 1
+R16
+Z32 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd|
+Z33 !s107 C:/CSD/P_Ch1/Arith_9bit/Comp_1bit.vhd|
+!i113 1
+R11
+R12
+Aalgorithm
+R1
+R2
+DEx4 work 9 comp_1bit 0 22 0VQXY<i;6Z`IMj?P3=jHU3
+!i122 76
+l18
+L15 30
+VPKdI8Il1VGVl3KZMn<bU^3
+!s100 JZGdY2Ab1J:[cV?>RQHQg1
+R6
+32
+R7
+!i10b 1
+R16
+R32
+R33
+!i113 1
+R11
+R12
+Ecomp_9bit
+R29
+R1
+R2
+!i122 77
+R3
+Z34 8C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd
+Z35 FC:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd
+l0
+L5 1
+VTRW4;fh3Y?HU>3?VKJ?Vz0
+!s100 OPQ0CD2g?b23WJ32DAgS=3
+R6
+32
+R7
+!i10b 1
+R16
+Z36 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd|
+Z37 !s107 C:/CSD/P_Ch1/Arith_9bit/Comp_9bit.vhd|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 9 comp_9bit 0 22 TRW4;fh3Y?HU>3?VKJ?Vz0
+!i122 77
+l30
+L16 136
+VUBgYFFWITQUeX[jc1zN0=0
+!s100 N<B[`LgQCKYgAT_B^0W?Q2
+R6
+32
+R7
+!i10b 1
+R16
+R36
+R37
+!i113 1
+R11
+R12
+Emux_2
+R0
+R1
+R2
+!i122 78
+R3
+Z38 8C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd
+Z39 FC:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd
+l0
+Z40 L13 1
+Vz<9WTA2G4Zf5NAYcX6ke_0
+!s100 WOH<ILPfT6Pkk:D>]T^`N0
+R6
+32
+R7
+!i10b 1
+R16
+Z41 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd|
+Z42 !s107 C:/CSD/P_Ch1/Arith_9bit/MUX_2.vhd|
+!i113 1
+R11
+R12
+Aalgorithm
+R1
+R2
+DEx4 work 5 mux_2 0 22 z<9WTA2G4Zf5NAYcX6ke_0
+!i122 78
+l26
+Z43 L24 16
+V?G]N3bc]Sa7fJYUi>7T;S0
+!s100 6[l1bf4k[Zi]TPK0;gibz0
+R6
+32
+R7
+!i10b 1
+R16
+R41
+R42
+!i113 1
+R11
+R12
+Emux_4
+R0
+R1
+R2
+!i122 79
+R3
+Z44 8C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd
+Z45 FC:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd
+l0
+L14 1
+VbR2eI?80UDZGe<j9f8C@50
+!s100 WjA3RI;;9@291:IQ^_Q:`2
+R6
+32
+Z46 !s110 1648765195
+!i10b 1
+R16
+Z47 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd|
+Z48 !s107 C:/CSD/P_Ch1/Arith_9bit/MUX_4.vhd|
+!i113 1
+R11
+R12
+Alogic_equations
+R1
+R2
+DEx4 work 5 mux_4 0 22 bR2eI?80UDZGe<j9f8C@50
+!i122 79
+l27
+L25 12
+Vj6jO3k`Mg^]6dj3z_^Z7E1
+!s100 ?SJf52ZI`T=:a1d`SM9=X0
+R6
+32
+R46
+!i10b 1
+R16
+R47
+R48
+!i113 1
+R11
+R12
+Esel_add_subt_9bit
+Z49 w1648764109
+R1
+R2
+!i122 80
+R3
+Z50 8C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd
+Z51 FC:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd
+l0
+L3 1
+V<h2EL7V^AhO^hAfg4QfRB2
+!s100 jigFXH1mO1Gd<bXTzl9RL3
+R6
+32
+R46
+!i10b 1
+Z52 !s108 1648765195.000000
+Z53 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd|
+Z54 !s107 C:/CSD/P_Ch1/Arith_9bit/Sel_Add_Subt_9bit.vhd|
+!i113 1
+R11
+R12
+Ahierarchical_structure
+R1
+R2
+DEx4 work 17 sel_add_subt_9bit 0 22 <h2EL7V^AhO^hAfg4QfRB2
+!i122 80
+l28
+L15 36
+VebZV<72lcbS<NZELBfF0c0
+!s100 <jOZ<6FfC2JocV;ETIoig1
+R6
+32
+R46
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R11
+R12
+Etriple_mux_2
+Z55 w1648760542
+R1
+R2
+!i122 81
+R3
+Z56 8C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl
+Z57 FC:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl
+l0
+R40
+VUo:cbk?Ol]2Nc<cl?cbmV1
+!s100 j0=dA:`L[Ehk@==hlfglW1
+R6
+32
+R46
+!i10b 1
+R52
+Z58 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl|
+Z59 !s107 C:/CSD/P_Ch1/Arith_9bit/Triple_MUX_2.vhdl|
+!i113 1
+R11
+R12
+Aalgorithm
+R1
+R2
+Z60 DEx4 work 12 triple_mux_2 0 22 Uo:cbk?Ol]2Nc<cl?cbmV1
+!i122 81
+l26
+R43
+Z61 VPj@aRFZlWHQM[h5H>W]bh1
+Z62 !s100 @jTCbFWWl5RNY]4DVdWHk1
+R6
+32
+R46
+!i10b 1
+R52
+R58
+R59
+!i113 1
+R11
+R12
