@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
+source_file = 1, C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/CSD/P_CH2/SP2_2/VHDL/db/Circuit_SP2_2.cbx.xml
+design_name = Circuit_SP2_2
+instance = comp, \CLK_L~I\, CLK_L, Circuit_SP2_2, 1
+instance = comp, \CD_L~I\, CD_L, Circuit_SP2_2, 1
+instance = comp, \Chip1|current_state\, Chip1|current_state, Circuit_SP2_2, 1
+instance = comp, \Chip2|current_state\, Chip2|current_state, Circuit_SP2_2, 1
+instance = comp, \Chip3|current_state\, Chip3|current_state, Circuit_SP2_2, 1
+instance = comp, \Q[0]~I\, Q[0], Circuit_SP2_2, 1
+instance = comp, \Q[1]~I\, Q[1], Circuit_SP2_2, 1
+instance = comp, \Q[2]~I\, Q[2], Circuit_SP2_2, 1

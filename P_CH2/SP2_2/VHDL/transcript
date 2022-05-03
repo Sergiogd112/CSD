@@ -1,0 +1,42 @@
+# Compile of Circuit_SP2_2.vhd was successful.
+# Compile of Circuit_SP2_2_tb.vhd was successful.
+# Compile of T_FF.vhd was successful.
+# Compile of Circuit_SP2_2.vho was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of Circuit_SP2_2.vhd was successful.
+# Compile of Circuit_SP2_2_tb.vhd was successful.
+# Compile of T_FF.vhd was successful.
+# Compile of Circuit_SP2_2.vho was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work_gate_level.circuit_sp2_2_tb -sdftyp /Circuit_SP2_2_tb/uut=C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2_vhd.sdo
+# vsim -gui work_gate_level.circuit_sp2_2_tb -sdftyp "/Circuit_SP2_2_tb/uut=C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2_vhd.sdo" 
+# Start time: 14:32:16 on May 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.circuit_sp2_2_tb(behavior)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading maxii.maxii_atom_pack(body)
+# Loading maxii.maxii_components
+# Loading work_gate_level.circuit_sp2_2(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading maxii.maxii_io(behave)
+# Loading maxii.maxii_lcell(vital_le_atom)
+# Loading maxii.maxii_asynch_lcell(vital_le)
+# Loading maxii.maxii_lcell_register(vital_le_reg)
+# Loading instances from C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2_vhd.sdo
+# Loading timing data from C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /circuit_sp2_2_tb File: C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd
+add wave sim:/circuit_sp2_2_tb/*
+run 300us
+# ** Warning: */LCELL SETUP High VIOLATION ON DATAIN WITH RESPECT TO CLK;
+#   Expected := 0.208 ns; Observed := 0.188 ns; At : 1.115 ns
+#    Time: 1115 ps  Iteration: 0  Instance: /circuit_sp2_2_tb/uut/\Chip2|current_state\/lereg
+quit -sim
+# End time: 14:38:50 on May 02,2022, Elapsed time: 0:06:34
+# Errors: 488, Warnings: 4

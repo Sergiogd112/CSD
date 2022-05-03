@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim
+Ecircuit_sp2_2
+Z1 w1651344853
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd
+Z5 FC:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd
+l0
+L4 1
+VSLS?_3;Iko>gICHecI_I^1
+!s100 Xk;LTf;m2God25A6i4dKH2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1651346986
+!i10b 1
+Z8 !s108 1651346985.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd|
+!s107 C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Ahierarchical_structure
+R2
+R3
+DEx4 work 13 circuit_sp2_2 0 22 SLS?_3;Iko>gICHecI_I^1
+!i122 1
+l22
+L12 41
+V>PR9ASg>1aQWPjE5:NzU^2
+!s100 >llWiXCD@YBh`PAPm5DNa0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd|
+!i113 1
+R10
+R11
+Et_ff
+Z13 w1651343638
+R2
+R3
+!i122 0
+R0
+Z14 8C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
+Z15 FC:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
+l0
+L9 1
+V?4d7O6kj60^c??z=oP7FE1
+!s100 B6eR@3Bo8WfM7n^ak]Ffz1
+R6
+31
+Z16 !s110 1651346985
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
+Z18 !s107 C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
+!i113 1
+R10
+R11
+Afsm_like
+R2
+R3
+DEx4 work 4 t_ff 0 22 ?4d7O6kj60^c??z=oP7FE1
+!i122 0
+l32
+L21 67
+V3[KVRzMZ<NFjAH]fX7C^63
+!s100 5@655IQII?5DTfV;g<mHa3
+R6
+31
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R10
+R11

@@ -4,13 +4,14 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY Circuit_SP2_2 IS
     PORT (
         CLK_L, CD_L : IN STD_LOGIC;
-        Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
+        Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     );
 
 END Circuit_SP2_2;
 
 ARCHITECTURE hierarchical_structure OF Circuit_SP2_2 IS
     COMPONENT T_FF IS
+        PORT (
         PORT (
             CLK : IN STD_LOGIC;
             CD : IN STD_LOGIC;
