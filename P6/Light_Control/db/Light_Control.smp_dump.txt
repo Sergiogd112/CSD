@@ -1,0 +1,9 @@
+
+State Machine - |Light_Control|current_state
+Name current_state.Click_3_detected current_state.Button_released_2 current_state.Click_2_detected current_state.Button_released_1 current_state.Click_1_detected current_state.Idle 
+current_state.Idle 0 0 0 0 0 0 
+current_state.Click_1_detected 0 0 0 0 1 1 
+current_state.Button_released_1 0 0 0 1 0 1 
+current_state.Click_2_detected 0 0 1 0 0 1 
+current_state.Button_released_2 0 1 0 0 0 1 
+current_state.Click_3_detected 1 0 0 0 0 1 
