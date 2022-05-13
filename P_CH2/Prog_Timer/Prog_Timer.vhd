@@ -1,15 +1,15 @@
 LIBRARY ieee;
 USE IEEE.STD_LOGIC_1164.ALL;
-ENTITY Datapath IS
+ENTITY Prog_Timer IS
 
     PORT (
         PC : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
-        CNT_E, RST, CLK, LD_PC, CD : IN STD_LOGIC;
-        TOF : OUT STD_LOGIC
+        TRG, CLK, CD : IN STD_LOGIC;
+        Timer_out, ETP : OUT STD_LOGIC
 
     );
 
-END Datapath;
+END Prog_Timer;
 
 ARCHITECTURE hierarchical_structure OF Datapath IS
 
@@ -24,7 +24,7 @@ ARCHITECTURE hierarchical_structure OF Datapath IS
 
     END COMPONENT;
 
-    COMPONENT ontrol_unit IS
+    COMPONENT Control_unit IS
         PORT (
             TRG : IN STD_LOGIC;
             CD : IN STD_LOGIC;
@@ -40,34 +40,27 @@ ARCHITECTURE hierarchical_structure OF Datapath IS
     END COMPONENT;
 
     SIGNAL CNT_Q, PC_R : STD_LOGIC_VECTOR(23 DOWNTO 0);
+    SIGNAL TOF, LD_PC, RST, CNT_E : STD_LOGIC;
 
 BEGIN
-    Counter_16M_1 : Counter_16M
+    Control_unit_1 : Control_unit
     PORT MAP(
         CLK => CLK,
         CD => CD,
-        LD => RST,
-        UD_L => '1',
-        CE => CNT_E,
-        Q => CNT_Q,
-        Din => "000000000000000000000000"
+        TRG => TRG,
+        TOF => TOF,
+        CNT_E => CNT_E,
+        CLR_C => RST,
+        LD_R => LD_PC
     );
-    Data_reg_24bit_1 : Data_reg_24bit
+    Datapath_1 : Datapath
     PORT MAP(
         CLK => CLK,
-        LD => LD_PC,
-        Din => PC,
         CD => CD,
-        Q => PC_R
+        CNT_E => CNT_E,
+        RST => RST,
+        LD_PC => LD_PC,
+        PC => PC,
+        TOF => TOF
     );
-    Comp_24bit_1 : Comp_24bit
-    PORT MAP(
-        A => CNT_Q,
-        B => PC_R,
-        Gi => '0',
-        Ei => '1',
-        Li => '0',
-        Eq => TOF
-    );
-
 END hierarchical_structure;

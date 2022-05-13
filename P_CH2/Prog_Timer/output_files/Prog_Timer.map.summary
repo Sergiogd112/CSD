@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri May 13 11:26:06 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Prog_Timer
+Top-level Entity Name : Prog_Timer
+Family : Cyclone IV E
+Total logic elements : 79
+    Total combinational functions : 55
+    Dedicated logic registers : 53
+Total registers : 53
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

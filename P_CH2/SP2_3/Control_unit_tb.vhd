@@ -100,6 +100,8 @@ BEGIN
 		CD <= '0';
 		WAIT FOR CLK_period * 6.78;
 
+		
+		
 		-- Trigger pulse:
 		TRG <= '1';
 		WAIT FOR CLK_period * 2.23;
