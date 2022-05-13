@@ -1,0 +1,8 @@
+
+State Machine - |Control_unit|current_state
+Name current_state.Trigger_Check current_state.End_Pulse current_state.Timing current_state.Load_Register current_state.Idle 
+current_state.Idle 0 0 0 0 0 
+current_state.Load_Register 0 0 0 1 1 
+current_state.Timing 0 0 1 0 1 
+current_state.End_Pulse 0 1 0 0 1 
+current_state.Trigger_Check 1 0 0 0 1 

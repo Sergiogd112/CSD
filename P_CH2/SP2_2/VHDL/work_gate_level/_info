@@ -10,26 +10,26 @@ z2
 cModel Technology
 Z0 dC:/CSD/P_CH2/SP2_2/VHDL
 Ecircuit_sp2_2
-Z1 w1651494646
+Z1 w1651596685
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx5 maxii 15 maxii_atom_pack 0 22 M[3^e4UUhBPE2QBOTA<Y?1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z5 DPx5 maxii 16 maxii_components 0 22 `0P`LeL4Ve;z2d]fLfDzU3
 Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 19
+!i122 27
 R0
 Z8 8C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2.vho
 Z9 FC:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2.vho
 l0
 Z10 L35 1
-V:3I=9]aAPi]C]0O^kX9jE2
-!s100 JTaW?0G>X]DAFNdbi9N@Y3
+Vz:<E:o;M<6`OBoR35a8QH2
+!s100 Ti<40Wm_X]=g>o1nQm3bV1
 Z11 OV;C;2020.1;71
 32
-Z12 !s110 1651494692
+Z12 !s110 1651596693
 !i10b 1
-Z13 !s108 1651494692.000000
+Z13 !s108 1651596693.000000
 Z14 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2.vho|
 Z15 !s107 C:/CSD/P_CH2/SP2_2/VHDL/simulation/modelsim/Circuit_SP2_2.vho|
 !i113 1
@@ -42,12 +42,12 @@ R4
 R5
 R6
 R7
-Z18 DEx4 work 13 circuit_sp2_2 0 22 :3I=9]aAPi]C]0O^kX9jE2
-!i122 19
+DEx4 work 13 circuit_sp2_2 0 22 z:<E:o;M<6`OBoR35a8QH2
+!i122 27
 l69
-Z19 L46 157
-Z20 VWChE7KK5[YICEnUPe]Po[1
-Z21 !s100 gRE9f0T;[KKk=3ELlcV9X2
+Z18 L46 157
+VM8eDc]2[lTn>]M[A<llU[0
+!s100 1=SDP_nl[H7I6dgDoje];2
 R11
 32
 R12
@@ -62,32 +62,32 @@ Ahierarchical_structure
 R6
 R7
 DEx4 work 13 circuit_sp2_2 0 22 [QCW^o;k9l3@FG5WiI6:<2
-!i122 16
+!i122 24
 l22
 L12 41
-VGX[l?C>`am]Oiml;cJ<3h0
-!s100 >llWiXCD@YBh`PAPm5DNa0
+V]gCb`ZkgJNU0O9g1b3KNO0
+!s100 GSzV6?>V49LREZSSQWoIR1
 R11
 32
-!s110 1651494691
+!s110 1651596692
 !i10b 1
-!s108 1651494691.000000
+!s108 1651596692.000000
 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd|
 !s107 C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd|
 !i113 1
 R16
 R17
 FC:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd
-w1651344853
+w1651596565
 8C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2.vhd
 Ecircuit_sp2_2_tb
-Z22 w1651347935
+Z19 w1651347935
 R6
 R7
-!i122 17
+!i122 25
 R0
-Z23 8C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd
-Z24 FC:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd
+Z20 8C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd
+Z21 FC:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd
 l0
 R10
 VM::QP4mgJN`C>[fmhm8M:3
@@ -97,8 +97,8 @@ R11
 R12
 !i10b 1
 R13
-Z25 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd|
-Z26 !s107 C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd|
+Z22 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd|
+Z23 !s107 C:/CSD/P_CH2/SP2_2/VHDL/Circuit_SP2_2_tb.vhd|
 !i113 1
 R16
 R17
@@ -106,7 +106,7 @@ Abehavior
 R6
 R7
 DEx4 work 16 circuit_sp2_2_tb 0 22 M::QP4mgJN`C>[fmhm8M:3
-!i122 17
+!i122 25
 l58
 L38 60
 VVig;5EFADFl[^?IH3e:Fd2
@@ -116,19 +116,19 @@ R11
 R12
 !i10b 1
 R13
-R25
-R26
+R22
+R23
 !i113 1
 R16
 R17
 Et_ff
-Z27 w1651343638
+Z24 w1651343638
 R6
 R7
-!i122 18
+!i122 26
 R0
-Z28 8C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
-Z29 FC:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
+Z25 8C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
+Z26 FC:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd
 l0
 L9 1
 V]aD1Hl36_Fc625Dbn3K`^1
@@ -138,8 +138,8 @@ R11
 R12
 !i10b 1
 R13
-Z30 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
-Z31 !s107 C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
+Z27 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
+Z28 !s107 C:/CSD/P_CH2/SP2_2/VHDL/T_FF.vhd|
 !i113 1
 R16
 R17
@@ -147,7 +147,7 @@ Afsm_like
 R6
 R7
 DEx4 work 4 t_ff 0 22 ]aD1Hl36_Fc625Dbn3K`^1
-!i122 18
+!i122 26
 l32
 L21 67
 VRBc2iQT1NL>3iA4jOXAZ<0
@@ -157,8 +157,8 @@ R11
 R12
 !i10b 1
 R13
-R30
-R31
+R27
+R28
 !i113 1
 R16
 R17

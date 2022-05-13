@@ -1,0 +1,19 @@
+C:/CSD/P_CH2/SP2_3/Control_unit.vhd {1 {vcom -work work_funcional -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_3/Control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Control_unit
+-- Compiling architecture FSM_like of Control_unit
+
+} {} {}} C:/CSD/P_CH2/SP2_3/Control_unit_tb.vhd {1 {vcom -work work_funcional -2002 -explicit -stats=none C:/CSD/P_CH2/SP2_3/Control_unit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Control_unit_vhd_tst
+-- Compiling architecture Control_unit_arch of Control_unit_vhd_tst
+
+} {} {}}

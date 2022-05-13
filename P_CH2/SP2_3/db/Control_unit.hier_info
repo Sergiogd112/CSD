@@ -1,0 +1,15 @@
+|Control_unit
+TRG => next_state.Load_Register.DATAB
+TRG => Selector2.IN3
+TRG => Selector0.IN1
+CD => current_state~3.DATAIN
+Clk => current_state~1.DATAIN
+TOF => next_state.End_Pulse.DATAB
+TOF => Selector1.IN2
+Timer_out << Timer_out.DB_MAX_OUTPUT_PORT_TYPE
+ETP << <GND>
+CNT_E << CNT_E.DB_MAX_OUTPUT_PORT_TYPE
+CLR_C << CLR_C.DB_MAX_OUTPUT_PORT_TYPE
+LD_R << LD_R.DB_MAX_OUTPUT_PORT_TYPE
+
+
