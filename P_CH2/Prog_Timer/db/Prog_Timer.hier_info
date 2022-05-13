@@ -1,0 +1,901 @@
+|Prog_Timer
+PC[0] => Datapath:Datapath_1.PC[0]
+PC[1] => Datapath:Datapath_1.PC[1]
+PC[2] => Datapath:Datapath_1.PC[2]
+PC[3] => Datapath:Datapath_1.PC[3]
+PC[4] => Datapath:Datapath_1.PC[4]
+PC[5] => Datapath:Datapath_1.PC[5]
+PC[6] => Datapath:Datapath_1.PC[6]
+PC[7] => Datapath:Datapath_1.PC[7]
+PC[8] => Datapath:Datapath_1.PC[8]
+PC[9] => Datapath:Datapath_1.PC[9]
+PC[10] => Datapath:Datapath_1.PC[10]
+PC[11] => Datapath:Datapath_1.PC[11]
+PC[12] => Datapath:Datapath_1.PC[12]
+PC[13] => Datapath:Datapath_1.PC[13]
+PC[14] => Datapath:Datapath_1.PC[14]
+PC[15] => Datapath:Datapath_1.PC[15]
+PC[16] => Datapath:Datapath_1.PC[16]
+PC[17] => Datapath:Datapath_1.PC[17]
+PC[18] => Datapath:Datapath_1.PC[18]
+PC[19] => Datapath:Datapath_1.PC[19]
+PC[20] => Datapath:Datapath_1.PC[20]
+PC[21] => Datapath:Datapath_1.PC[21]
+PC[22] => Datapath:Datapath_1.PC[22]
+PC[23] => Datapath:Datapath_1.PC[23]
+TRG => Control_unit:Control_unit_1.TRG
+CLK => Control_unit:Control_unit_1.Clk
+CLK => Datapath:Datapath_1.CLK
+CD => Control_unit:Control_unit_1.CD
+CD => Datapath:Datapath_1.CD
+Timer_out <= Control_unit:Control_unit_1.Timer_out
+ETP <= Control_unit:Control_unit_1.ETP
+
+
+|Prog_Timer|Control_unit:Control_unit_1
+TRG => next_state.Load_Register.DATAB
+TRG => Selector2.IN3
+TRG => Selector0.IN1
+CD => current_state~3.DATAIN
+Clk => current_state~1.DATAIN
+TOF => next_state.End_Pulse.DATAB
+TOF => Selector1.IN2
+Timer_out <= Timer_out.DB_MAX_OUTPUT_PORT_TYPE
+ETP <= <GND>
+CNT_E <= CNT_E.DB_MAX_OUTPUT_PORT_TYPE
+CLR_C <= CLR_C.DB_MAX_OUTPUT_PORT_TYPE
+LD_R <= LD_R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1
+PC[0] => Data_reg_24bit:Data_reg_24bit_1.Din[0]
+PC[1] => Data_reg_24bit:Data_reg_24bit_1.Din[1]
+PC[2] => Data_reg_24bit:Data_reg_24bit_1.Din[2]
+PC[3] => Data_reg_24bit:Data_reg_24bit_1.Din[3]
+PC[4] => Data_reg_24bit:Data_reg_24bit_1.Din[4]
+PC[5] => Data_reg_24bit:Data_reg_24bit_1.Din[5]
+PC[6] => Data_reg_24bit:Data_reg_24bit_1.Din[6]
+PC[7] => Data_reg_24bit:Data_reg_24bit_1.Din[7]
+PC[8] => Data_reg_24bit:Data_reg_24bit_1.Din[8]
+PC[9] => Data_reg_24bit:Data_reg_24bit_1.Din[9]
+PC[10] => Data_reg_24bit:Data_reg_24bit_1.Din[10]
+PC[11] => Data_reg_24bit:Data_reg_24bit_1.Din[11]
+PC[12] => Data_reg_24bit:Data_reg_24bit_1.Din[12]
+PC[13] => Data_reg_24bit:Data_reg_24bit_1.Din[13]
+PC[14] => Data_reg_24bit:Data_reg_24bit_1.Din[14]
+PC[15] => Data_reg_24bit:Data_reg_24bit_1.Din[15]
+PC[16] => Data_reg_24bit:Data_reg_24bit_1.Din[16]
+PC[17] => Data_reg_24bit:Data_reg_24bit_1.Din[17]
+PC[18] => Data_reg_24bit:Data_reg_24bit_1.Din[18]
+PC[19] => Data_reg_24bit:Data_reg_24bit_1.Din[19]
+PC[20] => Data_reg_24bit:Data_reg_24bit_1.Din[20]
+PC[21] => Data_reg_24bit:Data_reg_24bit_1.Din[21]
+PC[22] => Data_reg_24bit:Data_reg_24bit_1.Din[22]
+PC[23] => Data_reg_24bit:Data_reg_24bit_1.Din[23]
+CNT_E => Counter_16M:Counter_16M_1.CE
+RST => Counter_16M:Counter_16M_1.LD
+CLK => Counter_16M:Counter_16M_1.CLK
+CLK => Data_reg_24bit:Data_reg_24bit_1.CLK
+LD_PC => Data_reg_24bit:Data_reg_24bit_1.LD
+CD => Counter_16M:Counter_16M_1.CD
+CD => Data_reg_24bit:Data_reg_24bit_1.CD
+TOF <= Comp_24bit:Comp_24bit_1.Eq
+
+
+|Prog_Timer|Datapath:Datapath_1|Counter_16M:Counter_16M_1
+CLK => present_state[0].CLK
+CLK => present_state[1].CLK
+CLK => present_state[2].CLK
+CLK => present_state[3].CLK
+CLK => present_state[4].CLK
+CLK => present_state[5].CLK
+CLK => present_state[6].CLK
+CLK => present_state[7].CLK
+CLK => present_state[8].CLK
+CLK => present_state[9].CLK
+CLK => present_state[10].CLK
+CLK => present_state[11].CLK
+CLK => present_state[12].CLK
+CLK => present_state[13].CLK
+CLK => present_state[14].CLK
+CLK => present_state[15].CLK
+CLK => present_state[16].CLK
+CLK => present_state[17].CLK
+CLK => present_state[18].CLK
+CLK => present_state[19].CLK
+CLK => present_state[20].CLK
+CLK => present_state[21].CLK
+CLK => present_state[22].CLK
+CLK => present_state[23].CLK
+CD => present_state[0].ACLR
+CD => present_state[1].ACLR
+CD => present_state[2].ACLR
+CD => present_state[3].ACLR
+CD => present_state[4].ACLR
+CD => present_state[5].ACLR
+CD => present_state[6].ACLR
+CD => present_state[7].ACLR
+CD => present_state[8].ACLR
+CD => present_state[9].ACLR
+CD => present_state[10].ACLR
+CD => present_state[11].ACLR
+CD => present_state[12].ACLR
+CD => present_state[13].ACLR
+CD => present_state[14].ACLR
+CD => present_state[15].ACLR
+CD => present_state[16].ACLR
+CD => present_state[17].ACLR
+CD => present_state[18].ACLR
+CD => present_state[19].ACLR
+CD => present_state[20].ACLR
+CD => present_state[21].ACLR
+CD => present_state[22].ACLR
+CD => present_state[23].ACLR
+LD => next_state[23].OUTPUTSELECT
+LD => next_state[22].OUTPUTSELECT
+LD => next_state[21].OUTPUTSELECT
+LD => next_state[20].OUTPUTSELECT
+LD => next_state[19].OUTPUTSELECT
+LD => next_state[18].OUTPUTSELECT
+LD => next_state[17].OUTPUTSELECT
+LD => next_state[16].OUTPUTSELECT
+LD => next_state[15].OUTPUTSELECT
+LD => next_state[14].OUTPUTSELECT
+LD => next_state[13].OUTPUTSELECT
+LD => next_state[12].OUTPUTSELECT
+LD => next_state[11].OUTPUTSELECT
+LD => next_state[10].OUTPUTSELECT
+LD => next_state[9].OUTPUTSELECT
+LD => next_state[8].OUTPUTSELECT
+LD => next_state[7].OUTPUTSELECT
+LD => next_state[6].OUTPUTSELECT
+LD => next_state[5].OUTPUTSELECT
+LD => next_state[4].OUTPUTSELECT
+LD => next_state[3].OUTPUTSELECT
+LD => next_state[2].OUTPUTSELECT
+LD => next_state[1].OUTPUTSELECT
+LD => next_state[0].OUTPUTSELECT
+CE => TC16.IN1
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => TC16.IN1
+UD_L => TC16.IN1
+Din[0] => next_state[0].DATAB
+Din[1] => next_state[1].DATAB
+Din[2] => next_state[2].DATAB
+Din[3] => next_state[3].DATAB
+Din[4] => next_state[4].DATAB
+Din[5] => next_state[5].DATAB
+Din[6] => next_state[6].DATAB
+Din[7] => next_state[7].DATAB
+Din[8] => next_state[8].DATAB
+Din[9] => next_state[9].DATAB
+Din[10] => next_state[10].DATAB
+Din[11] => next_state[11].DATAB
+Din[12] => next_state[12].DATAB
+Din[13] => next_state[13].DATAB
+Din[14] => next_state[14].DATAB
+Din[15] => next_state[15].DATAB
+Din[16] => next_state[16].DATAB
+Din[17] => next_state[17].DATAB
+Din[18] => next_state[18].DATAB
+Din[19] => next_state[19].DATAB
+Din[20] => next_state[20].DATAB
+Din[21] => next_state[21].DATAB
+Din[22] => next_state[22].DATAB
+Din[23] => next_state[23].DATAB
+Q[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= present_state[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= present_state[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= present_state[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= present_state[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= present_state[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= present_state[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= present_state[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= present_state[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= present_state[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= present_state[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= present_state[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= present_state[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= present_state[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= present_state[16].DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= present_state[17].DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= present_state[18].DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= present_state[19].DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= present_state[20].DB_MAX_OUTPUT_PORT_TYPE
+Q[21] <= present_state[21].DB_MAX_OUTPUT_PORT_TYPE
+Q[22] <= present_state[22].DB_MAX_OUTPUT_PORT_TYPE
+Q[23] <= present_state[23].DB_MAX_OUTPUT_PORT_TYPE
+TC16 <= TC16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Data_reg_24bit:Data_reg_24bit_1
+CLK => present_state[0].CLK
+CLK => present_state[1].CLK
+CLK => present_state[2].CLK
+CLK => present_state[3].CLK
+CLK => present_state[4].CLK
+CLK => present_state[5].CLK
+CLK => present_state[6].CLK
+CLK => present_state[7].CLK
+CLK => present_state[8].CLK
+CLK => present_state[9].CLK
+CLK => present_state[10].CLK
+CLK => present_state[11].CLK
+CLK => present_state[12].CLK
+CLK => present_state[13].CLK
+CLK => present_state[14].CLK
+CLK => present_state[15].CLK
+CLK => present_state[16].CLK
+CLK => present_state[17].CLK
+CLK => present_state[18].CLK
+CLK => present_state[19].CLK
+CLK => present_state[20].CLK
+CLK => present_state[21].CLK
+CLK => present_state[22].CLK
+CLK => present_state[23].CLK
+CD => present_state[0].ACLR
+CD => present_state[1].ACLR
+CD => present_state[2].ACLR
+CD => present_state[3].ACLR
+CD => present_state[4].ACLR
+CD => present_state[5].ACLR
+CD => present_state[6].ACLR
+CD => present_state[7].ACLR
+CD => present_state[8].ACLR
+CD => present_state[9].ACLR
+CD => present_state[10].ACLR
+CD => present_state[11].ACLR
+CD => present_state[12].ACLR
+CD => present_state[13].ACLR
+CD => present_state[14].ACLR
+CD => present_state[15].ACLR
+CD => present_state[16].ACLR
+CD => present_state[17].ACLR
+CD => present_state[18].ACLR
+CD => present_state[19].ACLR
+CD => present_state[20].ACLR
+CD => present_state[21].ACLR
+CD => present_state[22].ACLR
+CD => present_state[23].ACLR
+LD => present_state[23].ENA
+LD => present_state[22].ENA
+LD => present_state[21].ENA
+LD => present_state[20].ENA
+LD => present_state[19].ENA
+LD => present_state[18].ENA
+LD => present_state[17].ENA
+LD => present_state[16].ENA
+LD => present_state[15].ENA
+LD => present_state[14].ENA
+LD => present_state[13].ENA
+LD => present_state[12].ENA
+LD => present_state[11].ENA
+LD => present_state[10].ENA
+LD => present_state[9].ENA
+LD => present_state[8].ENA
+LD => present_state[7].ENA
+LD => present_state[6].ENA
+LD => present_state[5].ENA
+LD => present_state[4].ENA
+LD => present_state[3].ENA
+LD => present_state[2].ENA
+LD => present_state[1].ENA
+LD => present_state[0].ENA
+Q[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= present_state[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= present_state[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= present_state[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= present_state[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= present_state[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= present_state[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= present_state[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= present_state[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= present_state[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= present_state[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= present_state[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= present_state[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= present_state[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= present_state[16].DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= present_state[17].DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= present_state[18].DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= present_state[19].DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= present_state[20].DB_MAX_OUTPUT_PORT_TYPE
+Q[21] <= present_state[21].DB_MAX_OUTPUT_PORT_TYPE
+Q[22] <= present_state[22].DB_MAX_OUTPUT_PORT_TYPE
+Q[23] <= present_state[23].DB_MAX_OUTPUT_PORT_TYPE
+Din[0] => present_state[0].DATAIN
+Din[1] => present_state[1].DATAIN
+Din[2] => present_state[2].DATAIN
+Din[3] => present_state[3].DATAIN
+Din[4] => present_state[4].DATAIN
+Din[5] => present_state[5].DATAIN
+Din[6] => present_state[6].DATAIN
+Din[7] => present_state[7].DATAIN
+Din[8] => present_state[8].DATAIN
+Din[9] => present_state[9].DATAIN
+Din[10] => present_state[10].DATAIN
+Din[11] => present_state[11].DATAIN
+Din[12] => present_state[12].DATAIN
+Din[13] => present_state[13].DATAIN
+Din[14] => present_state[14].DATAIN
+Din[15] => present_state[15].DATAIN
+Din[16] => present_state[16].DATAIN
+Din[17] => present_state[17].DATAIN
+Din[18] => present_state[18].DATAIN
+Din[19] => present_state[19].DATAIN
+Din[20] => present_state[20].DATAIN
+Din[21] => present_state[21].DATAIN
+Din[22] => present_state[22].DATAIN
+Din[23] => present_state[23].DATAIN
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1
+A[0] => Comp_4bit:Chip1.A[0]
+A[1] => Comp_4bit:Chip1.A[1]
+A[2] => Comp_4bit:Chip1.A[2]
+A[3] => Comp_4bit:Chip1.A[3]
+A[4] => Comp_4bit:Chip2.A[0]
+A[5] => Comp_4bit:Chip2.A[1]
+A[6] => Comp_4bit:Chip2.A[2]
+A[7] => Comp_4bit:Chip2.A[3]
+A[8] => Comp_4bit:Chip3.A[0]
+A[9] => Comp_4bit:Chip3.A[1]
+A[10] => Comp_4bit:Chip3.A[2]
+A[11] => Comp_4bit:Chip3.A[3]
+A[12] => Comp_4bit:Chip4.A[0]
+A[13] => Comp_4bit:Chip4.A[1]
+A[14] => Comp_4bit:Chip4.A[2]
+A[15] => Comp_4bit:Chip4.A[3]
+A[16] => Comp_4bit:Chip5.A[0]
+A[17] => Comp_4bit:Chip5.A[1]
+A[18] => Comp_4bit:Chip5.A[2]
+A[19] => Comp_4bit:Chip5.A[3]
+A[20] => Comp_4bit:Chip6.A[0]
+A[21] => Comp_4bit:Chip6.A[1]
+A[22] => Comp_4bit:Chip6.A[2]
+A[23] => Comp_4bit:Chip6.A[3]
+B[0] => Comp_4bit:Chip1.B[0]
+B[1] => Comp_4bit:Chip1.B[1]
+B[2] => Comp_4bit:Chip1.B[2]
+B[3] => Comp_4bit:Chip1.B[3]
+B[4] => Comp_4bit:Chip2.B[0]
+B[5] => Comp_4bit:Chip2.B[1]
+B[6] => Comp_4bit:Chip2.B[2]
+B[7] => Comp_4bit:Chip2.B[3]
+B[8] => Comp_4bit:Chip3.B[0]
+B[9] => Comp_4bit:Chip3.B[1]
+B[10] => Comp_4bit:Chip3.B[2]
+B[11] => Comp_4bit:Chip3.B[3]
+B[12] => Comp_4bit:Chip4.B[0]
+B[13] => Comp_4bit:Chip4.B[1]
+B[14] => Comp_4bit:Chip4.B[2]
+B[15] => Comp_4bit:Chip4.B[3]
+B[16] => Comp_4bit:Chip5.B[0]
+B[17] => Comp_4bit:Chip5.B[1]
+B[18] => Comp_4bit:Chip5.B[2]
+B[19] => Comp_4bit:Chip5.B[3]
+B[20] => Comp_4bit:Chip6.B[0]
+B[21] => Comp_4bit:Chip6.B[1]
+B[22] => Comp_4bit:Chip6.B[2]
+B[23] => Comp_4bit:Chip6.B[3]
+Gi => Comp_4bit:Chip1.Gi
+Ei => Comp_4bit:Chip1.Ei
+Li => Comp_4bit:Chip1.Li
+Gt <= Comp_4bit:Chip6.Gt
+Eq <= Comp_4bit:Chip6.Eq
+Lt <= Comp_4bit:Chip6.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip1
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip1|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip1|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip1|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip1|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip2
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip2|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip2|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip2|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip2|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip3
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip3|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip3|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip3|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip3|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip4
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip4|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip4|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip4|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip4|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip5
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip5|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip5|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip5|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip5|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip6
+A[0] => Comp_1bit:Chip1.A
+A[1] => Comp_1bit:Chip2.A
+A[2] => Comp_1bit:Chip3.A
+A[3] => Comp_1bit:Chip4.A
+B[0] => Comp_1bit:Chip1.B
+B[1] => Comp_1bit:Chip2.B
+B[2] => Comp_1bit:Chip3.B
+B[3] => Comp_1bit:Chip4.B
+Gi => Comp_1bit:Chip1.Gi
+Ei => Comp_1bit:Chip1.Ei
+Li => Comp_1bit:Chip1.Li
+Gt <= Comp_1bit:Chip4.Gt
+Eq <= Comp_1bit:Chip4.Eq
+Lt <= Comp_1bit:Chip4.Lt
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip6|Comp_1bit:Chip1
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip6|Comp_1bit:Chip2
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip6|Comp_1bit:Chip3
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Prog_Timer|Datapath:Datapath_1|Comp_24bit:Comp_24bit_1|Comp_4bit:Chip6|Comp_1bit:Chip4
+A => process_0.IN0
+A => process_0.IN0
+A => process_0.IN0
+B => process_0.IN1
+B => process_0.IN1
+B => process_0.IN1
+Gi => Gt$latch.DATAIN
+Ei => Eq$latch.DATAIN
+Li => Lt$latch.DATAIN
+Gt <= Gt$latch.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Eq$latch.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= Lt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
