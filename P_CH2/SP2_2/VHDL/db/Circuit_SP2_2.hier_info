@@ -3,9 +3,9 @@ CLK_L => T_FF:Chip1.CLK
 CD_L => T_FF:Chip1.CD
 CD_L => T_FF:Chip2.CD
 CD_L => T_FF:Chip3.CD
-Q[0] << T_FF:Chip3.Q
-Q[1] << T_FF:Chip2.Q
-Q[2] << T_FF:Chip1.Q
+Q[0] <= T_FF:Chip1.Q
+Q[1] <= T_FF:Chip2.Q
+Q[2] <= T_FF:Chip3.Q
 
 
 |Circuit_SP2_2|T_FF:Chip1

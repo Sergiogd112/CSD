@@ -48,5 +48,5 @@ BEGIN
         Q_L => Q2_L,
         Q => Q2
     );
-    Q <= (Q0, Q1, Q2);
+    Q <= (Q2, Q1, Q0);
 END hierarchical_structure;

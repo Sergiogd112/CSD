@@ -1,5 +1,5 @@
 Fitter report for Circuit_SP2_2
-Mon May 02 14:39:25 2022
+Tue May 03 18:51:20 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Mon May 02 14:39:25 2022       ;
+; Fitter Status         ; Successful - Tue May 03 18:51:20 2022       ;
 ; Quartus Prime Version ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name         ; Circuit_SP2_2                               ;
 ; Top-level Entity Name ; Circuit_SP2_2                               ;
@@ -133,8 +133,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-16        ;   0.1%      ;
+;     Processors 2-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -199,7 +198,7 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; CD_L  ; J6    ; 1        ; 0            ; 8            ; 0           ; 3                     ; 0                  ; yes    ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; CLK_L ; D1    ; 1        ; 0            ; 13           ; 3           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; CLK_L ; R15   ; 3        ; 21           ; 1            ; 4           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
 +-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
 
@@ -208,9 +207,9 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; Q[0] ; D6    ; 2        ; 2            ; 14           ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; Fitter               ; 10 pF ; -                    ; -                   ;
-; Q[1] ; E2    ; 1        ; 0            ; 13           ; 5           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; Q[2] ; C3    ; 1        ; 0            ; 13           ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; Q[0] ; R17   ; 3        ; 21           ; 1            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; yes                    ; Fitter               ; 10 pF ; -                    ; -                   ;
+; Q[1] ; T13   ; 4        ; 19           ; 0            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; Q[2] ; V15   ; 4        ; 19           ; 0            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
@@ -219,10 +218,10 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 +----------+----------------+---------------+--------------+
 ; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
 +----------+----------------+---------------+--------------+
-; 1        ; 4 / 68 ( 6 % ) ; 3.3V          ; --           ;
-; 2        ; 1 / 66 ( 2 % ) ; 3.3V          ; --           ;
-; 3        ; 0 / 72 ( 0 % ) ; 3.3V          ; --           ;
-; 4        ; 0 / 66 ( 0 % ) ; 3.3V          ; --           ;
+; 1        ; 1 / 68 ( 1 % ) ; 3.3V          ; --           ;
+; 2        ; 0 / 66 ( 0 % ) ; 3.3V          ; --           ;
+; 3        ; 2 / 72 ( 3 % ) ; 3.3V          ; --           ;
+; 4        ; 2 / 66 ( 3 % ) ; 3.3V          ; --           ;
 +----------+----------------+---------------+--------------+
 
 
@@ -269,7 +268,7 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; B18      ; 210        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; C1       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; C2       ; 0          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; C3       ; 1          ; 1        ; Q[2]           ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; C3       ; 1          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; C4       ; 270        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; C5       ; 264        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; C6       ; 267        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
@@ -285,12 +284,12 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; C16      ; 206        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; C17      ; 208        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; C18      ;            ; 3        ; VCCIO3         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
-; D1       ; 3          ; 1        ; CLK_L          ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; D1       ; 3          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; D2       ; 2          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; D3       ; 4          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; D4       ; 6          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; D5       ; 274        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; D6       ; 269        ; 2        ; Q[0]           ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; D6       ; 269        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; D7       ; 261        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; D8       ; 253        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; D9       ; 245        ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
@@ -304,7 +303,7 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; D17      ; 203        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; D18      ; 199        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; E1       ; 7          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; E2       ; 5          ; 1        ; Q[1]           ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; E2       ; 5          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; E3       ; 8          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; E4       ; 10         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; E5       ; 12         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
@@ -497,9 +496,9 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; R12      ; 126        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R13      ; 132        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; R14      ; 137        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; R15      ; 139        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; R15      ; 139        ; 3        ; CLK_L          ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; R16      ; 141        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; R17      ; 143        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
+; R17      ; 143        ; 3        ; Q[0]           ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; R18      ; 145        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; T1       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; T2       ; 70         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
@@ -513,7 +512,7 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; T10      ; 112        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; T11      ; 120        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; T12      ; 128        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; T13      ; 134        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; T13      ; 134        ; 4        ; Q[1]           ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; T14      ; 121        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; T15      ; 127        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; T16      ; 140        ; 3        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
@@ -551,7 +550,7 @@ The pin-out file can be found in C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP
 ; V12      ; 115        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; V13      ; 119        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; V14      ; 125        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; V15      ; 131        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
+; V15      ; 131        ; 4        ; Q[2]           ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; V16      ;            ; 4        ; VCCIO4         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; V17      ; 135        ; 4        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; V18      ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
@@ -584,8 +583,8 @@ Note: User assignments will override these defaults. The user specified values a
 ; Q[0]     ; Missing location assignment ;
 ; Q[1]     ; Missing location assignment ;
 ; Q[2]     ; Missing location assignment ;
-; CD_L     ; Missing location assignment ;
 ; CLK_L    ; Missing location assignment ;
+; CD_L     ; Missing location assignment ;
 +----------+-----------------------------+
 
 
@@ -610,8 +609,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Q[0]  ; Output   ; --            ;
 ; Q[1]  ; Output   ; --            ;
 ; Q[2]  ; Output   ; --            ;
-; CD_L  ; Input    ; (0)           ;
 ; CLK_L ; Input    ; (0)           ;
+; CD_L  ; Input    ; (0)           ;
 +-------+----------+---------------+
 
 
@@ -621,9 +620,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                     ; Location     ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
 +--------------------------+--------------+---------+--------------+--------+----------------------+------------------+
 ; CD_L                     ; PIN_J6       ; 3       ; Async. clear ; yes    ; Global Clock         ; GCLK0            ;
-; CLK_L                    ; PIN_D1       ; 1       ; Clock        ; no     ; --                   ; --               ;
-; T_FF:Chip1|current_state ; LC_X1_Y13_N4 ; 3       ; Clock        ; no     ; --                   ; --               ;
-; T_FF:Chip2|current_state ; LC_X1_Y13_N2 ; 3       ; Clock        ; no     ; --                   ; --               ;
+; CLK_L                    ; PIN_R15      ; 1       ; Clock        ; no     ; --                   ; --               ;
+; T_FF:Chip1|current_state ; LC_X20_Y1_N2 ; 3       ; Clock        ; no     ; --                   ; --               ;
+; T_FF:Chip2|current_state ; LC_X19_Y1_N9 ; 3       ; Clock        ; no     ; --                   ; --               ;
 +--------------------------+--------------+---------+--------------+--------+----------------------+------------------+
 
 
@@ -641,8 +640,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------+
 ; Routing Resource Type ; Usage               ;
 +-----------------------+---------------------+
-; C4s                   ; 0 / 4,452 ( 0 % )   ;
-; Direct links          ; 3 / 6,570 ( < 1 % ) ;
+; C4s                   ; 2 / 4,452 ( < 1 % ) ;
+; Direct links          ; 1 / 6,570 ( < 1 % ) ;
 ; Global clocks         ; 1 / 4 ( 25 % )      ;
 ; LAB clocks            ; 2 / 88 ( 2 % )      ;
 ; LUT chains            ; 0 / 1,989 ( 0 % )   ;
@@ -770,22 +769,22 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X11_Y0 to location X21_Y14
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.35 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/CSD/P_CH2/SP2_2/VHDL/output_files/Circuit_SP2_2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6162 megabytes
-    Info: Processing ended: Mon May 02 14:39:25 2022
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 6159 megabytes
+    Info: Processing ended: Tue May 03 18:51:20 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
