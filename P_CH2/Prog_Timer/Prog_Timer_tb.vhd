@@ -80,7 +80,8 @@ BEGIN
 
 		CD <= '0';
 		TRG <= '0';
-		PC<="0000000000000000000000000";
+		PC<="000000000000000000000000";
+
 		WAIT FOR CLK_period * 3.53;
 
 		-- Clear direct pulse:
@@ -88,12 +89,12 @@ BEGIN
 		WAIT FOR CLK_period * 2.23;
 		CD <= '0';
 		WAIT FOR CLK_period * 6.78;
-		PC <= "111111111111111111111111";
+		PC <= "000000000000100000000000";
 		WAIT FOR CLK_period * 2.23;
 		-- Trigger pulse:
 		TRG <= '1';
 		WAIT FOR CLK_period * 2.23;
 		TRG <= '0';
-		WAIT FOR CLK_period * 205;
+		WAIT;
 	END PROCESS;
 END Prog_Timer_arch;

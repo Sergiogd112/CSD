@@ -13,7 +13,7 @@ Ecomp_1bit
 Z0 w1648750415
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 60
+!i122 109
 Z3 dC:/CSD/P_CH2/Prog_Timer
 Z4 8C:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd
 Z5 FC:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd
@@ -23,9 +23,9 @@ V0VQXY<i;6Z`IMj?P3=jHU3
 !s100 Lc:h<=BnZ?R=Hn11:go7D2
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1652436090
+Z7 !s110 1652437591
 !i10b 1
-Z8 !s108 1652436090.000000
+Z8 !s108 1652437591.000000
 Z9 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd|
 Z10 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Aalgorithm
 R1
 R2
 DEx4 work 9 comp_1bit 0 22 0VQXY<i;6Z`IMj?P3=jHU3
-!i122 60
+!i122 109
 l18
 L15 30
 VPKdI8Il1VGVl3KZMn<bU^3
@@ -54,7 +54,7 @@ Ecomp_24bit
 Z13 w1649077242
 R1
 R2
-!i122 63
+!i122 112
 R3
 Z14 8C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd
 Z15 FC:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd
@@ -64,11 +64,11 @@ V?2Ffih7XS?Kc]_4dz1Thn1
 !s100 ;N`SA1n@7NcMoMYNb8J@a1
 R6
 32
-Z16 !s110 1652436091
+R7
 !i10b 1
-Z17 !s108 1652436091.000000
-Z18 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd|
-Z19 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd|
+R8
+Z16 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd|
+Z17 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd|
 !i113 1
 R11
 R12
@@ -76,29 +76,29 @@ Ahierarchical_structure
 R1
 R2
 DEx4 work 10 comp_24bit 0 22 ?2Ffih7XS?Kc]_4dz1Thn1
-!i122 63
+!i122 112
 l25
 L14 96
 VC67A`S6h[d]4Y;lYC^:643
 !s100 :_XV3d]BA6lG5dbkH4g[F0
 R6
 32
-R16
+R7
 !i10b 1
+R8
+R16
 R17
-R18
-R19
 !i113 1
 R11
 R12
 Ecomp_4bit
-Z20 w1649076845
+Z18 w1649076845
 R1
 R2
-!i122 61
+!i122 110
 R3
-Z21 8C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd
-Z22 FC:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd
+Z19 8C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd
+Z20 FC:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd
 l0
 L3 1
 V>UA2S]4M2mRH_Uc>zmm[R0
@@ -108,8 +108,8 @@ R6
 R7
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd|
-Z24 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd|
+Z21 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd|
+Z22 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd|
 !i113 1
 R11
 R12
@@ -117,7 +117,7 @@ Ahierarchical_structure
 R1
 R2
 DEx4 work 9 comp_4bit 0 22 >UA2S]4M2mRH_Uc>zmm[R0
-!i122 61
+!i122 110
 l24
 L14 69
 V3<lWP2<88Ae=Z[1;LdRQf2
@@ -127,8 +127,8 @@ R6
 R7
 !i10b 1
 R8
-R23
-R24
+R21
+R22
 !i113 1
 R11
 R12
@@ -136,21 +136,21 @@ Ecomp_9bit_vhd_tst
 R0
 R1
 R2
-!i122 62
+!i122 111
 R3
-Z25 8C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd
-Z26 FC:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd
+Z23 8C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd
+Z24 FC:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd
 l0
-Z27 L31 1
+Z25 L31 1
 VjnT0Gef4QW=GTAh>g75=C3
 !s100 1N;:SAREMTc2oiSWY]bd[1
 R6
 32
-R16
+R7
 !i10b 1
 R8
-Z28 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd|
-Z29 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd|
+Z26 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd|
+Z27 !s107 C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd|
 !i113 1
 R11
 R12
@@ -158,85 +158,85 @@ Acomp_9bit_arch
 R1
 R2
 DEx4 work 17 comp_9bit_vhd_tst 0 22 jnT0Gef4QW=GTAh>g75=C3
-!i122 62
+!i122 111
 l59
 L33 188
 VaQ^:_k`j8EZcM0<F?S;=Q2
 !s100 DW:mAOcF_@JLemFVL1hhi3
 R6
 32
-R16
+R7
 !i10b 1
 R8
-R28
-R29
+R26
+R27
 !i113 1
 R11
 R12
 Econtrol_unit
-Z30 w1652097163
-Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z32 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z28 w1652097163
+Z29 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z30 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R1
 R2
-!i122 64
+!i122 113
 R3
-Z33 8C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd
-Z34 FC:/CSD/P_CH2/Prog_Timer/Control_unit.vhd
+Z31 8C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd
+Z32 FC:/CSD/P_CH2/Prog_Timer/Control_unit.vhd
 l0
 L17 1
 V<FVe=G>ZV@AUZ271g>_@80
 !s100 bdl?Y<z5^=1ABnfdAW[HA2
 R6
 32
-R16
+R7
 !i10b 1
-R17
-Z35 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd|
-Z36 !s107 C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd|
+R8
+Z33 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd|
+Z34 !s107 C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd|
 !i113 1
 R11
 R12
 Afsm_like
-R31
-R32
+R29
+R30
 R1
 R2
 DEx4 work 12 control_unit 0 22 <FVe=G>ZV@AUZ271g>_@80
-!i122 64
+!i122 113
 l47
 L32 111
 VYZWZWRYJQNl0[8C]0;nJi3
 !s100 [Tz?RK6Jg=iiUfGBgD[RS1
 R6
 32
-R16
+R7
 !i10b 1
-R17
-R35
-R36
+R8
+R33
+R34
 !i113 1
 R11
 R12
 Econtrol_unit_vhd_tst
-Z37 w1652098102
+Z35 w1652098102
 R1
 R2
-!i122 65
+!i122 114
 R3
-Z38 8C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd
-Z39 FC:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd
+Z36 8C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd
+Z37 FC:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd
 l0
-R27
+R25
 V=k^5>7U1H6`HfFX9Da=Eb0
 !s100 JCYUQA<k@U7z4@bJ8?4dz2
 R6
 32
-R16
+R7
 !i10b 1
-R17
-Z40 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd|
-Z41 !s107 C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd|
+R8
+Z38 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd|
+Z39 !s107 C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd|
 !i113 1
 R11
 R12
@@ -244,85 +244,85 @@ Acontrol_unit_arch
 R1
 R2
 DEx4 work 20 control_unit_vhd_tst 0 22 =k^5>7U1H6`HfFX9Da=Eb0
-!i122 65
+!i122 114
 l62
 L33 95
 V5kmWamTiJbPX9FY]RacnY0
 !s100 ==bnOKaZ7aVm0:Y0`YH5W3
 R6
 32
-R16
+R7
 !i10b 1
-R17
-R40
-R41
+R8
+R38
+R39
 !i113 1
 R11
 R12
 Ecounter_16m
-Z42 w1652430633
-R32
-R31
+Z40 w1652430633
+R30
+R29
 R1
 R2
-!i122 66
+!i122 115
 R3
-Z43 8C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd
-Z44 FC:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd
+Z41 8C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd
+Z42 FC:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd
 l0
 L16 1
 Vn=SJ_H`5R6k8XYACW`MSz0
 !s100 heQR:J35EoB=[Kj:I37RD1
 R6
 32
-R16
+R7
 !i10b 1
-R17
-Z45 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd|
-Z46 !s107 C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd|
+R8
+Z43 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd|
+Z44 !s107 C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd|
 !i113 1
 R11
 R12
 Afsm_like
-R32
-R31
+R30
+R29
 R1
 R2
 DEx4 work 11 counter_16m 0 22 n=SJ_H`5R6k8XYACW`MSz0
-!i122 66
+!i122 115
 l38
 L29 66
 V7a4aiDN11=2A:MAniS^L31
 !s100 H_1?dk:0LWBgc2RNl<9K<0
 R6
 32
-R16
+R7
 !i10b 1
-R17
-R45
-R46
+R8
+R43
+R44
 !i113 1
 R11
 R12
 Edata_reg_24bit
-Z47 w1652430695
+Z45 w1652430695
 R1
 R2
-!i122 67
+!i122 116
 R3
-Z48 8C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd
-Z49 FC:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd
+Z46 8C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd
+Z47 FC:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd
 l0
 L14 1
 VFZlVCl:6[]kHfEgU0OX=Z3
 !s100 ]4h5SfT[U7<@LZ@l<=c9f2
 R6
 32
-R16
+R7
 !i10b 1
-R17
-Z50 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd|
-Z51 !s107 C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd|
+R8
+Z48 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd|
+Z49 !s107 C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd|
 !i113 1
 R11
 R12
@@ -330,40 +330,40 @@ Afsm_like
 R1
 R2
 DEx4 work 14 data_reg_24bit 0 22 FZlVCl:6[]kHfEgU0OX=Z3
-!i122 67
+!i122 116
 l33
 L25 45
 V?2M9c=UbNojmH<ieORW6h2
 !s100 ^`OO7;DU3B73joIjK^;G>3
 R6
 32
-R16
+R7
 !i10b 1
-R17
-R50
-R51
+R8
+R48
+R49
 !i113 1
 R11
 R12
 Edatapath
-Z52 w1652430599
+Z50 w1652430599
 R1
 R2
-!i122 68
+!i122 117
 R3
-Z53 8C:/CSD/P_CH2/Prog_Timer/Datapath.vhd
-Z54 FC:/CSD/P_CH2/Prog_Timer/Datapath.vhd
+Z51 8C:/CSD/P_CH2/Prog_Timer/Datapath.vhd
+Z52 FC:/CSD/P_CH2/Prog_Timer/Datapath.vhd
 l0
 L3 1
 Vl`i4I74IVaL]bbY^Jcd?U3
 !s100 gjPn2^T`OkaC?MR7PIC`81
 R6
 32
-R16
+R7
 !i10b 1
-R17
-Z55 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Datapath.vhd|
-Z56 !s107 C:/CSD/P_CH2/Prog_Timer/Datapath.vhd|
+R8
+Z53 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Datapath.vhd|
+Z54 !s107 C:/CSD/P_CH2/Prog_Timer/Datapath.vhd|
 !i113 1
 R11
 R12
@@ -371,40 +371,40 @@ Ahierarchical_structure
 R1
 R2
 DEx4 work 8 datapath 0 22 l`i4I74IVaL]bbY^Jcd?U3
-!i122 68
+!i122 117
 l46
 L14 62
 VC4hVFTB96;Q;>hm0Pe2D[0
 !s100 SC3X=H`D:AEz07mCYMZ`43
 R6
 32
-R16
+R7
 !i10b 1
-R17
-R55
-R56
+R8
+R53
+R54
 !i113 1
 R11
 R12
 Edatapath_vhd_tst
-Z57 w1652432067
+Z55 w1652432067
 R1
 R2
-!i122 69
+!i122 118
 R3
-Z58 8C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd
-Z59 FC:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd
+Z56 8C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd
+Z57 FC:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd
 l0
-R27
+R25
 Va8ILkSfaQoWTXd[CX]cIa2
 !s100 zFfPA3_@>O_neFT_Udf0H2
 R6
 32
-R16
+Z58 !s110 1652437592
 !i10b 1
-R17
-Z60 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd|
-Z61 !s107 C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd|
+R8
+Z59 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd|
+Z60 !s107 C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd|
 !i113 1
 R11
 R12
@@ -412,38 +412,38 @@ Adatapath_arch
 R1
 R2
 DEx4 work 16 datapath_vhd_tst 0 22 a8ILkSfaQoWTXd[CX]cIa2
-!i122 69
+!i122 118
 l54
 L33 48
 Vhb4Jok76lj5^]SknP39he0
 !s100 7H9hVcPLK>ZAI`Q]zQB=43
 R6
 32
-R16
+R58
 !i10b 1
-R17
+R8
+R59
 R60
-R61
 !i113 1
 R11
 R12
 Eprog_timer
-Z62 w1652433957
+Z61 w1652433957
 R1
 R2
-!i122 70
+!i122 119
 R3
-Z63 8C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd
-Z64 FC:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd
+Z62 8C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd
+Z63 FC:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd
 l0
 L3 1
 V_ihnl`Pj:`P0d]kULEHc31
 !s100 :24_1=[=:IE`g_@@bFhcY2
 R6
 32
-R16
+R58
 !i10b 1
-R17
+Z64 !s108 1652437592.000000
 Z65 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd|
 Z66 !s107 C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd|
 !i113 1
@@ -453,38 +453,38 @@ Ahierarchical_structure
 R1
 R2
 DEx4 work 10 prog_timer 0 22 _ihnl`Pj:`P0d]kULEHc31
-!i122 70
+!i122 119
 l46
 L15 55
 VO]M<08ece^>B16`]KYHcS2
 !s100 l2;:V9_^eMghfO0T;deO^1
 R6
 32
-R16
+R58
 !i10b 1
-R17
+R64
 R65
 R66
 !i113 1
 R11
 R12
 Eprog_timer_vhd_tst
-Z67 w1652436076
+Z67 w1652437500
 R1
 R2
-!i122 71
+!i122 120
 R3
 Z68 8C:/CSD/P_CH2/Prog_Timer/Prog_Timer_tb.vhd
 Z69 FC:/CSD/P_CH2/Prog_Timer/Prog_Timer_tb.vhd
 l0
-R27
+R25
 Vmif^NaA<iNTknW`4R=lUW2
 !s100 ^g9OPG3k?QE4On8=i3a9i2
 R6
 32
-R16
+R58
 !i10b 1
-R17
+R64
 Z70 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P_CH2/Prog_Timer/Prog_Timer_tb.vhd|
 Z71 !s107 C:/CSD/P_CH2/Prog_Timer/Prog_Timer_tb.vhd|
 !i113 1
@@ -494,16 +494,16 @@ Aprog_timer_arch
 R1
 R2
 Z72 DEx4 work 18 prog_timer_vhd_tst 0 22 mif^NaA<iNTknW`4R=lUW2
-!i122 71
+!i122 120
 l54
-L33 66
-V3m_:J]Z<a;PNBSK<X7SYR3
-!s100 Y;aIVm_SHWCHIXB?^W1ML3
+Z73 L33 68
+VQ>dZOng5jQ96U[U5k:0k]3
+!s100 cR?g3g38_I50ld?OC22_R3
 R6
 32
-R16
+R58
 !i10b 1
-R17
+R64
 R70
 R71
 !i113 1
