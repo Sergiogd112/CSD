@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue May 10 18:14:50 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Counter_mod12
+Top-level Entity Name : Counter_mod12
+Family : MAX II
+Device : EPM2210F324C3
+Timing Models : Final
+Total logic elements : 11 / 2,210 ( < 1 % )
+Total pins : 9 / 272 ( 3 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

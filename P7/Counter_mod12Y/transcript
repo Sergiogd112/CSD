@@ -1,0 +1,122 @@
+# ** Error: Acs sdne.
+# ;
+#        Unable to replace existing ini file (C:/CSD/P7/Counter_mod12C2/Counter_mod12.mpf).  File can not be renamed.
+# Compile of Counter_mod12 (1).vhd was successful.
+# Compile of Counter_mod12_tb.vhd was successful.
+# Compile of Counter_mod16.vhd was successful.
+# Compile of Quad_MUX2.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work_gate_level.counter_mod12_vhd_tst -sdftyp /Counter_mod12_vhd_tst/i1=C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo
+# vsim -gui work_gate_level.counter_mod12_vhd_tst -sdftyp "/Counter_mod12_vhd_tst/i1=C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo" 
+# Start time: 18:13:34 on May 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.counter_mod12_vhd_tst(counter_mod12_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work_gate_level.counter_mod12(hierarchical_structure)
+# Loading work_gate_level.counter_mod16(fsm_like)
+# Loading work_gate_level.quad_mux2(truth_table)
+# Loading instances from C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo
+# ** Error (suppressible): (vsim-SDF-3266) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo: Instance 'S' is not a module or architecture.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(266): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(125): Failed to find INSTANCE '\CD~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(49): Failed to find INSTANCE '\CE~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(40): Failed to find INSTANCE '\CLK~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(67): Failed to find INSTANCE '\Chip1|next_state[1]~3\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(67): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(169): Failed to find INSTANCE '\Chip1|next_state[2]~4\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(169): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(79): Failed to find INSTANCE '\Chip1|next_state[3]~0\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(79): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(93): Failed to find INSTANCE '\Chip1|next_state[3]~1\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(93): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(215): Failed to find INSTANCE '\Chip1|next_state[3]~6\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(215): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(282): Failed to find INSTANCE '\Chip1|present_state[0]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(282): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(298): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(134): Failed to find INSTANCE '\Chip1|present_state[1]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(134): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(150): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(183): Failed to find INSTANCE '\Chip1|present_state[2]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(183): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(199): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(231): Failed to find INSTANCE '\Chip1|present_state[3]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(231): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(247): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(109): Failed to find INSTANCE '\LD~0\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(109): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(314): Failed to find INSTANCE '\Q[0]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(324): Failed to find INSTANCE '\Q[1]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(334): Failed to find INSTANCE '\Q[2]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(344): Failed to find INSTANCE '\Q[3]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(354): Failed to find INSTANCE '\TC12~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(58): Failed to find INSTANCE '\UD_L~I\'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Fatal: SDF files require Intel FPGA Edition primitive library
+#    Time: 0 ps  Iteration: 0  Instance: /counter_mod12_vhd_tst File: C:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd Line: UNKNOWN
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:13:35 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 38, Warnings: 10
+vsim -gui -sdftyp /Counter_mod12_vhd_tst/i1=C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo work_gate_level.counter_mod12_vhd_tst
+# vsim -gui -sdftyp "/Counter_mod12_vhd_tst/i1=C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo" work_gate_level.counter_mod12_vhd_tst 
+# Start time: 18:15:27 on May 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work_gate_level.counter_mod12_vhd_tst(counter_mod12_arch)
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work_gate_level.counter_mod12(hierarchical_structure)
+# Loading work_gate_level.counter_mod16(fsm_like)
+# Loading work_gate_level.quad_mux2(truth_table)
+# Loading instances from C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo
+# ** Error (suppressible): (vsim-SDF-3266) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo: Instance 'S' is not a module or architecture.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(266): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(125): Failed to find INSTANCE '\CD~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(49): Failed to find INSTANCE '\CE~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(40): Failed to find INSTANCE '\CLK~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(67): Failed to find INSTANCE '\Chip1|next_state[1]~3\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(67): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(169): Failed to find INSTANCE '\Chip1|next_state[2]~4\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(169): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(79): Failed to find INSTANCE '\Chip1|next_state[3]~0\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(79): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(93): Failed to find INSTANCE '\Chip1|next_state[3]~1\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(93): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(215): Failed to find INSTANCE '\Chip1|next_state[3]~6\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(215): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(282): Failed to find INSTANCE '\Chip1|present_state[0]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(282): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(298): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(134): Failed to find INSTANCE '\Chip1|present_state[1]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(134): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(150): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(183): Failed to find INSTANCE '\Chip1|present_state[2]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(183): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(199): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(231): Failed to find INSTANCE '\Chip1|present_state[3]\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(231): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(247): Failed to find INSTANCE 'lereg'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(109): Failed to find INSTANCE '\LD~0\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(109): Failed to find INSTANCE 'lecomb'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(314): Failed to find INSTANCE '\Q[0]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(324): Failed to find INSTANCE '\Q[1]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(334): Failed to find INSTANCE '\Q[2]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(344): Failed to find INSTANCE '\Q[3]~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(354): Failed to find INSTANCE '\TC12~I\'.
+# ** Error (suppressible): (vsim-SDF-3250) C:/CSD/P7/Counter_mod12C2/simulation/modelsim/Counter_mod12_vhd.sdo(58): Failed to find INSTANCE '\UD_L~I\'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# ** Fatal: SDF files require Intel FPGA Edition primitive library
+#    Time: 0 ps  Iteration: 0  Instance: /counter_mod12_vhd_tst File: C:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd Line: UNKNOWN
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:15:28 on May 10,2022, Elapsed time: 0:00:01
+# Errors: 37, Warnings: 1

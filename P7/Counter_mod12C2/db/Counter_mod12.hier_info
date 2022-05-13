@@ -1,0 +1,68 @@
+|Counter_mod12
+UD_L => D11.IN0
+UD_L => Counter_mod16:Chip1.UD_L
+CE => D11.IN1
+CE => Counter_mod16:Chip1.CE
+CD => Counter_mod16:Chip1.CD
+CLK => Counter_mod16:Chip1.CLK
+Q[0] << Counter_mod16:Chip1.Q[0]
+Q[1] << Counter_mod16:Chip1.Q[1]
+Q[2] << Counter_mod16:Chip1.Q[2]
+Q[3] << Counter_mod16:Chip1.Q[3]
+TC12 << LD.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter_mod12|Counter_mod16:Chip1
+CLK => present_state[0].CLK
+CLK => present_state[1].CLK
+CLK => present_state[2].CLK
+CLK => present_state[3].CLK
+CD => present_state[0].ACLR
+CD => present_state[1].ACLR
+CD => present_state[2].ACLR
+CD => present_state[3].ACLR
+LD => next_state[3].OUTPUTSELECT
+LD => next_state[2].OUTPUTSELECT
+LD => next_state[1].OUTPUTSELECT
+LD => next_state[0].OUTPUTSELECT
+CE => TC16.IN1
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+CE => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => next_state.OUTPUTSELECT
+UD_L => TC16.IN1
+UD_L => TC16.IN1
+Din[0] => next_state[0].DATAB
+Din[1] => next_state[1].DATAB
+Din[2] => next_state[2].DATAB
+Din[3] => next_state[3].DATAB
+Q[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= present_state[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+TC16 <= TC16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Counter_mod12|Quad_MUX2:Chip2
+CH0[0] => Y.DATAB
+CH0[1] => Y.DATAB
+CH0[2] => Y.DATAB
+CH0[3] => Y.DATAB
+CH1[0] => Y.DATAB
+CH1[1] => Y.DATAB
+CH1[2] => Y.DATAB
+CH1[3] => Y.DATAB
+E => Y.IN0
+E => Y.IN0
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+S => Y.IN1
+S => Y.IN1
+
+

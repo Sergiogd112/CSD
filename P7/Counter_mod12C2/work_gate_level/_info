@@ -1,0 +1,187 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CSD/P7/Counter_mod12Y
+Ecounter_mod12
+Z0 w1652198088
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z5 dC:/CSD/P7/Counter_mod12C2
+Z6 8C:/CSD/P7/Counter_mod12C2/Counter_mod12 (1).vhd
+Z7 FC:/CSD/P7/Counter_mod12C2/Counter_mod12 (1).vhd
+l0
+Z8 L16 1
+VMGRl5];RM@KLknKYkH@A93
+!s100 fFoBXfg:?hAd^L]eaz:<;1
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1652199169
+!i10b 1
+Z11 !s108 1652199169.000000
+Z12 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P7/Counter_mod12C2/Counter_mod12 (1).vhd|
+Z13 !s107 C:/CSD/P7/Counter_mod12C2/Counter_mod12 (1).vhd|
+!i113 1
+Z14 o-work work_gate_level -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Ahierarchical_structure
+R1
+R2
+R3
+R4
+DEx4 work 13 counter_mod12 0 22 MGRl5];RM@KLknKYkH@A93
+!i122 0
+l55
+L25 65
+Vz4c3jm3O7JSW?iNB[4:bf2
+!s100 P;o_4F6E?H]OaibH[[HCz0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ecounter_mod12_vhd_tst
+Z16 w1652196436
+R3
+R4
+!i122 1
+R5
+Z17 8C:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd
+Z18 FC:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd
+l0
+L31 1
+Vezi3ZZCId=OCfZO9Sk==:1
+!s100 bDGIl8Fl;>PNmL]@PaSRh3
+R9
+32
+Z19 !s110 1652199170
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd|
+Z21 !s107 C:/CSD/P7/Counter_mod12C2/Counter_mod12_tb.vhd|
+!i113 1
+R14
+R15
+Acounter_mod12_arch
+R3
+R4
+DEx4 work 21 counter_mod12_vhd_tst 0 22 ezi3ZZCId=OCfZO9Sk==:1
+!i122 1
+l58
+L33 95
+VW[QmTnbHLGFk`b[19haz]1
+!s100 :D7W8gmlJd=iY2ne]GZBj0
+R9
+32
+R19
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R14
+R15
+Ecounter_mod16
+Z22 w1652197496
+R1
+R2
+R3
+R4
+!i122 2
+R5
+Z23 8C:/CSD/P7/Counter_mod12C2/Counter_mod16.vhd
+Z24 FC:/CSD/P7/Counter_mod12C2/Counter_mod16.vhd
+l0
+R8
+V==3bfFM8HYRHCG>]4O1Wg2
+!s100 HATVkb<Jkl_SQGVOdCoYg0
+R9
+32
+R19
+!i10b 1
+Z25 !s108 1652199170.000000
+Z26 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P7/Counter_mod12C2/Counter_mod16.vhd|
+Z27 !s107 C:/CSD/P7/Counter_mod12C2/Counter_mod16.vhd|
+!i113 1
+R14
+R15
+Afsm_like
+R1
+R2
+R3
+R4
+DEx4 work 13 counter_mod16 0 22 ==3bfFM8HYRHCG>]4O1Wg2
+!i122 2
+l38
+L29 66
+V=HbN`S09Y9lhhIT0@Vi9k0
+!s100 7G;Vi0V1P_6f[QA8W=QDP0
+R9
+32
+R19
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R14
+R15
+Equad_mux2
+Z28 w1652197406
+R1
+R2
+R3
+R4
+!i122 3
+R5
+Z29 8C:/CSD/P7/Counter_mod12C2/Quad_MUX2.vhd
+Z30 FC:/CSD/P7/Counter_mod12C2/Quad_MUX2.vhd
+l0
+L13 1
+VOhOZbJjR:ldcP@:_PaJFU0
+!s100 ofd3=C]nTjOL;QCf0K9Rz0
+R9
+32
+R19
+!i10b 1
+R25
+Z31 !s90 -reportprogress|300|-work|work_gate_level|-2002|-explicit|-stats=none|C:/CSD/P7/Counter_mod12C2/Quad_MUX2.vhd|
+!s107 C:/CSD/P7/Counter_mod12C2/Quad_MUX2.vhd|
+!i113 1
+R14
+R15
+Atruth_table
+R1
+R2
+R3
+R4
+DEx4 work 9 quad_mux2 0 22 OhOZbJjR:ldcP@:_PaJFU0
+!i122 3
+l24
+L23 7
+Vz8b9fU_hJz>:KKYmHi^G=2
+!s100 `XX5CMj3bnUmlQZ`^U0mT0
+R9
+32
+R19
+!i10b 1
+R25
+R31
+Z32 !s107 C:/CSD/P7/Counter_mod12C2/Quad_MUX2.vhd|
+!i113 1
+R14
+R15

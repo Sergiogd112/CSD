@@ -1,0 +1,27 @@
+|Counter_mod12
+UD_L => future_state.OUTPUTSELECT
+UD_L => future_state.OUTPUTSELECT
+UD_L => future_state.OUTPUTSELECT
+UD_L => future_state.OUTPUTSELECT
+UD_L => TC12.IN1
+UD_L => TC12.IN1
+CE => TC12.IN1
+CE => present_state[3].ENA
+CE => present_state[2].ENA
+CE => present_state[1].ENA
+CE => present_state[0].ENA
+CD => present_state[0].ACLR
+CD => present_state[1].ACLR
+CD => present_state[2].ACLR
+CD => present_state[3].ACLR
+CLK => present_state[0].CLK
+CLK => present_state[1].CLK
+CLK => present_state[2].CLK
+CLK => present_state[3].CLK
+Q[0] <= present_state[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= present_state[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= present_state[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= present_state[3].DB_MAX_OUTPUT_PORT_TYPE
+TC12 <= TC12.DB_MAX_OUTPUT_PORT_TYPE
+
+
