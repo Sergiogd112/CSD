@@ -4,15 +4,14 @@ ENTITY Prog_Timer IS
 
     PORT (
         PC : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
-        TRG:IN STD_LOGIC;
-		  CLK, CD : IN STD_LOGIC;
+        TRG, CLK, CD : IN STD_LOGIC;
         Timer_out, ETP : OUT STD_LOGIC
 
     );
 
 END Prog_Timer;
 
-ARCHITECTURE hierarchical_structure OF Prog_Timer IS
+ARCHITECTURE hierarchical_structure OF Datapath IS
 
     COMPONENT Datapath IS
 
@@ -41,7 +40,7 @@ ARCHITECTURE hierarchical_structure OF Prog_Timer IS
     END COMPONENT;
 
     SIGNAL CNT_Q, PC_R : STD_LOGIC_VECTOR(23 DOWNTO 0);
-    SIGNAL TOFs, LD_PCs, RSTs, CNT_Es : STD_LOGIC;
+    SIGNAL TOF, LD_PC, RST, CNT_E : STD_LOGIC;
 
 BEGIN
     Control_unit_1 : Control_unit
@@ -49,21 +48,19 @@ BEGIN
         CLK => CLK,
         CD => CD,
         TRG => TRG,
-        TOF => TOFs,
-        CNT_E => CNT_Es,
-        CLR_C => RSTs,
-        LD_R => LD_PCs,
-        Timer_out=> Timer_out,
-        ETP=> ETP
+        TOF => TOF,
+        CNT_E => CNT_E,
+        CLR_C => RST,
+        LD_R => LD_PC
     );
     Datapath_1 : Datapath
     PORT MAP(
         CLK => CLK,
         CD => CD,
-        CNT_E => CNT_Es,
-        RST => RSTs,
-        LD_PC => LD_PCs,
+        CNT_E => CNT_E,
+        RST => RST,
+        LD_PC => LD_PC,
         PC => PC,
-        TOF => TOFs
+        TOF => TOF
     );
 END hierarchical_structure;

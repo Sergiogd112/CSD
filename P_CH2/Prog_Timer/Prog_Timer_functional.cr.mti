@@ -1,0 +1,93 @@
+C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Comp_4bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_4bit
+-- Compiling architecture hierarchical_structure of Comp_4bit
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Data_reg_24bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Data_reg_24bit
+-- Compiling architecture FSM_like of Data_reg_24bit
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Datapath_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Datapath_vhd_tst
+-- Compiling architecture Datapath_arch of Datapath_vhd_tst
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Comp_1bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_1bit
+-- Compiling architecture algorithm of Comp_1bit
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Comp_9bit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_9bit_vhd_tst
+-- Compiling architecture Comp_9bit_arch of Comp_9bit_vhd_tst
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Comp_24bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Comp_24bit
+-- Compiling architecture hierarchical_structure of Comp_24bit
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Counter_16M.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Counter_16M
+-- Compiling architecture FSM_like of Counter_16M
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Control_unit_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Control_unit_vhd_tst
+-- Compiling architecture Control_unit_arch of Control_unit_vhd_tst
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Datapath.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Datapath
+-- Compiling architecture hierarchical_structure of Datapath
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Control_unit
+-- Compiling architecture FSM_like of Control_unit
+
+} {} {}} C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd {1 {vcom -work work_functional -2002 -explicit -stats=none C:/CSD/P_CH2/Prog_Timer/Prog_Timer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Prog_Timer
+-- Compiling architecture hierarchical_structure of Prog_Timer
+
+} {} {}}
