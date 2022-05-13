@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Elight_control
+Z0 w1651594207
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z5 dC:/CSD/P6/Light_Control
+Z6 8C:/CSD/P6/Light_Control/Light_Control.vhd
+Z7 FC:/CSD/P6/Light_Control/Light_Control.vhd
+l0
+L17 1
+V^XE^Gzc>U[3Fh^;GC;E8W3
+!s100 3V@[RS>:2;H>?1]47nHRL1
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1651594945
+!i10b 1
+Z10 !s108 1651594945.000000
+Z11 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P6/Light_Control/Light_Control.vhd|
+Z12 !s107 C:/CSD/P6/Light_Control/Light_Control.vhd|
+!i113 1
+Z13 o-work work_functional -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Afsm_like
+R1
+R2
+R3
+R4
+DEx4 work 13 light_control 0 22 ^XE^Gzc>U[3Fh^;GC;E8W3
+!i122 0
+l43
+L25 115
+VYOGTl^C9K1f5O>:BR5Uez2
+!s100 ^k5]L5S5lUAYk2FN29h7Z3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Elight_control_tb
+Z15 w1651594880
+R3
+R4
+!i122 1
+R5
+Z16 8C:/CSD/P6/Light_Control/Light_Control_tb.vhd
+Z17 FC:/CSD/P6/Light_Control/Light_Control_tb.vhd
+l0
+L35 1
+V8K0IdEHh:GFZ[I03MW6l;3
+!s100 j68X6GNU]DN3ml8f3;k_W1
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work_functional|-2002|-explicit|-stats=none|C:/CSD/P6/Light_Control/Light_Control_tb.vhd|
+!s107 C:/CSD/P6/Light_Control/Light_Control_tb.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 16 light_control_tb 0 22 8K0IdEHh:GFZ[I03MW6l;3
+!i122 1
+l63
+L38 94
+V`_YUeXDEcgbm>Sn3?D6nS1
+!s100 5aC443TnPVAZJ4]?Kk[ZC3
+R8
+32
+R9
+!i10b 1
+R10
+R18
+Z19 !s107 C:/CSD/P6/Light_Control/Light_Control_tb.vhd|
+!i113 1
+R13
+R14
