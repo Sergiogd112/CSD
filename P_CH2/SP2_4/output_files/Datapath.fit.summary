@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri May 13 10:31:47 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Datapath
+Top-level Entity Name : Datapath
+Family : MAX II
+Device : EPM2210F324C3
+Timing Models : Final
+Total logic elements : 61 / 2,210 ( 3 % )
+Total pins : 30 / 272 ( 11 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
