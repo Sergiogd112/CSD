@@ -186,26 +186,31 @@ void init_system(void)
 
     TRISA = 0b00110000; // Inputs: RA5 --> A(1), RA4 --> A(0)
                         // Output:  RA3 --> EQ
-
-    PORTB = 0x00; // Reset all Flip-Flops at PORTB
-    LATB = 0x00;
-    TRISB = 0b11111000; // Inputs: RB7 --> B(3), RB6 --> B(2),
-                        // Inputs: RB5 --> Gi, RB4 --> Ei),
-                        // Inputs: RB3 --> Li
-                        // Output: RB2 --> GT
-    PORTC = 0x00; // Reset all Flip-Flops at PORTB
-    LATB = 0x00;
-    TRISB = 0b11110000; // Inputs: RB7 --> B(3), RB6 --> B(2),
-                        // Inputs: RB5 --> Gi, RB4 --> Ei),
-                        // Inputs: RB3 --> Li
-                        // Output: RB2 --> GT
-    PORTD = 0x00; // Reset all Flip-Flops at PORTB
+    PORTA = 0x00;       // Reset all Flip-Flops at PORTB
     LATB = 0x00;
     TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
                         // Inputs: RB5 --> Gi, RB4 --> Ei),
                         // Inputs: RB3 --> Li
                         // Output: RB2 --> GT
-    GIE = 0; // No interrupts in this  simple application
+    PORTB = 0x00;       // Reset all Flip-Flops at PORTB
+    LATB = 0x00;
+    TRISB = 0b11111000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+                        // Inputs: RB5 --> Gi, RB4 --> Ei),
+                        // Inputs: RB3 --> Li
+                        // Output: RB2 --> GT
+    PORTC = 0x00;       // Reset all Flip-Flops at PORTB
+    LATB = 0x00;
+    TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+                        // Inputs: RB5 --> Gi, RB4 --> Ei),
+                        // Inputs: RB3 --> Li
+                        // Output: RB2 --> GT
+    PORTD = 0x00;       // Reset all Flip-Flops at PORTB
+    LATB = 0x00;
+    TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+                        // Inputs: RB5 --> Gi, RB4 --> Ei),
+                        // Inputs: RB3 --> Li
+                        // Output: RB2 --> GT
+    GIE = 0;            // No interrupts in this  simple application
 }
 
 /* =============================================================================
@@ -231,12 +236,14 @@ void read_inputs(void)
     var_buf = var_buf & 0b00000001;
     var_B = var_buf | var_buf2 | var_buf3;
     // Read PORTC and save A(3..2)
-    var_buf = PORTC & 0b11100000;
-    var_buf2 = var_buf >> 4;     // A(3..2)
-    var_buf3 = var_buf & 0b01000000;
+    var_buf = PORTC & 0b11000000;
+    var_buf2 = var_buf & 0b11000000;
+    var_buf2 = var_buf2 >> 4;
+    var_buf2 = PORTA & 0b10000001;
+    var_buf3 = var_buf & 0b10000000;
     var_buf3 = var_buf3 >> 6;
-    var_buf = var_buf & 0b10000000;
-    Var_A = var_buf | var_buf2; // save A
+    var_buf = var_buf & 0b00000001;
+    var_A = var_buf | var_buf2 | var_buf3; // A(3..2)
 }
 
 /* =============================================================================
@@ -249,7 +256,24 @@ void read_inputs(void)
 void truth_table(void)
 {
     // Run the truth table only if there is no input code errors
-    // if (Var_Gi)
+    if (Var_Gi & ^Var_Ei & ^ Var_Li)
+    {
+        Var_GT = 1;
+        Var_EQ = 0;
+        Var_LT = 0;
+    }
+    else if (Var_Li & ^Var_Ei & ^ Var_Gi)
+    {
+        Var_GT = 0;
+        Var_EQ = 0;
+        Var_LT = 1;
+    }
+    else if (^Var_Gi & Var_Ei & ^ Var_Li)
+    {
+        Var_GT = Var_GT > Var_B;
+        Var_EQ = Var_GT == Var_B;
+        Var_LT = Var_A < Var_B;
+    }
 }
 
 /* =============================================================================
