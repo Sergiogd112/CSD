@@ -50,7 +50,7 @@ BEGIN
         CD=>CD,
         LD=>RST,
         UD_L=>'1',
-        CE=>CNT_E,
+p        CE=>CNT_E,
         Q=>CNT_Q,
         Din=>"000000000000000000000000"
     );
