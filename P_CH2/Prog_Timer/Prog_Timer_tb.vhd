@@ -49,7 +49,7 @@ ARCHITECTURE Prog_Timer_arch OF Prog_Timer_vhd_tst IS
 			TRG : IN STD_LOGIC
 		);
 	END COMPONENT;
-CONSTANT CLK_period : TIME := 62.5 ns; -- 16 MHz
+	CONSTANT CLK_period : TIME := 62.5 ns; -- 16 MHz
 	-- ***************************************************************************
 BEGIN
 	i1 : Prog_Timer
@@ -80,7 +80,7 @@ BEGIN
 
 		CD <= '0';
 		TRG <= '0';
-		PC<="000000000000000000000000";
+		PC <= "000000000000000000000000";
 
 		WAIT FOR CLK_period * 3.53;
 
@@ -89,7 +89,7 @@ BEGIN
 		WAIT FOR CLK_period * 2.23;
 		CD <= '0';
 		WAIT FOR CLK_period * 6.78;
-		PC <= "000000000000100000000000";
+		PC <= "000000000000010000000000";
 		WAIT FOR CLK_period * 2.23;
 		-- Trigger pulse:
 		TRG <= '1';

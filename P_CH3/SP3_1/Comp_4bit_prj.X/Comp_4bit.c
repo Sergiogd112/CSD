@@ -25,8 +25,8 @@ https://digsys.upc.edu/csd/plan/pla/2021Q2/pla.html#SP3_1
    -------------------------------------------------------------------------- */
 void init_system(void);
 void read_inputs(void);
-
-void write_outputs(void);
+void truth_table(void);
+vkoid write_outputs(void);
 
 /* -----------------------------------
     Global variables
@@ -59,6 +59,7 @@ void main(void)
     { /* loop forever reading inputs and calculating outputs*/
         read_inputs();
         truth_table();
+        write_outputs();
     }
 }
 
@@ -234,7 +235,7 @@ void read_inputs(void)
     var_buf3 = var_buf & 0b10000000;
     var_buf3 = var_buf3 >> 6;
     var_buf = var_buf & 0b00000001;
-    var_B = var_buf | var_buf2 | var_buf3;
+    Var_B = var_buf | var_buf2 | var_buf3;
     // Read PORTC and save A(3..2)
     var_buf = PORTC & 0b11000000;
     var_buf2 = var_buf & 0b11000000;
@@ -243,7 +244,7 @@ void read_inputs(void)
     var_buf3 = var_buf & 0b10000000;
     var_buf3 = var_buf3 >> 6;
     var_buf = var_buf & 0b00000001;
-    var_A = var_buf | var_buf2 | var_buf3; // A(3..2)
+    Var_A = var_buf | var_buf2 | var_buf3; // A(3..2)
 }
 
 /* =============================================================================
@@ -256,23 +257,23 @@ void read_inputs(void)
 void truth_table(void)
 {
     // Run the truth table only if there is no input code errors
-    if (Var_Gi & ^Var_Ei & ^ Var_Li)
+    if (Var_A > Var_B)
     {
-        Var_GT = 1;
-        Var_EQ = 0;
-        Var_LT = 0;
+        Var_GT = '1';
+        Var_EQ = '0';
+        Var_LT = '0';
     }
-    else if (Var_Li & ^Var_Ei & ^ Var_Gi)
+    else if (Var_A < Var_B)
     {
-        Var_GT = 0;
-        Var_EQ = 0;
-        Var_LT = 1;
+        Var_GT = '0';
+        Var_EQ = '0';
+        Var_LT = '1';
     }
-    else if (^Var_Gi & Var_Ei & ^ Var_Li)
+    else if (Var_A == Var_B)
     {
-        Var_GT = Var_GT > Var_B;
-        Var_EQ = Var_GT == Var_B;
-        Var_LT = Var_A < Var_B;
+        Var_GT = Var_Gi;
+        Var_EQ = Var_Ei;
+        Var_LT = Var_Li;
     }
 }
 
@@ -285,7 +286,15 @@ void write_outputs(void)
     // WWrite GT
     // For not disturbing the bits of no interest, let's read all the port
     var_buf = PORTB & 0b11111011;
-    var_buf2 = Var_GT << 2;
+    var_buf2 = (Var_GT) << 2;
     var_buf2 = var_buf2 | var_buf;
     PORTB = var_buf2; // Write in a single assembly operation
+    var_buf = PORTA & 0b11110111;
+    var_buf2 = Var_EQ << 3;
+    var_buf2 = var_buf2 | var_buf;
+    PORTA = var_buf2; // Write in a single assembly operation
+    var_buf = PORTC & 0b11011111;
+    var_buf2 = Var_LT << 5;
+    var_buf2 = var_buf2 | var_buf;
+    PORTC = var_buf2; // Write in a single assembly operation
 }

@@ -5,10 +5,10 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.35\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Dual_MUX_4_prj.X.production.sym \
   --cmf=dist/default/production\Dual_MUX_4_prj.X.production.cmf -z \
-  -Q18F4520 -oC:\Users\sergi\AppData\Local\Temp\xcAsi3o.4 \
+  -Q18F4520 -oC:\Users\sergi\AppData\Local\Temp\xcAsia8.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Dual_MUX_4_prj.X.production.map \
-  --md=C:\Users\sergi\AppData\Local\Temp\xcAsi3o.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\sergi\AppData\Local\Temp\xcAsia8.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\sergi\AppData\Local\Temp\xcAsi3o.o \
+  C:\Users\sergi\AppData\Local\Temp\xcAsia8.o \
   dist/default/production\Dual_MUX_4_prj.X.production.o 
 
 Object code version is 3.11
@@ -33,7 +33,7 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\sergi\AppData\Local\Temp\xcAsi3o.o
+C:\Users\sergi\AppData\Local\Temp\xcAsia8.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0

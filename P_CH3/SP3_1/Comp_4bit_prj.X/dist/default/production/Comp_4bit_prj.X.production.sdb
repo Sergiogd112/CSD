@@ -1,0 +1,106 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"55 C:\CSD\P_CH3\SP3_1\Comp_4bit_prj.X\Comp_4bit.c
+[v _main main `(v  1 e 1 0 ]
+"73
+[v _init_system init_system `(v  1 e 1 0 ]
+"222
+[v _read_inputs read_inputs `(v  1 e 1 0 ]
+"257
+[v _truth_table truth_table `(v  1 e 1 0 ]
+"284
+[v _write_outputs write_outputs `(v  1 e 1 0 ]
+"53 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"272
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"451
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"633
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"978
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"1090
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1478
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1700
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4691
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"7416
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"37 C:\CSD\P_CH3\SP3_1\Comp_4bit_prj.X\Comp_4bit.c
+[v _Var_A Var_A `uc  1 s 1 Var_A ]
+"38
+[v _Var_B Var_B `uc  1 s 1 Var_B ]
+"40
+[v _Var_Gi Var_Gi `uc  1 s 1 Var_Gi ]
+"41
+[v _Var_Ei Var_Ei `uc  1 s 1 Var_Ei ]
+"42
+[v _Var_Li Var_Li `uc  1 s 1 Var_Li ]
+"44
+[v _Var_GT Var_GT `uc  1 s 1 Var_GT ]
+"45
+[v _Var_EQ Var_EQ `uc  1 s 1 Var_EQ ]
+"46
+[v _Var_LT Var_LT `uc  1 s 1 Var_LT ]
+"48
+[v _var_buf var_buf `uc  1 s 1 var_buf ]
+"49
+[v _var_buf2 var_buf2 `uc  1 s 1 var_buf2 ]
+"50
+[v _var_buf3 var_buf3 `uc  1 s 1 var_buf3 ]
+"55
+[v _main main `(v  1 e 1 0 ]
+{
+"64
+} 0
+"284
+[v _write_outputs write_outputs `(v  1 e 1 0 ]
+{
+"300
+} 0
+"257
+[v _truth_table truth_table `(v  1 e 1 0 ]
+{
+"278
+} 0
+"222
+[v _read_inputs read_inputs `(v  1 e 1 0 ]
+{
+"248
+} 0
+"73
+[v _init_system init_system `(v  1 e 1 0 ]
+{
+"215
+} 0
