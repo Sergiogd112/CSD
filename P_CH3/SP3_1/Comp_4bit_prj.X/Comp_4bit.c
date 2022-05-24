@@ -26,7 +26,7 @@ https://digsys.upc.edu/csd/plan/pla/2021Q2/pla.html#SP3_1
 void init_system(void);
 void read_inputs(void);
 void truth_table(void);
-vkoid write_outputs(void);
+void write_outputs(void);
 
 /* -----------------------------------
     Global variables
@@ -48,6 +48,8 @@ static char Var_LT;
 static char var_buf;  // An 8-bit buffer where to store partial results
 static char var_buf2; // An 8-bit buffer where to store partial results
 static char var_buf3; // An 8-bit buffer where to store partial results
+static char var_buf4; // An 8-bit buffer where to store partial results
+static char var_buf5; // An 8-bit buffer where to store partial results
 
 /* =============================================================================
         Main function
@@ -185,29 +187,29 @@ void init_system(void)
      * can be also defined as analogue inputs*/
     ADCON1 = 0x0F;
 
-    TRISA = 0b00110000; // Inputs: RA5 --> A(1), RA4 --> A(0)
+    TRISA = 0b11111111; // Inputs: RA5 --> A(1), RA4 --> A(0)
                         // Output:  RA3 --> EQ
     PORTA = 0x00;       // Reset all Flip-Flops at PORTB
     LATB = 0x00;
-    TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+    TRISB = 0b11111111; // Inputs: RB7 --> B(3), RB6 --> B(2),
                         // Inputs: RB5 --> Gi, RB4 --> Ei),
                         // Inputs: RB3 --> Li
                         // Output: RB2 --> GT
     PORTB = 0x00;       // Reset all Flip-Flops at PORTB
     LATB = 0x00;
-    TRISB = 0b11111000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+    TRISB = 0b11111111; // Inputs: RB7 --> B(3), RB6 --> B(2),
                         // Inputs: RB5 --> Gi, RB4 --> Ei),
                         // Inputs: RB3 --> Li
                         // Output: RB2 --> GT
     PORTC = 0x00;       // Reset all Flip-Flops at PORTB
     LATB = 0x00;
-    TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+    TRISB = 0b00011111; // Inputs: RB7 --> B(3), RB6 --> B(2),
                         // Inputs: RB5 --> Gi, RB4 --> Ei),
                         // Inputs: RB3 --> Li
                         // Output: RB2 --> GT
     PORTD = 0x00;       // Reset all Flip-Flops at PORTB
     LATB = 0x00;
-    TRISB = 0b11000000; // Inputs: RB7 --> B(3), RB6 --> B(2),
+    TRISB = 0b11111111; // Inputs: RB7 --> B(3), RB6 --> B(2),
                         // Inputs: RB5 --> Gi, RB4 --> Ei),
                         // Inputs: RB3 --> Li
                         // Output: RB2 --> GT
@@ -221,30 +223,16 @@ void init_system(void)
   =========================================================================== */
 void read_inputs(void)
 {
-    // Read PORTB and save Gi, Ei, Li and B(3..2)
-    var_buf = PORTB & 0b11111000;
-    var_buf2 = var_buf & 0b00100000;
-    Var_Gi = var_buf2 >> 5;
-    var_buf2 = var_buf & 0b00010000;
-    Var_Ei = var_buf2 >> 4;
-    var_buf2 = var_buf & 0b00001000;
-    Var_Li = var_buf2 >> 3;
-    var_buf2 = var_buf & 0b11000000;
-    var_buf2 = var_buf2 >> 4;
-    var_buf2 = PORTD & 0b10000001;
-    var_buf3 = var_buf & 0b10000000;
-    var_buf3 = var_buf3 >> 6;
-    var_buf = var_buf & 0b00000001;
-    Var_B = var_buf | var_buf2 | var_buf3;
-    // Read PORTC and save A(3..2)
-    var_buf = PORTC & 0b11000000;
-    var_buf2 = var_buf & 0b11000000;
-    var_buf2 = var_buf2 >> 4;
-    var_buf2 = PORTA & 0b10000001;
-    var_buf3 = var_buf & 0b10000000;
-    var_buf3 = var_buf3 >> 6;
-    var_buf = var_buf & 0b00000001;
-    Var_A = var_buf | var_buf2 | var_buf3; // A(3..2)
+    var_buf = PORTB & 0b00001111;
+    Var_B = var_buf;
+    Var_A = PORTA & 0b00001111;
+    var_buf = PORTC & 0b00000111;
+    var_buf2 = var_buf & 0b00000001;
+    Var_Li = var_buf2;
+    var_buf2 = var_buf & 0b00000010;
+    Var_Ei = var_buf2 >> 1;
+    var_buf2 = var_buf & 0b00000100;
+    Var_Gi = var_buf2 >> 2;
 }
 
 /* =============================================================================
@@ -259,15 +247,15 @@ void truth_table(void)
     // Run the truth table only if there is no input code errors
     if (Var_A > Var_B)
     {
-        Var_GT = '1';
-        Var_EQ = '0';
-        Var_LT = '0';
+        Var_GT = 0b00000001;
+        Var_EQ = 0b00000000;
+        Var_LT = 0b00000001;
     }
     else if (Var_A < Var_B)
     {
-        Var_GT = '0';
-        Var_EQ = '0';
-        Var_LT = '1';
+        Var_GT = 0b00000000;
+        Var_EQ = 0b00000000;
+        Var_LT = 0b00000001;
     }
     else if (Var_A == Var_B)
     {
@@ -285,16 +273,10 @@ void write_outputs(void)
 {
     // WWrite GT
     // For not disturbing the bits of no interest, let's read all the port
-    var_buf = PORTB & 0b11111011;
-    var_buf2 = (Var_GT) << 2;
-    var_buf2 = var_buf2 | var_buf;
-    PORTB = var_buf2; // Write in a single assembly operation
-    var_buf = PORTA & 0b11110111;
-    var_buf2 = Var_EQ << 3;
-    var_buf2 = var_buf2 | var_buf;
-    PORTA = var_buf2; // Write in a single assembly operation
-    var_buf = PORTC & 0b11011111;
-    var_buf2 = Var_LT << 5;
-    var_buf2 = var_buf2 | var_buf;
-    PORTC = var_buf2; // Write in a single assembly operation
+    var_buf = Var_LT << 5;
+    var_buf2 = Var_EQ << 6;
+    var_buf3 = Var_GT << 7;
+    var_buf4 = PORTC & 0b00011111;
+    var_buf5 = (var_buf3 | var_buf2 | var_buf | (var_buf4));
+    PORTC = var_buf5;
 }

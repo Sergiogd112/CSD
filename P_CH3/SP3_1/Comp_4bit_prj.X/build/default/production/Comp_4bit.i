@@ -4639,6 +4639,8 @@ static char Var_LT;
 static char var_buf;
 static char var_buf2;
 static char var_buf3;
+static char var_buf4;
+static char var_buf5;
 
 
 
@@ -4653,7 +4655,7 @@ void main(void)
         write_outputs();
     }
 }
-# 73 "Comp_4bit.c"
+# 75 "Comp_4bit.c"
 void init_system(void)
 {
 
@@ -4769,29 +4771,29 @@ void init_system(void)
 
     ADCON1 = 0x0F;
 
-    TRISA = 0b00110000;
+    TRISA = 0b11111111;
 
     PORTA = 0x00;
     LATB = 0x00;
-    TRISB = 0b11000000;
+    TRISB = 0b11111111;
 
 
 
     PORTB = 0x00;
     LATB = 0x00;
-    TRISB = 0b11111000;
+    TRISB = 0b11111111;
 
 
 
     PORTC = 0x00;
     LATB = 0x00;
-    TRISB = 0b11000000;
+    TRISB = 0b00011111;
 
 
 
     PORTD = 0x00;
     LATB = 0x00;
-    TRISB = 0b11000000;
+    TRISB = 0b11111111;
 
 
 
@@ -4805,46 +4807,32 @@ void init_system(void)
 
 void read_inputs(void)
 {
-
-    var_buf = PORTB & 0b11111000;
-    var_buf2 = var_buf & 0b00100000;
-    Var_Gi = var_buf2 >> 5;
-    var_buf2 = var_buf & 0b00010000;
-    Var_Ei = var_buf2 >> 4;
-    var_buf2 = var_buf & 0b00001000;
-    Var_Li = var_buf2 >> 3;
-    var_buf2 = var_buf & 0b11000000;
-    var_buf2 = var_buf2 >> 4;
-    var_buf2 = PORTD & 0b10000001;
-    var_buf3 = var_buf & 0b10000000;
-    var_buf3 = var_buf3 >> 6;
-    var_buf = var_buf & 0b00000001;
-    Var_B = var_buf | var_buf2 | var_buf3;
-
-    var_buf = PORTC & 0b11000000;
-    var_buf2 = var_buf & 0b11000000;
-    var_buf2 = var_buf2 >> 4;
-    var_buf2 = PORTA & 0b10000001;
-    var_buf3 = var_buf & 0b10000000;
-    var_buf3 = var_buf3 >> 6;
-    var_buf = var_buf & 0b00000001;
-    Var_A = var_buf | var_buf2 | var_buf3;
+    var_buf = PORTB & 0b00001111;
+    Var_B = var_buf;
+    Var_A = PORTA & 0b00001111;
+    var_buf = PORTC & 0b00000111;
+    var_buf2 = var_buf & 0b00000001;
+    Var_Li = var_buf2;
+    var_buf2 = var_buf & 0b00000010;
+    Var_Ei = var_buf2 >> 1;
+    var_buf2 = var_buf & 0b00000100;
+    Var_Gi = var_buf2 >> 2;
 }
-# 257 "Comp_4bit.c"
+# 245 "Comp_4bit.c"
 void truth_table(void)
 {
 
     if (Var_A > Var_B)
     {
-        Var_GT = '1';
-        Var_EQ = '0';
-        Var_LT = '0';
+        Var_GT = 0b00000001;
+        Var_EQ = 0b00000000;
+        Var_LT = 0b00000001;
     }
     else if (Var_A < Var_B)
     {
-        Var_GT = '0';
-        Var_EQ = '0';
-        Var_LT = '1';
+        Var_GT = 0b00000000;
+        Var_EQ = 0b00000000;
+        Var_LT = 0b00000001;
     }
     else if (Var_A == Var_B)
     {
@@ -4862,16 +4850,10 @@ void write_outputs(void)
 {
 
 
-    var_buf = PORTB & 0b11111011;
-    var_buf2 = (Var_GT) << 2;
-    var_buf2 = var_buf2 | var_buf;
-    PORTB = var_buf2;
-    var_buf = PORTA & 0b11110111;
-    var_buf2 = Var_EQ << 3;
-    var_buf2 = var_buf2 | var_buf;
-    PORTA = var_buf2;
-    var_buf = PORTC & 0b11011111;
-    var_buf2 = Var_LT << 5;
-    var_buf2 = var_buf2 | var_buf;
-    PORTC = var_buf2;
+    var_buf = Var_LT << 5;
+    var_buf2 = Var_EQ << 6;
+    var_buf3 = Var_GT << 7;
+    var_buf4 = PORTC & 0b00011111;
+    var_buf5 = (var_buf3 | var_buf2 | var_buf | (var_buf4));
+    PORTC = var_buf5;
 }

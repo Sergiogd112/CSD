@@ -10,11 +10,11 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 3h		(dist/default/production\Comp_4bit_prj.X.production.hex)
-  7E58h - 7FFFh		(dist/default/production\Comp_4bit_prj.X.production.hex)
+  7ECEh - 7FFFh		(dist/default/production\Comp_4bit_prj.X.production.hex)
   200000h - 200007h		(dist/default/production\Comp_4bit_prj.X.production.hex)
   300000h - 30000Dh		(dist/default/production\Comp_4bit_prj.X.production.hex)
  Unused ranges:
-  4h - 7E57h
+  4h - 7ECDh
   8000h - 1FFFFFh
   200008h - 2FFFFFh
 
@@ -27,14 +27,7 @@
 ----------------------------------------------------------
 00000000 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
-00007E50 | -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1
-00007E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007E90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007EA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007EB0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00007EC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00007EC0 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1
 00007ED0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007EE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007EF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

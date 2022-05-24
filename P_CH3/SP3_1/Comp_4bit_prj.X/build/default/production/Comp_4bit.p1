@@ -2,7 +2,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
 "26 Comp_4bit.c
 [; ;Comp_4bit.c: 26: void init_system(void);
-[; ;Comp_4bit.c: 26:     TRISB = 0b11000000;
+[; ;Comp_4bit.c: 26:     TRISB = 0b00011111;
 [v _init_system `(v ~T0 @X0 0 ef ]
 "27
 [; ;Comp_4bit.c: 27: void read_inputs(void);
@@ -490,349 +490,305 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Var_EQ `uc ~T0 @X0 1 s ]
 "46
 [; ;Comp_4bit.c: 46: static char Var_LT;
-[; ;Comp_4bit.c: 46: 
+[; ;Comp_4bit.c: 46:     var_buf = PORTB & 0b00001111;
 [v _Var_LT `uc ~T0 @X0 1 s ]
 "48
 [; ;Comp_4bit.c: 48: static char var_buf;
-[; ;Comp_4bit.c: 48:     var_buf2 = var_buf & 0b00100000;
+[; ;Comp_4bit.c: 48:     Var_A = PORTA & 0b00001111;
 [v _var_buf `uc ~T0 @X0 1 s ]
 "49
 [; ;Comp_4bit.c: 49: static char var_buf2;
-[; ;Comp_4bit.c: 49:     Var_Gi = var_buf2 >> 5;
+[; ;Comp_4bit.c: 49:     var_buf = PORTC & 0b00000111;
 [v _var_buf2 `uc ~T0 @X0 1 s ]
 "50
 [; ;Comp_4bit.c: 50: static char var_buf3;
-[; ;Comp_4bit.c: 50:     var_buf2 = var_buf & 0b00010000;
+[; ;Comp_4bit.c: 50:     var_buf2 = var_buf & 0b00000001;
 [v _var_buf3 `uc ~T0 @X0 1 s ]
+"51
+[; ;Comp_4bit.c: 51: static char var_buf4;
+[; ;Comp_4bit.c: 51:     Var_Li = var_buf2;
+[v _var_buf4 `uc ~T0 @X0 1 s ]
+"52
+[; ;Comp_4bit.c: 52: static char var_buf5;
+[; ;Comp_4bit.c: 52:     var_buf2 = var_buf & 0b00000010;
+[v _var_buf5 `uc ~T0 @X0 1 s ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"55
-[; ;Comp_4bit.c: 55: void main(void)
-[; ;Comp_4bit.c: 55:     var_buf2 = var_buf2 >> 4;
+"57
+[; ;Comp_4bit.c: 57: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"56
-[; ;Comp_4bit.c: 56: {
-[; ;Comp_4bit.c: 56:     var_buf2 = PORTD & 0b10000001;
+"58
+[; ;Comp_4bit.c: 58: {
 {
 [e :U _main ]
 [f ]
-"57
-[; ;Comp_4bit.c: 57:     init_system();
-[; ;Comp_4bit.c: 57:     var_buf3 = var_buf & 0b10000000;
-[e ( _init_system ..  ]
-"58
-[; ;Comp_4bit.c: 58:     while (1)
-[; ;Comp_4bit.c: 58:     var_buf3 = var_buf3 >> 6;
-[e :U 283 ]
 "59
-[; ;Comp_4bit.c: 59:     {
-[; ;Comp_4bit.c: 59:     var_buf = var_buf & 0b00000001;
-{
+[; ;Comp_4bit.c: 59:     init_system();
+[e ( _init_system ..  ]
 "60
-[; ;Comp_4bit.c: 60:         read_inputs();
-[; ;Comp_4bit.c: 60:     Var_B = var_buf | var_buf2 | var_buf3;
-[e ( _read_inputs ..  ]
+[; ;Comp_4bit.c: 60:     while (1)
+[e :U 283 ]
 "61
-[; ;Comp_4bit.c: 61:         truth_table();
-[; ;Comp_4bit.c: 61: 
-[e ( _truth_table ..  ]
+[; ;Comp_4bit.c: 61:     {
+{
 "62
-[; ;Comp_4bit.c: 62:         write_outputs();
-[; ;Comp_4bit.c: 62:     var_buf = PORTC & 0b11000000;
-[e ( _write_outputs ..  ]
+[; ;Comp_4bit.c: 62:         read_inputs();
+[e ( _read_inputs ..  ]
 "63
-[; ;Comp_4bit.c: 63:     }
-[; ;Comp_4bit.c: 63:     var_buf2 = var_buf & 0b11000000;
+[; ;Comp_4bit.c: 63:         truth_table();
+[e ( _truth_table ..  ]
+"64
+[; ;Comp_4bit.c: 64:         write_outputs();
+[e ( _write_outputs ..  ]
+"65
+[; ;Comp_4bit.c: 65:     }
 }
 [e :U 282 ]
 [e $U 283  ]
 [e :U 284 ]
-"64
-[; ;Comp_4bit.c: 64: }
-[; ;Comp_4bit.c: 64:     var_buf2 = var_buf2 >> 4;
+"66
+[; ;Comp_4bit.c: 66: }
 [e :UE 281 ]
 }
-"73
-[; ;Comp_4bit.c: 73: void init_system(void)
+"75
+[; ;Comp_4bit.c: 75: void init_system(void)
 [v _init_system `(v ~T0 @X0 1 ef ]
-"74
-[; ;Comp_4bit.c: 74: {
+"76
+[; ;Comp_4bit.c: 76: {
 {
 [e :U _init_system ]
 [f ]
-"182
+"184
 [e = _PORTA -> -> 0 `i `uc ]
-"183
+"185
 [e = _LATA -> -> 0 `i `uc ]
-"186
-[e = _ADCON1 -> -> 15 `i `uc ]
 "188
-[e = _TRISA -> -> 48 `i `uc ]
+[e = _ADCON1 -> -> 15 `i `uc ]
 "190
-[e = _PORTA -> -> 0 `i `uc ]
-"191
-[e = _LATB -> -> 0 `i `uc ]
+[e = _TRISA -> -> 255 `i `uc ]
 "192
-[e = _TRISB -> -> 192 `i `uc ]
-"196
-[e = _PORTB -> -> 0 `i `uc ]
-"197
+[e = _PORTA -> -> 0 `i `uc ]
+"193
 [e = _LATB -> -> 0 `i `uc ]
+"194
+[e = _TRISB -> -> 255 `i `uc ]
 "198
-[e = _TRISB -> -> 248 `i `uc ]
-"202
-[e = _PORTC -> -> 0 `i `uc ]
-"203
+[e = _PORTB -> -> 0 `i `uc ]
+"199
 [e = _LATB -> -> 0 `i `uc ]
+"200
+[e = _TRISB -> -> 255 `i `uc ]
 "204
-[e = _TRISB -> -> 192 `i `uc ]
-"208
-[e = _PORTD -> -> 0 `i `uc ]
-"209
+[e = _PORTC -> -> 0 `i `uc ]
+"205
 [e = _LATB -> -> 0 `i `uc ]
+"206
+[e = _TRISB -> -> 31 `i `uc ]
 "210
-[e = _TRISB -> -> 192 `i `uc ]
-"214
+[e = _PORTD -> -> 0 `i `uc ]
+"211
+[e = _LATB -> -> 0 `i `uc ]
+"212
+[e = _TRISB -> -> 255 `i `uc ]
+"216
 [e = _GIE -> -> 0 `i `b ]
-"215
+"217
 [e :UE 285 ]
 }
-"83
+"85
 [p x OSC  =  XT  ]
-"84
-[p x FCMEN  =  OFF ]
 "86
+[p x FCMEN  =  OFF ]
+"88
 [p x IESO  =  OFF ]
-"90
+"92
 [p x PWRT  =  ON  ]
-"91
+"93
 [p x BOREN  =  SBORDIS ]
-"94
+"96
 [p x BORV  =  3  ]
-"97
-[p x WDT  =  OFF ]
 "99
+[p x WDT  =  OFF ]
+"101
 [p x WDTPS  =  32768 ]
-"103
-[p x CCP2MX  =  PORTC ]
 "105
+[p x CCP2MX  =  PORTC ]
+"107
 [p x PBADEN  =  OFF ]
-"108
+"110
 [p x LPT1OSC  =  OFF ]
-"111
+"113
 [p x MCLRE  =  ON ]
-"115
-[p x STVREN  =  ON ]
 "117
-[p x LVP  =  OFF ]
+[p x STVREN  =  ON ]
 "119
+[p x LVP  =  OFF ]
+"121
 [p x XINST  =  OFF ]
-"124
-[p x CP0  =  OFF ]
 "126
-[p x CP1  =  OFF ]
+[p x CP0  =  OFF ]
 "128
-[p x CP2  =  OFF ]
+[p x CP1  =  OFF ]
 "130
+[p x CP2  =  OFF ]
+"132
 [p x CP3  =  OFF ]
-"134
+"136
 [p x CPB  =  OFF ]
-"137
+"139
 [p x CPD  =  OFF ]
-"141
-[p x WRT0  =  OFF ]
 "143
-[p x WRT1  =  OFF ]
+[p x WRT0  =  OFF ]
 "145
+[p x WRT1  =  OFF ]
+"147
 [p x WRT2  =  OFF ]
-"148
+"150
 [p x WRT3  =  OFF ]
-"152
+"154
 [p x WRTC  =  OFF ]
-"155
+"157
 [p x WRTB  =  OFF ]
-"158
+"160
 [p x WRTD  =  OFF ]
-"162
+"164
 [p x EBTR0  =  OFF ]
-"165
+"167
 [p x EBTR1  =  OFF ]
-"168
+"170
 [p x EBTR2  =  OFF ]
-"171
+"173
 [p x EBTR3  =  OFF ]
-"176
+"178
 [p x EBTRB  =  OFF ]
-"222
+"224
 [v _read_inputs `(v ~T0 @X0 1 ef ]
-"223
+"225
 {
 [e :U _read_inputs ]
 [f ]
-"225
-[e = _var_buf -> & -> _PORTB `i -> 248 `i `uc ]
 "226
-[e = _var_buf2 -> & -> _var_buf `i -> 32 `i `uc ]
+[e = _var_buf -> & -> _PORTB `i -> 15 `i `uc ]
 "227
-[e = _Var_Gi -> >> -> _var_buf2 `i -> 5 `i `uc ]
+[e = _Var_B _var_buf ]
 "228
-[e = _var_buf2 -> & -> _var_buf `i -> 16 `i `uc ]
+[e = _Var_A -> & -> _PORTA `i -> 15 `i `uc ]
 "229
-[e = _Var_Ei -> >> -> _var_buf2 `i -> 4 `i `uc ]
+[e = _var_buf -> & -> _PORTC `i -> 7 `i `uc ]
 "230
-[e = _var_buf2 -> & -> _var_buf `i -> 8 `i `uc ]
+[e = _var_buf2 -> & -> _var_buf `i -> 1 `i `uc ]
 "231
-[e = _Var_Li -> >> -> _var_buf2 `i -> 3 `i `uc ]
+[e = _Var_Li _var_buf2 ]
 "232
-[e = _var_buf2 -> & -> _var_buf `i -> 192 `i `uc ]
+[e = _var_buf2 -> & -> _var_buf `i -> 2 `i `uc ]
 "233
-[e = _var_buf2 -> >> -> _var_buf2 `i -> 4 `i `uc ]
+[e = _Var_Ei -> >> -> _var_buf2 `i -> 1 `i `uc ]
 "234
-[e = _var_buf2 -> & -> _PORTD `i -> 129 `i `uc ]
+[e = _var_buf2 -> & -> _var_buf `i -> 4 `i `uc ]
 "235
-[e = _var_buf3 -> & -> _var_buf `i -> 128 `i `uc ]
+[e = _Var_Gi -> >> -> _var_buf2 `i -> 2 `i `uc ]
 "236
-[e = _var_buf3 -> >> -> _var_buf3 `i -> 6 `i `uc ]
-"237
-[e = _var_buf -> & -> _var_buf `i -> 1 `i `uc ]
-"238
-[e = _Var_B -> | | -> _var_buf `i -> _var_buf2 `i -> _var_buf3 `i `uc ]
-"240
-[e = _var_buf -> & -> _PORTC `i -> 192 `i `uc ]
-"241
-[e = _var_buf2 -> & -> _var_buf `i -> 192 `i `uc ]
-"242
-[e = _var_buf2 -> >> -> _var_buf2 `i -> 4 `i `uc ]
-"243
-[e = _var_buf2 -> & -> _PORTA `i -> 129 `i `uc ]
-"244
-[e = _var_buf3 -> & -> _var_buf `i -> 128 `i `uc ]
-"245
-[e = _var_buf3 -> >> -> _var_buf3 `i -> 6 `i `uc ]
-"246
-[e = _var_buf -> & -> _var_buf `i -> 1 `i `uc ]
-"247
-[e = _Var_A -> | | -> _var_buf `i -> _var_buf2 `i -> _var_buf3 `i `uc ]
-"248
 [e :UE 286 ]
 }
-"257
-[; ;Comp_4bit.c: 257: void truth_table(void)
+"245
+[; ;Comp_4bit.c: 245: void truth_table(void)
 [v _truth_table `(v ~T0 @X0 1 ef ]
-"258
-[; ;Comp_4bit.c: 258: {
+"246
+[; ;Comp_4bit.c: 246: {
 {
 [e :U _truth_table ]
 [f ]
-"260
-[; ;Comp_4bit.c: 260:     if (Var_A > Var_B)
+"248
+[; ;Comp_4bit.c: 248:     if (Var_A > Var_B)
 [e $ ! > -> _Var_A `i -> _Var_B `i 288  ]
+"249
+[; ;Comp_4bit.c: 249:     {
+{
+"250
+[; ;Comp_4bit.c: 250:         Var_GT = 0b00000001;
+[e = _Var_GT -> -> 1 `i `uc ]
+"251
+[; ;Comp_4bit.c: 251:         Var_EQ = 0b00000000;
+[e = _Var_EQ -> -> 0 `i `uc ]
+"252
+[; ;Comp_4bit.c: 252:         Var_LT = 0b00000001;
+[e = _Var_LT -> -> 1 `i `uc ]
+"253
+[; ;Comp_4bit.c: 253:     }
+}
+[e $U 289  ]
+"254
+[; ;Comp_4bit.c: 254:     else if (Var_A < Var_B)
+[e :U 288 ]
+[e $ ! < -> _Var_A `i -> _Var_B `i 290  ]
+"255
+[; ;Comp_4bit.c: 255:     {
+{
+"256
+[; ;Comp_4bit.c: 256:         Var_GT = 0b00000000;
+[e = _Var_GT -> -> 0 `i `uc ]
+"257
+[; ;Comp_4bit.c: 257:         Var_EQ = 0b00000000;
+[e = _Var_EQ -> -> 0 `i `uc ]
+"258
+[; ;Comp_4bit.c: 258:         Var_LT = 0b00000001;
+[e = _Var_LT -> -> 1 `i `uc ]
+"259
+[; ;Comp_4bit.c: 259:     }
+}
+[e $U 291  ]
+"260
+[; ;Comp_4bit.c: 260:     else if (Var_A == Var_B)
+[e :U 290 ]
+[e $ ! == -> _Var_A `i -> _Var_B `i 292  ]
 "261
 [; ;Comp_4bit.c: 261:     {
 {
 "262
-[; ;Comp_4bit.c: 262:         Var_GT = '1';
-[e = _Var_GT -> -> 49 `ui `uc ]
+[; ;Comp_4bit.c: 262:         Var_GT = Var_Gi;
+[e = _Var_GT _Var_Gi ]
 "263
-[; ;Comp_4bit.c: 263:         Var_EQ = '0';
-[e = _Var_EQ -> -> 48 `ui `uc ]
+[; ;Comp_4bit.c: 263:         Var_EQ = Var_Ei;
+[e = _Var_EQ _Var_Ei ]
 "264
-[; ;Comp_4bit.c: 264:         Var_LT = '0';
-[e = _Var_LT -> -> 48 `ui `uc ]
+[; ;Comp_4bit.c: 264:         Var_LT = Var_Li;
+[e = _Var_LT _Var_Li ]
 "265
 [; ;Comp_4bit.c: 265:     }
-}
-[e $U 289  ]
-"266
-[; ;Comp_4bit.c: 266:     else if (Var_A < Var_B)
-[e :U 288 ]
-[e $ ! < -> _Var_A `i -> _Var_B `i 290  ]
-"267
-[; ;Comp_4bit.c: 267:     {
-{
-"268
-[; ;Comp_4bit.c: 268:         Var_GT = '0';
-[e = _Var_GT -> -> 48 `ui `uc ]
-"269
-[; ;Comp_4bit.c: 269:         Var_EQ = '0';
-[e = _Var_EQ -> -> 48 `ui `uc ]
-"270
-[; ;Comp_4bit.c: 270:         Var_LT = '1';
-[e = _Var_LT -> -> 49 `ui `uc ]
-"271
-[; ;Comp_4bit.c: 271:     }
-}
-[e $U 291  ]
-"272
-[; ;Comp_4bit.c: 272:     else if (Var_A == Var_B)
-[e :U 290 ]
-[e $ ! == -> _Var_A `i -> _Var_B `i 292  ]
-"273
-[; ;Comp_4bit.c: 273:     {
-{
-"274
-[; ;Comp_4bit.c: 274:         Var_GT = Var_Gi;
-[e = _Var_GT _Var_Gi ]
-"275
-[; ;Comp_4bit.c: 275:         Var_EQ = Var_Ei;
-[e = _Var_EQ _Var_Ei ]
-"276
-[; ;Comp_4bit.c: 276:         Var_LT = Var_Li;
-[e = _Var_LT _Var_Li ]
-"277
-[; ;Comp_4bit.c: 277:     }
 }
 [e :U 292 ]
 [e :U 291 ]
 [e :U 289 ]
-"278
-[; ;Comp_4bit.c: 278: }
+"266
+[; ;Comp_4bit.c: 266: }
 [e :UE 287 ]
 }
-"284
-[; ;Comp_4bit.c: 284: void write_outputs(void)
+"272
+[; ;Comp_4bit.c: 272: void write_outputs(void)
 [v _write_outputs `(v ~T0 @X0 1 ef ]
-"285
-[; ;Comp_4bit.c: 285: {
+"273
+[; ;Comp_4bit.c: 273: {
 {
 [e :U _write_outputs ]
 [f ]
-"288
-[; ;Comp_4bit.c: 288:     var_buf = PORTB & 0b11111011;
-[e = _var_buf -> & -> _PORTB `i -> 251 `i `uc ]
-"289
-[; ;Comp_4bit.c: 289:     var_buf2 = (Var_GT) << 2;
-[e = _var_buf2 -> << -> _Var_GT `i -> 2 `i `uc ]
-"290
-[; ;Comp_4bit.c: 290:     var_buf2 = var_buf2 | var_buf;
-[e = _var_buf2 -> | -> _var_buf2 `i -> _var_buf `i `uc ]
-"291
-[; ;Comp_4bit.c: 291:     PORTB = var_buf2;
-[e = _PORTB -> _var_buf2 `uc ]
-"292
-[; ;Comp_4bit.c: 292:     var_buf = PORTA & 0b11110111;
-[e = _var_buf -> & -> _PORTA `i -> 247 `i `uc ]
-"293
-[; ;Comp_4bit.c: 293:     var_buf2 = Var_EQ << 3;
-[e = _var_buf2 -> << -> _Var_EQ `i -> 3 `i `uc ]
-"294
-[; ;Comp_4bit.c: 294:     var_buf2 = var_buf2 | var_buf;
-[e = _var_buf2 -> | -> _var_buf2 `i -> _var_buf `i `uc ]
-"295
-[; ;Comp_4bit.c: 295:     PORTA = var_buf2;
-[e = _PORTA -> _var_buf2 `uc ]
-"296
-[; ;Comp_4bit.c: 296:     var_buf = PORTC & 0b11011111;
-[e = _var_buf -> & -> _PORTC `i -> 223 `i `uc ]
-"297
-[; ;Comp_4bit.c: 297:     var_buf2 = Var_LT << 5;
-[e = _var_buf2 -> << -> _Var_LT `i -> 5 `i `uc ]
-"298
-[; ;Comp_4bit.c: 298:     var_buf2 = var_buf2 | var_buf;
-[e = _var_buf2 -> | -> _var_buf2 `i -> _var_buf `i `uc ]
-"299
-[; ;Comp_4bit.c: 299:     PORTC = var_buf2;
-[e = _PORTC -> _var_buf2 `uc ]
-"300
-[; ;Comp_4bit.c: 300: }
+"276
+[; ;Comp_4bit.c: 276:     var_buf = Var_LT << 5;
+[e = _var_buf -> << -> _Var_LT `i -> 5 `i `uc ]
+"277
+[; ;Comp_4bit.c: 277:     var_buf2 = Var_EQ << 6;
+[e = _var_buf2 -> << -> _Var_EQ `i -> 6 `i `uc ]
+"278
+[; ;Comp_4bit.c: 278:     var_buf3 = Var_GT << 7;
+[e = _var_buf3 -> << -> _Var_GT `i -> 7 `i `uc ]
+"279
+[; ;Comp_4bit.c: 279:     var_buf4 = PORTC & 0b00011111;
+[e = _var_buf4 -> & -> _PORTC `i -> 31 `i `uc ]
+"280
+[; ;Comp_4bit.c: 280:     var_buf5 = (var_buf3 | var_buf2 | var_buf | (var_buf4));
+[e = _var_buf5 -> | | | -> _var_buf3 `i -> _var_buf2 `i -> _var_buf `i -> _var_buf4 `i `uc ]
+"281
+[; ;Comp_4bit.c: 281:     PORTC = var_buf5;
+[e = _PORTC -> _var_buf5 `uc ]
+"282
+[; ;Comp_4bit.c: 282: }
 [e :UE 293 ]
 }
