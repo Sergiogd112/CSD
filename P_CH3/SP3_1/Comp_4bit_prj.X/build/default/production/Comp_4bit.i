@@ -4855,5 +4855,8 @@ void write_outputs(void)
     var_buf3 = Var_GT << 7;
     var_buf4 = PORTC & 0b00011111;
     var_buf5 = (var_buf3 | var_buf2 | var_buf | (var_buf4));
-    PORTC = var_buf5;
+
+    RC5=Var_LT==0b00000001;
+    RC6=Var_EQ==0b00000001;
+    RC7=Var_GT==0b00000001;
 }

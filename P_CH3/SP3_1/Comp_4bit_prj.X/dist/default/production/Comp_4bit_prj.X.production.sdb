@@ -57,6 +57,12 @@
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "7416
 [v _GIE GIE `VEb  1 e 0 @32663 ]
+"8154
+[v _RC5 RC5 `VEb  1 e 0 @31765 ]
+"8157
+[v _RC6 RC6 `VEb  1 e 0 @31766 ]
+"8160
+[v _RC7 RC7 `VEb  1 e 0 @31767 ]
 "37 C:\CSD\P_CH3\SP3_1\Comp_4bit_prj.X\Comp_4bit.c
 [v _Var_A Var_A `uc  1 s 1 Var_A ]
 "38
@@ -91,7 +97,7 @@
 "272
 [v _write_outputs write_outputs `(v  1 e 1 0 ]
 {
-"282
+"285
 } 0
 "245
 [v _truth_table truth_table `(v  1 e 1 0 ]

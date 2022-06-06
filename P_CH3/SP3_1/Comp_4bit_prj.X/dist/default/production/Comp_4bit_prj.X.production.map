@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.35\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Comp_4bit_prj.X.production.sym \
   --cmf=dist/default/production\Comp_4bit_prj.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\sergi\AppData\Local\Temp\xcAshe8.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\sergi\AppData\Local\Temp\xcAshd4.4 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Comp_4bit_prj.X.production.map \
-  --md=C:\Users\sergi\AppData\Local\Temp\xcAshe8.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\sergi\AppData\Local\Temp\xcAshd4.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\sergi\AppData\Local\Temp\xcAshe8.o \
+  C:\Users\sergi\AppData\Local\Temp\xcAshd4.o \
   dist/default/production\Comp_4bit_prj.X.production.o 
 
 Object code version is 3.11
@@ -32,31 +32,31 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\sergi\AppData\Local\Temp\xcAshe8.o
+C:\Users\sergi\AppData\Local\Temp\xcAshd4.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  0        0        4        0       0
 dist/default/production\Comp_4bit_prj.X.production.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
-                text4                              7F24     7F24       3C     3F92       0
-                text3                              7F60     7F60       3C     3FB0       0
-                text2                              7F9C     7F9C       64     3FCE       0
-                text1                              7EF8     7EF8       2C     3F7C       0
-                text0                              7EE0     7EE0       18     3F70       0
+                text4                              7EC0     7EC0       3C     3F60       0
+                text3                              7EFC     7EFC       3C     3F7E       0
+                text2                              7F38     7F38       64     3F9C       0
+                text1                              7F9C     7F9C       64     3FCE       0
+                text0                              7EA8     7EA8       18     3F54       0
                 bssCOMRAM                             8        8        6        1       1
-                cinit                              7ECE     7ECE       12     3F67       0
+                cinit                              7E96     7E96       12     3F4B       0
                 nvCOMRAM                              1        1        7        1       1
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 init                                  0        0        4         0
-                text4                              7F24     7F24       3C         0
-                text3                              7F60     7F60       3C         0
-                text2                              7F9C     7F9C       64         0
-                text1                              7EF8     7EF8       2C         0
-                text0                              7EE0     7EE0       18         0
-                cinit                              7ECE     7ECE       12         0
+                text4                              7EC0     7EC0       3C         0
+                text3                              7EFC     7EFC       3C         0
+                text2                              7F38     7F38       64         0
+                text1                              7F9C     7F9C       64         0
+                text0                              7EA8     7EA8       18         0
+                cinit                              7E96     7E96       12         0
 
         CLASS   CONST          
 
@@ -110,12 +110,12 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 nvCOMRAM                       000001  00000D  00000E         1       1  COMRAM  
-                cinit                          007ECE  000012  007EE0      3F67       0  CODE    
-                text0                          007EE0  000018  007EF8      3F70       0  CODE    
-                text1                          007EF8  00002C  007F24      3F7C       0  CODE    
-                text4                          007F24  00003C  007F60      3F92       0  CODE    
-                text3                          007F60  00003C  007F9C      3FB0       0  CODE    
-                text2                          007F9C  000064  008000      3FCE       0  CODE    
+                cinit                          007E96  000012  007EA8      3F4B       0  CODE    
+                text0                          007EA8  000018  007EC0      3F54       0  CODE    
+                text4                          007EC0  00003C  007EFC      3F60       0  CODE    
+                text3                          007EFC  00003C  007F38      3F7E       0  CODE    
+                text2                          007F38  000064  007F9C      3F9C       0  CODE    
+                text1                          007F9C  000064  008000      3FCE       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -129,14 +129,14 @@ UNUSED ADDRESS RANGES
         BANK5            000500-0005FF              100
         BIGRAM           00000E-0005FF              5F2
         BIGSFR           000F80-000FFF               80
-        CODE             000004-007ECD             7ECA
+        CODE             000004-007E95             7E92
         COMRAM           00000E-00007F               72
-        CONST            000004-007ECD             7ECA
+        CONST            000004-007E95             7E92
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000600-007ECD             78CE
+        MEDIUMCONST      000600-007E95             7896
         RAM              000080-0005FF              100
         SFR              000F80-000FFF               80
-        SMALLCONST       000600-007ECD              100
+        SMALLCONST       000600-007E95              100
 
                                   Symbol Table
 
@@ -148,6 +148,9 @@ _PORTA                   (abs)        000F80
 _PORTB                   (abs)        000F81
 _PORTC                   (abs)        000F82
 _PORTD                   (abs)        000F83
+_RC5                     (abs)        007C15
+_RC6                     (abs)        007C16
+_RC7                     (abs)        007C17
 _TRISA                   (abs)        000F92
 _TRISB                   (abs)        000F93
 _Var_A                   nvCOMRAM     000007
@@ -303,36 +306,36 @@ ___rparam_used           (abs)        000001
 ___sp                    stack        000000
 __accesstop              (abs)        000080
 __activetblptr           (abs)        000000
-__end_of__initialization cinit        007EDA
-__end_of_init_system     text4        007F60
-__end_of_main            text0        007EF8
-__end_of_read_inputs     text3        007F9C
-__end_of_truth_table     text2        008000
-__end_of_write_outputs   text1        007F24
-__initialization         cinit        007ECE
+__end_of__initialization cinit        007EA2
+__end_of_init_system     text4        007EFC
+__end_of_main            text0        007EC0
+__end_of_read_inputs     text3        007F38
+__end_of_truth_table     text2        007F9C
+__end_of_write_outputs   text1        008000
+__initialization         cinit        007E96
 __mediumconst            mediumconst  000000
 __pbssCOMRAM             bssCOMRAM    000008
-__pcinit                 cinit        007ECE
+__pcinit                 cinit        007E96
 __pcstackCOMRAM          cstackCOMRAM 000000
 __pnvCOMRAM              nvCOMRAM     000001
-__ptext0                 text0        007EE0
-__ptext1                 text1        007EF8
-__ptext2                 text2        007F9C
-__ptext3                 text3        007F60
-__ptext4                 text4        007F24
+__ptext0                 text0        007EA8
+__ptext1                 text1        007F9C
+__ptext2                 text2        007F38
+__ptext3                 text3        007EFC
+__ptext4                 text4        007EC0
 __ramtop                 ramtop       000600
 __smallconst             smallconst   000000
-_init_system             text4        007F24
-_main                    text0        007EE0
-_read_inputs             text3        007F60
-_truth_table             text2        007F9C
+_init_system             text4        007EC0
+_main                    text0        007EA8
+_read_inputs             text3        007EFC
+_truth_table             text2        007F38
 _var_buf                 nvCOMRAM     000002
 _var_buf2                nvCOMRAM     000001
 _var_buf3                bssCOMRAM    00000A
 _var_buf4                bssCOMRAM    000009
 _var_buf5                bssCOMRAM    000008
-_write_outputs           text1        007EF8
-end_of_initialization    cinit        007EDA
+_write_outputs           text1        007F9C
+end_of_initialization    cinit        007EA2
 intlevel0                text         000000
 intlevel1                text         000000
 intlevel2                text         000000
@@ -342,23 +345,23 @@ isa$xinst                (abs)        000000
 stackhi                  (abs)        000000
 stacklo                  (abs)        000000
 start                    init         000000
-start_initialization     cinit        007ECE
+start_initialization     cinit        007E96
 
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 Comp_4bit.c
-		_truth_table   		CODE           	7F9C	0000	100
-		_init_system   		CODE           	7F24	0000	60
-		_main          		CODE           	7EE0	0000	24
-		_read_inputs   		CODE           	7F60	0000	60
-		_write_outputs 		CODE           	7EF8	0000	44
+		_truth_table   		CODE           	7F38	0000	100
+		_init_system   		CODE           	7EC0	0000	60
+		_main          		CODE           	7EA8	0000	24
+		_read_inputs   		CODE           	7EFC	0000	60
+		_write_outputs 		CODE           	7F9C	0000	100
 
-Comp_4bit.c estimated size: 288
+Comp_4bit.c estimated size: 344
 
 shared
-		__initialization		CODE           	7ECE	0000	12
+		__initialization		CODE           	7E96	0000	12
 
 shared estimated size: 12
 

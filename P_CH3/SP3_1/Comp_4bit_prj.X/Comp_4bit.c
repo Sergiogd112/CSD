@@ -247,9 +247,9 @@ void truth_table(void)
     // Run the truth table only if there is no input code errors
     if (Var_A > Var_B)
     {
-        Var_GT = 0b00000001;
-        Var_EQ = 0b00000000;
-        Var_LT = 0b00000001;
+        Var_GT = 1;
+        Var_EQ = 0;
+        Var_LT = 0;
     }
     else if (Var_A < Var_B)
     {
